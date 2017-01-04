@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\classes_dex2jar.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0423595747bd3b4633b0a3190e6994db5b74d29b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\classes_dex2jar_bbd938d87c45a6841523f67d9d27b4de99ca0b6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\rxjava-1.0.15.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3e34a4670bb3d00149256754aa6b562667b0d919">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxjava-1.0.15_268afc97a35d2be84fca956e3616b58ec12d9c19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_search_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="08f97ee0e35fb17d405d29bf62eef305faffffcc">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_search_v4_0_0_cdc05d81c61fa545dd4da1b25f80b8a4c0a60dc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipaysecsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysecsdk_767f03bb34657fe0c3372e352febae34f2fdac9f.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\classes_dex2jar.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0423595747bd3b4633b0a3190e6994db5b74d29b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\classes_dex2jar_bbd938d87c45a6841523f67d9d27b4de99ca0b6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\locSDK_6.13_e187245ecb2eb3da1598816c18109c6a93c22c50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipayutdid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipayutdid_0d55c87c0742f3ee2c461564c1fa56563c33629e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\log4j-1.2.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="057b8740427ee6d7b0b60792751356cad17dc0d9">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\log4j-1.2.12_3e7ba6c38886e9d636e4cd4f07d3493f120f9c61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-log4j12-1.6.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5cd9b4fbc3ff6a97beaade3206137d76f65df805">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-log4j12-1.6.6_7959b0eb14e182915dc95a267bcedf101db712e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipaysecsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysecsdk_767f03bb34657fe0c3372e352febae34f2fdac9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipaysdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0c3384f9877b711c3f0b6556ce9ec7f63dc2426e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysdk_77b17e1c69c7bb6d8d8fb4847883a47a9ef66342.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_search_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="08f97ee0e35fb17d405d29bf62eef305faffffcc">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_search_v4_0_0_cdc05d81c61fa545dd4da1b25f80b8a4c0a60dc0.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_map_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="db4a1025ee9c6f95747aab4a69baa1391534d80e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_map_v4_0_0_9cb728d17f39d373bfb61275c5c7877eab3f734a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipaysdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0c3384f9877b711c3f0b6556ce9ec7f63dc2426e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysdk_77b17e1c69c7bb6d8d8fb4847883a47a9ef66342.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\iSecurityPAB.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ab16c1b910cb45a8ba72bc2af97d90a71d7b56c">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\iSecurityPAB_df4719156573df7a3c1caf701f1fe05c16457819.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\pushservice-5.2.0.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="faca3beecf0f68ff0ade49b9165c16ee14247a42">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pushservice-5.2.0.12_f60a62540b80488ac756220e99adaeb468a0ed5f.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\commons-lang-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="16313e02a793435009f1e458fa4af5d879f6fb11">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\commons-lang-2.4_40e6c6090c658706ea81b1c93d8cd59fdc269a43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\iSecurityPAB.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0ab16c1b910cb45a8ba72bc2af97d90a71d7b56c">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\iSecurityPAB_df4719156573df7a3c1caf701f1fe05c16457819.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\locSDK_6.13_e187245ecb2eb3da1598816c18109c6a93c22c50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\mina-core-2.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1224b7c4127231b2d12c2f0e98b4c448a5f83faf">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\mina-core-2.0.4_e5e43d0481fd2abc459d0e03d4e783236987049d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\locSDK_6.13_e187245ecb2eb3da1598816c18109c6a93c22c50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\pushservice-5.2.0.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="faca3beecf0f68ff0ade49b9165c16ee14247a42">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pushservice-5.2.0.12_f60a62540b80488ac756220e99adaeb468a0ed5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\log4j-1.2.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="057b8740427ee6d7b0b60792751356cad17dc0d9">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\log4j-1.2.12_3e7ba6c38886e9d636e4cd4f07d3493f120f9c61.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\log4j-1.2.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="057b8740427ee6d7b0b60792751356cad17dc0d9">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\log4j-1.2.12_3e7ba6c38886e9d636e4cd4f07d3493f120f9c61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\iSecurityPAB.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ab16c1b910cb45a8ba72bc2af97d90a71d7b56c">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\iSecurityPAB_df4719156573df7a3c1caf701f1fe05c16457819.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_util_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1e9069435803e5a4f32dc429906def33a95aaf17">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_util_v4_0_0_1b59e34ef7cbc64edd866624455eff4e3647a939.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\commons-lang-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="16313e02a793435009f1e458fa4af5d879f6fb11">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\commons-lang-2.4_40e6c6090c658706ea81b1c93d8cd59fdc269a43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-api-1.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6f3b8a24bf970f17289b234284c94f43eb42f0e4">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-api-1.6.1_a4f21ae27f349d4e914e4d77bc4d695c92f9dd16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_util_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1e9069435803e5a4f32dc429906def33a95aaf17">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_util_v4_0_0_1b59e34ef7cbc64edd866624455eff4e3647a939.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_map_v4_0_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="db4a1025ee9c6f95747aab4a69baa1391534d80e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_map_v4_0_0_9cb728d17f39d373bfb61275c5c7877eab3f734a.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\rxjava-1.0.15.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3e34a4670bb3d00149256754aa6b562667b0d919">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxjava-1.0.15_268afc97a35d2be84fca956e3616b58ec12d9c19.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-log4j12-1.6.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5cd9b4fbc3ff6a97beaade3206137d76f65df805">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-log4j12-1.6.6_7959b0eb14e182915dc95a267bcedf101db712e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\pushservice-5.2.0.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="faca3beecf0f68ff0ade49b9165c16ee14247a42">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pushservice-5.2.0.12_f60a62540b80488ac756220e99adaeb468a0ed5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-api-1.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6f3b8a24bf970f17289b234284c94f43eb42f0e4">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-api-1.6.1_a4f21ae27f349d4e914e4d77bc4d695c92f9dd16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\otto-1.3.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\otto-1.3.8_653b345cad7259932897f1f6a0ff221cea8e43b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\otto-1.3.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\otto-1.3.8_653b345cad7259932897f1f6a0ff221cea8e43b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\sun.misc.BASE64Decoder.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="acd93e3727886196f9b8434279ff445ba8611186">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\sun.misc.BASE64Decoder_9e30b018e17ee360c2b531fe8b1dc43f1ec8981f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\mina-core-2.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1224b7c4127231b2d12c2f0e98b4c448a5f83faf">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\mina-core-2.0.4_e5e43d0481fd2abc459d0e03d4e783236987049d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\sun.misc.BASE64Decoder.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="acd93e3727886196f9b8434279ff445ba8611186">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\sun.misc.BASE64Decoder_9e30b018e17ee360c2b531fe8b1dc43f1ec8981f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\gson-2.4_6890e801880bd242164763e4b5f4086b8128ed8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\butterknife-7.0.1_945f1670d53030ca3a665ae0ceeb2a025bce434a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\pafundverify-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="dc472a5623db583726fd6942f489b5872b55b69b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pafundverify-1.0_d0889ee21475cc1e7ae99ef0bb1773524a9941b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\butterknife-7.0.1_945f1670d53030ca3a665ae0ceeb2a025bce434a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c1f63f70671d69ee38379728e1192db82e289246">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\libammsdk_f1b58cd3b6d5923297942abab9864e5a146f0d6c.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\alipaysecsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysecsdk_767f03bb34657fe0c3372e352febae34f2fdac9f.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_util_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1e9069435803e5a4f32dc429906def33a95aaf17">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_util_v4_0_0_1b59e34ef7cbc64edd866624455eff4e3647a939.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\gson-2.4_6890e801880bd242164763e4b5f4086b8128ed8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\locSDK_6.13_e187245ecb2eb3da1598816c18109c6a93c22c50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\sun.misc.BASE64Decoder.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="acd93e3727886196f9b8434279ff445ba8611186">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\sun.misc.BASE64Decoder_9e30b018e17ee360c2b531fe8b1dc43f1ec8981f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\rxandroid-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="08eb83dbb4b3444601a4276c1b22199917cbd096">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxandroid-1.1.1_831413482fc34c43f01f48f9f66fc3986ba88dc3.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\pafundverify-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc472a5623db583726fd6942f489b5872b55b69b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pafundverify-1.0_d0889ee21475cc1e7ae99ef0bb1773524a9941b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\rxandroid-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="08eb83dbb4b3444601a4276c1b22199917cbd096">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxandroid-1.1.1_831413482fc34c43f01f48f9f66fc3986ba88dc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipaysecsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysecsdk_767f03bb34657fe0c3372e352febae34f2fdac9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_util_v4_0_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1e9069435803e5a4f32dc429906def33a95aaf17">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_util_v4_0_0_1b59e34ef7cbc64edd866624455eff4e3647a939.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\sun.misc.BASE64Decoder.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="acd93e3727886196f9b8434279ff445ba8611186">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\sun.misc.BASE64Decoder_9e30b018e17ee360c2b531fe8b1dc43f1ec8981f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\75b28b2b-082a-3eec-bc0c-539989c64a77.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\75b28b2b-082a-3eec-bc0c-539989c64a77_ac7e72e6e6374c0a28a0d49186a97abcc1e5cbd6.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\picasso-2.5.2_7a3a802db9991e609c072bd76f08a02451508264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_radar_v4_0_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="81b00e6e2da11e12554d8cbf0acc23627fd1225b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_radar_v4_0_0_4ce2a0668da5a71505785aa9e8ac04f3e90ddb10.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\universal-image-loader-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f667a2f4f27542fe11a6781f5f7ac572d27afcec">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.0_191f9e1fde247a288d9b4a7c4ca8918f0dd806a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_cloud_v4_0_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e2aca735ca322917c5ee5fd40d663773391cf0a6">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v4_0_0_f089fc58a48bc7cb55546797728868c87f19ea90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\universal-image-loader-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f667a2f4f27542fe11a6781f5f7ac572d27afcec">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.0_191f9e1fde247a288d9b4a7c4ca8918f0dd806a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\picasso-2.5.2_7a3a802db9991e609c072bd76f08a02451508264.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_radar_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="81b00e6e2da11e12554d8cbf0acc23627fd1225b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_radar_v4_0_0_4ce2a0668da5a71505785aa9e8ac04f3e90ddb10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6588030ead793923de82d93a28b075c7c9045448">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\instant-run_ab440f3d2157f3f7b51459662253795356fde546.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\gson-2.4_6890e801880bd242164763e4b5f4086b8128ed8f.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c1f63f70671d69ee38379728e1192db82e289246">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\libammsdk_f1b58cd3b6d5923297942abab9864e5a146f0d6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e115b0ac7dcaf79017e490331003b04efc9b37ce">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\instant-run_ab440f3d2157f3f7b51459662253795356fde546.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\pafundverify-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc472a5623db583726fd6942f489b5872b55b69b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pafundverify-1.0_d0889ee21475cc1e7ae99ef0bb1773524a9941b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\pafundverify-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc472a5623db583726fd6942f489b5872b55b69b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pafundverify-1.0_d0889ee21475cc1e7ae99ef0bb1773524a9941b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\75b28b2b-082a-3eec-bc0c-539989c64a77.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\75b28b2b-082a-3eec-bc0c-539989c64a77_ac7e72e6e6374c0a28a0d49186a97abcc1e5cbd6.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_cloud_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e2aca735ca322917c5ee5fd40d663773391cf0a6">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v4_0_0_f089fc58a48bc7cb55546797728868c87f19ea90.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\otto-1.3.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\otto-1.3.8_653b345cad7259932897f1f6a0ff221cea8e43b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\butterknife-7.0.1_945f1670d53030ca3a665ae0ceeb2a025bce434a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\rxandroid-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="08eb83dbb4b3444601a4276c1b22199917cbd096">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxandroid-1.1.1_831413482fc34c43f01f48f9f66fc3986ba88dc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c1f63f70671d69ee38379728e1192db82e289246">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\libammsdk_f1b58cd3b6d5923297942abab9864e5a146f0d6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_cloud_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e2aca735ca322917c5ee5fd40d663773391cf0a6">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v4_0_0_f089fc58a48bc7cb55546797728868c87f19ea90.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\rxandroid-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="08eb83dbb4b3444601a4276c1b22199917cbd096">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxandroid-1.1.1_831413482fc34c43f01f48f9f66fc3986ba88dc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c1f63f70671d69ee38379728e1192db82e289246">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\libammsdk_f1b58cd3b6d5923297942abab9864e5a146f0d6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\otto-1.3.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\otto-1.3.8_653b345cad7259932897f1f6a0ff221cea8e43b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_cloud_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e2aca735ca322917c5ee5fd40d663773391cf0a6">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v4_0_0_f089fc58a48bc7cb55546797728868c87f19ea90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipayutdid.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipayutdid_0d55c87c0742f3ee2c461564c1fa56563c33629e.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\butterknife-7.0.1_945f1670d53030ca3a665ae0ceeb2a025bce434a.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\mina-core-2.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1224b7c4127231b2d12c2f0e98b4c448a5f83faf">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\mina-core-2.0.4_e5e43d0481fd2abc459d0e03d4e783236987049d.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\alipayutdid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipayutdid_0d55c87c0742f3ee2c461564c1fa56563c33629e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\classes_dex2jar.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0423595747bd3b4633b0a3190e6994db5b74d29b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\classes_dex2jar_bbd938d87c45a6841523f67d9d27b4de99ca0b6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_radar_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="81b00e6e2da11e12554d8cbf0acc23627fd1225b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_radar_v4_0_0_4ce2a0668da5a71505785aa9e8ac04f3e90ddb10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-log4j12-1.6.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5cd9b4fbc3ff6a97beaade3206137d76f65df805">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-log4j12-1.6.6_7959b0eb14e182915dc95a267bcedf101db712e2.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\alipaysdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0c3384f9877b711c3f0b6556ce9ec7f63dc2426e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysdk_77b17e1c69c7bb6d8d8fb4847883a47a9ef66342.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-api-1.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6f3b8a24bf970f17289b234284c94f43eb42f0e4">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-api-1.6.1_a4f21ae27f349d4e914e4d77bc4d695c92f9dd16.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_search_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="08f97ee0e35fb17d405d29bf62eef305faffffcc">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_search_v4_0_0_cdc05d81c61fa545dd4da1b25f80b8a4c0a60dc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\rxjava-1.0.15.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3e34a4670bb3d00149256754aa6b562667b0d919">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxjava-1.0.15_268afc97a35d2be84fca956e3616b58ec12d9c19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_radar_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="81b00e6e2da11e12554d8cbf0acc23627fd1225b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_radar_v4_0_0_4ce2a0668da5a71505785aa9e8ac04f3e90ddb10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\75b28b2b-082a-3eec-bc0c-539989c64a77.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\75b28b2b-082a-3eec-bc0c-539989c64a77_ac7e72e6e6374c0a28a0d49186a97abcc1e5cbd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\universal-image-loader-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f667a2f4f27542fe11a6781f5f7ac572d27afcec">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.0_191f9e1fde247a288d9b4a7c4ca8918f0dd806a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="89f6b81a2066dcba56c7a70a715d804dd0ef1366">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2bc44e0382b391eab17963a886431b9e5c2d7a4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipaysdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0c3384f9877b711c3f0b6556ce9ec7f63dc2426e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipaysdk_77b17e1c69c7bb6d8d8fb4847883a47a9ef66342.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\rxjava-1.0.15.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3e34a4670bb3d00149256754aa6b562667b0d919">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\rxjava-1.0.15_268afc97a35d2be84fca956e3616b58ec12d9c19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\universal-image-loader-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f667a2f4f27542fe11a6781f5f7ac572d27afcec">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.0_191f9e1fde247a288d9b4a7c4ca8918f0dd806a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_search_v4_0_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="08f97ee0e35fb17d405d29bf62eef305faffffcc">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_search_v4_0_0_cdc05d81c61fa545dd4da1b25f80b8a4c0a60dc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\mina-core-2.0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1224b7c4127231b2d12c2f0e98b4c448a5f83faf">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\mina-core-2.0.4_e5e43d0481fd2abc459d0e03d4e783236987049d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="299573def624e31ba479378cad262c5492e7146c">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2bc44e0382b391eab17963a886431b9e5c2d7a4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_base_v4_0_0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc207932ddfb65566a157ca311a6a6dffc7fccab">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_base_v4_0_0_9447ae482dac3e251bd51b9dd6c384a56e255fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_base_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc207932ddfb65566a157ca311a6a6dffc7fccab">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_base_v4_0_0_9447ae482dac3e251bd51b9dd6c384a56e255fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-log4j12-1.6.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5cd9b4fbc3ff6a97beaade3206137d76f65df805">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-log4j12-1.6.6_7959b0eb14e182915dc95a267bcedf101db712e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\log4j-1.2.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="057b8740427ee6d7b0b60792751356cad17dc0d9">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\log4j-1.2.12_3e7ba6c38886e9d636e4cd4f07d3493f120f9c61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_map_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="db4a1025ee9c6f95747aab4a69baa1391534d80e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_map_v4_0_0_9cb728d17f39d373bfb61275c5c7877eab3f734a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_base_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="dc207932ddfb65566a157ca311a6a6dffc7fccab">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_base_v4_0_0_9447ae482dac3e251bd51b9dd6c384a56e255fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\iSecurityPAB.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ab16c1b910cb45a8ba72bc2af97d90a71d7b56c">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\iSecurityPAB_df4719156573df7a3c1caf701f1fe05c16457819.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\pushservice-5.2.0.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="faca3beecf0f68ff0ade49b9165c16ee14247a42">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\pushservice-5.2.0.12_f60a62540b80488ac756220e99adaeb468a0ed5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\picasso-2.5.2_7a3a802db9991e609c072bd76f08a02451508264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\alipayutdid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\alipayutdid_0d55c87c0742f3ee2c461564c1fa56563c33629e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\picasso-2.5.2_7a3a802db9991e609c072bd76f08a02451508264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\commons-lang-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="16313e02a793435009f1e458fa4af5d879f6fb11">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\commons-lang-2.4_40e6c6090c658706ea81b1c93d8cd59fdc269a43.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_base_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc207932ddfb65566a157ca311a6a6dffc7fccab">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_base_v4_0_0_9447ae482dac3e251bd51b9dd6c384a56e255fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\commons-lang-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="16313e02a793435009f1e458fa4af5d879f6fb11">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\commons-lang-2.4_40e6c6090c658706ea81b1c93d8cd59fdc269a43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\classes_dex2jar.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0423595747bd3b4633b0a3190e6994db5b74d29b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\classes_dex2jar_bbd938d87c45a6841523f67d9d27b4de99ca0b6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\baidumapapi_map_v4_0_0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="db4a1025ee9c6f95747aab4a69baa1391534d80e">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\baidumapapi_map_v4_0_0_9cb728d17f39d373bfb61275c5c7877eab3f734a.jar" />
+    </item>
+    <item
+        jar="E:\hangyi\client_android\client_android\libs\75b28b2b-082a-3eec-bc0c-539989c64a77.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\75b28b2b-082a-3eec-bc0c-539989c64a77_ac7e72e6e6374c0a28a0d49186a97abcc1e5cbd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hangyi\client_android\client_android\libs\slf4j-api-1.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6f3b8a24bf970f17289b234284c94f43eb42f0e4">
+        <dex dex="E:\hangyi\client_android\client_android\build\intermediates\pre-dexed\debug\slf4j-api-1.6.1_a4f21ae27f349d4e914e4d77bc4d695c92f9dd16.jar" />
+    </item>
+
+</items>

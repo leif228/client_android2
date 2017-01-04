@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="iSecurityPAB">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/client_android/libs/iSecurityPAB.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

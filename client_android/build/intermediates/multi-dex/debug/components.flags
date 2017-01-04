@@ -1,0 +1,830 @@
+-injars 'E:\hangyi\client_android\client_android\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'E:\hangyi\client_android\client_android\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'F:\adt-bundle-windows-x86_64-20130717_new\adt-bundle-windows-x86_64-20130717\sdk\build-tools\23.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'E:\hangyi\client_android\client_android\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.eyunda.third.GlobalApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.hangyi.zd.SplashActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.TestImageBase64Activity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.gridviewpage.AllAppListActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.widge.MainActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.NotifyDetailActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.NewPageHomeMainActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.GroupListActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.GroupActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShowBigImage {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipSeachActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipPoliceActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.PoliceActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.NewShipGroupActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipGroupActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.HelpActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.LSShipListActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.MainActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ZdShipDynamicActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipFBActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipHCNodeActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipListActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipHCListActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipHCListIngActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipHCItemActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipHCActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipLSActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipSCActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.LoginActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.UpdatePwd {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ChangUserLoginActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.AccountInfoActivity {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.ShipInfoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.main.SplashTwoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.viewPage.ViewPagerActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.AdvShipSearchActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.AdvCargoSearchActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.MyOrderActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.DynamicActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipDataSource {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipDuesActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipGasOrderActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipDuesInActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.oil.OilListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.oil.GasOrderActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.oil.OilPreviewActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.map.ShipLatestDynamicActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipCabinListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipCabinActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ContractTemplateActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.HomeDynamicActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.EditTemplateActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.UploadActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.WalletHomeActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.UserSettlesActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.FillFetchActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.FillMoneyActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.BankListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.BindBankCardActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.ConfirmPayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.BindBankCardNextActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.MyshipActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ConfirmPublicActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.WTCTemplateDownloadActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipMoniterActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipLineListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.map.ShipDistributeActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.map.ShipDynamicActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.map.ShipPicActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipDeliveryActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipDtListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.CargoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.FindTYRActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.CargoListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.CargoSendNotifyActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.CargoNotifyObjActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.AddCargoResultActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.AddCargoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipinfoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipAuthDataActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.FindCargoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.FindShipActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.FindShipResultActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderTYRActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderCCActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.AgentInfoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.UserSiteActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.WebSiteActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.notice.NoticeListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.SiteHomeBtnActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderGSHActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderOneGSHActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.OrderCargoListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderZXActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderJSActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderTKActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AddOrderOneTemplateActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.OrderPreviewActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.OrderDownloadActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.OrderTemplatePreviewActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.OrderCommentActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipPreviewActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.cargo.CargoPreviewActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.LoginActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.UserInfoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.UpdatePwd {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.RegisterActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.EydProtocolActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.ForgetPasswdActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.CropImageActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.ShowNormalFileActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.FileChooserActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.BasicInfoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.SendNotifyActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.AccountInfoActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.AddAccountActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.AccountListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.ApplyAgentActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.AgentApplyActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.AgentActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.SignatureActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.ChatActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.NewChatAllHistoryActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.ContactRoleListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.NotifyDetailActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.ContactListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.SingleAllFriendsActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.NewContactListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.AddContactActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.UserChildListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.UserChildActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.UserChildSelShipActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.user.AddUserChildActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.ContextMenu {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.ShowBigImage {
+    <init>();
+}
+
+-keep class com.eyunda.third.locatedb.NoNetworkDialog {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipAttrActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.chat.AlertDialog {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.HomeCategoryActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.GasOrderInActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.HomeSearchResultActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.DlrListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.AliUcActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.WebPayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.account.GeneralPayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.PaymentActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.TranslateActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.FetchMoneyActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.PayRealActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.PayMoneyActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.BabyPayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.ShipDuesPayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.ShipGasOrderPayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.ShipDuesRefundActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.ShipGasOrderRefundActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.ShipDuesPaymentActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.pay.ShipGasOrderPaymentActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.PayActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.FindShipActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.MenuActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.SiteHomeActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipArvlftActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ArvLftListActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.ship.ShipUpdownActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.order.SimpleOrderActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.activities.home.CargoResultActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.CaptureActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.PreferencesActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.encode.EncodeActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.book.SearchBookContentsActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.share.ShareActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.share.BookmarkPickerActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.share.AppPickerActivity {
+    <init>();
+}
+
+-keep class com.google.zxing.client.android.HelpActivity {
+    <init>();
+}
+
+-keep class com.alipay.sdk.app.H5PayActivity {
+    <init>();
+}
+
+-keep class com.pingan.bank.libs.fundverify.FundVerifyActivity {
+    <init>();
+}
+
+-keep class com.sa.isecurity.plugin.SAKbdActivity {
+    <init>();
+}
+
+-keep class com.eyunda.third.PushService {
+    <init>();
+}
+
+-keep class com.eyunda.third.adapters.chat.ScreenOnReceiver {
+    <init>();
+}
+
+-keep class com.hangyi.baidu.push.PushDemoActivity {
+    <init>();
+}
+
+-keep class com.hangyi.baidu.push.LoginActivity {
+    <init>();
+}
+
+-keep class com.hangyi.baidu.push.CustomActivity {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.richmedia.MediaViewActivity {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.richmedia.MediaListActivity {
+    <init>();
+}
+
+-keep class com.hangyi.baidu.push.MyPushMessageReceiver {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.PushServiceReceiver {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.RegistrationReceiver {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.PushInfoProvider {
+    <init>();
+}
+
+-keep class com.hangyi.zd.ReLoginListenerService {
+    <init>();
+}
+
+-keep class com.hangyi.zd.ImgDownLoadService {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.newplay.ImgDownLoadService {
+    <init>();
+}
+
+-keep class com.hangyi.zd.activity.newplay.ImgLocalSaveService {
+    <init>();
+}
+
+-keep class com.hangyi.zd.PageHomeImgDownLoadService {
+    <init>();
+}
+
+-keep class com.hangyi.zd.ClearService {
+    <init>();
+}
+
+-keep class com.hangyi.zd.PHClearService {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.PushService {
+    <init>();
+}
+
+-keep class com.baidu.android.pushservice.CommandService {
+    <init>();
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

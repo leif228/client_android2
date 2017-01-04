@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout-land\\encode.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout-land\\encode.xml"
+    },
+    {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout-land\\share.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout-land\\share.xml"
+    }
+]

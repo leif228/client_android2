@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pafundverify-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/client_android/libs/pafundverify-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

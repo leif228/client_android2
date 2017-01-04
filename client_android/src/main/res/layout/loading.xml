@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6" >
+	<!-- 广告图片 -->
+    <ImageView
+        android:id="@+id/sp_gg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/sp_logo"
+        />
+	<!-- logo -->
+    <LinearLayout
+        android:id="@+id/sp_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/down_lay"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sp_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/down_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp" >
+		<!-- 登陆按钮 -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/loading_login"
+            android:textSize="18dp"
+            android:visibility="gone" />
+		<!-- 随便看看 -->
+        <Button
+            android:id="@+id/see"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/loading_see"
+            android:textSize="18dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

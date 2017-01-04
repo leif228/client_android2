@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="send_appdata_item">
+        <item>发送app文件本地路径</item>
+        <item>发送app二进制数据</item>
+        <item>发送无附件的app</item>
+    </string-array>
+    <string-array name="send_emoji_item">
+        <item>发送表情本地路径</item>
+        <item>发送表情二进制数据</item>
+    </string-array>
+    <string-array name="send_emoji_item_format">
+        <item>发送GIF图片</item>
+        <item>发送非GIF图片</item>
+    </string-array>
+    <string-array name="send_img_item">
+        <item>发送图片的二进制数据</item>
+        <item>发送图片的本地路径</item>
+        <item>发送图片的URL</item>
+    </string-array>
+    <string-array name="send_music_item">
+        <item>发送音乐url</item>
+        <item>发送低带宽音乐url</item>
+    </string-array>
+    <string-array name="send_video_item">
+        <item>发送视频url</item>
+        <item>发送低带宽视频url</item>
+    </string-array>
+    <string-array name="send_webpage_item">
+        <item>发送网页url</item>
+    </string-array>
+    <attr forMymat="boolean" name="auto_play"/>
+    <color name="DarkGreen">#24a900</color>
+    <color name="action_bar_bg">#ff01b0f1</color>
+    <color name="back_color_click">#8fff</color>
+    <color name="back_color_noclick">#ffff</color>
+    <color name="bbutton_danger">#ffd9534f</color>
+    <color name="bbutton_danger_disabled">#a5d9534f</color>
+    <color name="bbutton_danger_disabled_edge">#a5d43f3a</color>
+    <color name="bbutton_danger_edge">#ffd43f3a</color>
+    <color name="bbutton_danger_pressed">#ffd2322d</color>
+    <color name="bbutton_danger_pressed_edge">#ffac2925</color>
+    <color name="bbutton_default">#ffffffff</color>
+    <color name="bbutton_default_disabled">#a5ffffff</color>
+    <color name="bbutton_default_disabled_edge">#a5cccccc</color>
+    <color name="bbutton_default_edge">#ffcccccc</color>
+    <color name="bbutton_default_pressed">#ffebebeb</color>
+    <color name="bbutton_default_pressed_edge">#ffadadad</color>
+    <color name="bbutton_edittext_border">#ccc</color>
+    <color name="bbutton_edittext_disabled">#ffe0e0e0</color>
+    <color name="bbutton_info">#ff5bc0de</color>
+    <color name="bbutton_info_disabled">#a55bc0de</color>
+    <color name="bbutton_info_disabled_edge">#a546b8da</color>
+    <color name="bbutton_info_edge">#ff46b8da</color>
+    <color name="bbutton_info_pressed">#ff39b3d7</color>
+    <color name="bbutton_info_pressed_edge">#ff269abc</color>
+    <color name="bbutton_inverse">#ff0a0a0a</color>
+    <color name="bbutton_inverse_disabled">#a50a0a0a</color>
+    <color name="bbutton_inverse_disabled_edge">#a5141414</color>
+    <color name="bbutton_inverse_edge">#ff141414</color>
+    <color name="bbutton_inverse_pressed">#ff1f1f1f</color>
+    <color name="bbutton_inverse_pressed_edge">#ff292929</color>
+    <color name="bbutton_primary">#ff428bca</color>
+    <color name="bbutton_primary_disabled">#a5428bca</color>
+    <color name="bbutton_primary_disabled_edge">#a5357ebd</color>
+    <color name="bbutton_primary_edge">#ff357ebd</color>
+    <color name="bbutton_primary_pressed">#ff3276b1</color>
+    <color name="bbutton_primary_pressed_edge">#ff285e8e</color>
+    <color name="bbutton_success">#ff5cb85c</color>
+    <color name="bbutton_success_disabled">#a55cb85c</color>
+    <color name="bbutton_success_disabled_edge">#a54cae4c</color>
+    <color name="bbutton_success_edge">#ff4cae4c</color>
+    <color name="bbutton_success_pressed">#ff47a447</color>
+    <color name="bbutton_success_pressed_edge">#ff398439</color>
+    <color name="bbutton_warning">#fff0ad4e</color>
+    <color name="bbutton_warning_disabled">#a5f0ad4e</color>
+    <color name="bbutton_warning_disabled_edge">#a5eea236</color>
+    <color name="bbutton_warning_edge">#ffeea236</color>
+    <color name="bbutton_warning_pressed">#ffed9c28</color>
+    <color name="bbutton_warning_pressed_edge">#ffd58512</color>
+    <color name="bgColor">#f0f0f0</color>
+    <color name="bg_gray">#e2e2e2</color>
+    <color name="black">#ff000000</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="blue">#4779d8</color>
+    <color name="border_line">#ffc8c8c8</color>
+    <color name="bthumbnail_background">#ffffffff</color>
+    <color name="bthumbnail_border">#dbdbdb</color>
+    <color name="bthumbnail_font">#7e7e7e</color>
+    <color name="bthumbnail_placeholder">#e9e9e9</color>
+    <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+    <color name="color_white">#ffffff</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="darkgray">#cccc</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="eyd_chat_bottom_text_color_normal">#ffffff</color>
+    <color name="eyd_chat_btn_blue_normal">#1e90ff</color>
+    <color name="eyd_chat_btn_blue_pressed">#0066FF</color>
+    <color name="eyd_chat_btn_gray_normal">#c0c0c0</color>
+    <color name="eyd_chat_btn_gray_pressed_status">#b5b5b6</color>
+    <color name="eyd_chat_common_bg">#fcfcfc</color>
+    <color name="eyd_chat_divider_list">#cccccc</color>
+    <color name="eyd_chat_error_item_color">#F6EBE6</color>
+    <color name="eyd_chat_gray">#808080</color>
+    <color name="eyd_chat_orange">#FFA500</color>
+    <color name="eyd_chat_top_bar_normal_bg">#4ebcd3</color>
+    <color name="green">#65e17b</color>
+    <color name="grey">#58616d</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="myred">#eb4f38</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="police_nr">#FF0000</color>
+    <color name="police_r">#FF7744</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="red">#E1423C</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="save_color_click">#E44647</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="ship_jj1">#e4e4e4</color>
+    <color name="ship_jj2">#cecfe1</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="tab_middle_line_color">#5c882c</color>
+    <color name="tab_title_normal_color">#262726</color>
+    <color name="tab_title_pressed_color">#16982b</color>
+    <color name="tab_txt_unselect">#ff888899</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="text_but">#ff5D77B4</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="translucence">#506050</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="white">#ffffffff</color>
+    <declare-styleable name="BootstrapButton"><attr format="string" name="bb_type"/><attr format="string" name="bb_icon_left"/><attr format="string" name="bb_icon_right"/><attr format="boolean" name="bb_roundedCorners"/><attr format="string" name="bb_text_alignment"/><attr format="string" name="bb_size"/><attr format="string" name="bb_text_gravity"/><attr name="android:textSize"/><attr name="android:text"/><attr name="android:enabled"/><attr name="android:layout_width"/><attr name="android:layout_weight"/></declare-styleable>
+    <declare-styleable name="BootstrapCircleThumbnail"><attr format="integer" name="bct_image"/><attr format="string" name="bct_size"/><attr format="boolean" name="bct_minimal"/><attr name="android:text"/></declare-styleable>
+    <declare-styleable name="BootstrapEditText"><attr format="boolean" name="be_roundedCorners"/><attr format="string" name="be_state"/><attr name="android:textSize"/><attr name="android:text"/><attr name="android:hint"/><attr name="android:enabled"/></declare-styleable>
+    <declare-styleable name="BootstrapThumbnail"><attr format="boolean" name="bt_roundedCorners"/><attr format="integer" name="bt_image"/><attr format="dimension" name="bt_width"/><attr format="dimension" name="bt_height"/><attr format="dimension" name="bt_inside_padding"/><attr name="android:text"/></declare-styleable>
+    <declare-styleable name="CropImageView"><attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr><attr format="boolean" name="fixAspectRatio"/><attr format="integer" name="aspectRatioX"/><attr format="integer" name="aspectRatioY"/><attr format="reference" name="imageResource"/></declare-styleable>
+    <declare-styleable name="FontAwesomeText"><attr format="string" name="fa_icon"/><attr name="android:textSize"/><attr name="android:textColor"/></declare-styleable>
+    <declare-styleable name="JDAdverView"><attr format="integer" name="gap"/><attr format="integer" name="animDuration"/></declare-styleable>
+    <declare-styleable name="SignaturePad"><attr format="float" name="minWidth"/><attr format="float" name="maxWidth"/><attr format="color" name="penColor"/><attr format="float" name="velocityFilterWeight"/></declare-styleable>
+    <declare-styleable name="SlidingSwitcherView"><attr name="auto_play"/></declare-styleable>
+    <declare-styleable name="gridPasswordView"><attr format="color|reference" name="gpvTextColor"/><attr format="dimension" name="gpvTextSize"/><attr format="color" name="gpvLineColor"/><attr format="color" name="gpvGridColor"/><attr format="dimension" name="gpvLineWidth"/><attr format="integer" name="gpvPasswordLength"/><attr format="string" name="gpvPasswordTransformation"/><attr format="enum" name="gpvPasswordType">
+            <enum name="numberPassword" value="0"/>
+            <enum name="textPassword" value="1"/>
+            <enum name="textVisiblePassword" value="2"/>
+            <enum name="textWebPassword" value="3"/>
+        </attr></declare-styleable>
+    <dimen name="BasicTextSize">15dp</dimen>
+    <dimen name="ChattingContentMinHeight">49dp</dimen>
+    <dimen name="ChattingTextSize">16dp</dimen>
+    <dimen name="ConversationItemHeight">58dp</dimen>
+    <dimen name="LargeAvatarSize">56dp</dimen>
+    <dimen name="LargeTextSize">16dp</dimen>
+    <dimen name="LargestTextSize">30dp</dimen>
+    <dimen name="PreferenceItemHeight">42dp</dimen>
+    <dimen name="SmallTextSize">14dp</dimen>
+    <dimen name="SmallerTextSize">13dp</dimen>
+    <dimen name="TitleTextSize">18dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+    <dimen name="bthumbnail_rounded_corner_radius">3dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+    <dimen name="eyd_chat_height_top_bar">40dp</dimen>
+    <dimen name="eyd_chat_margin_chat_activity">5dp</dimen>
+    <dimen name="eyd_chat_padding_search_bar">5dp</dimen>
+    <dimen name="eyd_chat_size_avatar">50dp</dimen>
+    <dimen name="eyd_user_activity_horizontal_margin">16dp</dimen>
+    <dimen name="eyd_user_activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_micro">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="textSize">22sp</dimen>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="pa_x_fragment_default" type="layout">r/dir/pa_fragment_default.xml</item>
+    <item name="pa_x_fragment_forgetpsw" type="layout">r/dir/pa_fragment_forgetpsw.xml</item>
+    <item name="pa_x_fragment_modifypsw" type="layout">r/dir/pa_fragment_modifypsw.xml</item>
+    <item name="pa_x_fragment_setpsw" type="layout">r/dir/pa_fragment_setpsw.xml</item>
+    <string name="action_settings">Settings</string>
+    <string name="api_key">%1$s</string>
+    <string name="app_back">返回</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_delete">删除</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_exit">退出</string>
+    <string name="app_find">查找</string>
+    <string name="app_finish">完成</string>
+    <string name="app_login">登陆</string>
+    <string name="app_login_register">登陆/注册</string>
+    <string name="app_name">驳船调度</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_ok">确定</string>
+    <string name="app_picker_name">应用</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_register">注册</string>
+    <string name="app_save">保存</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_share">分享</string>
+    <string name="app_sys_set">设置</string>
+    <string name="app_tile">船舶详情</string>
+    <string name="app_tip">提示</string>
+    <string name="applet_seccode_fail_tip">验证码错误，请重新输入</string>
+    <string name="applet_seccode_tip">验证码不能为空</string>
+    <string name="applet_secimg_change">换一张图片</string>
+    <string name="applet_secimg_title">填写验证码</string>
+    <string name="attach_file">文件</string>
+    <string name="bookmark_picker_name">书签</string>
+    <string name="box_20e">20\'E:</string>
+    <string name="box_20f">20\'F:</string>
+    <string name="box_40e">40\'E:</string>
+    <string name="box_40f">40\'F</string>
+    <string name="box_60e">45\'E:</string>
+    <string name="box_60f">45\'F:</string>
+    <string name="built_date">下水日期</string>
+    <string name="button_add_calendar">添加事件至日历</string>
+    <string name="button_add_contact">添加联系人</string>
+    <string name="button_back">返回</string>
+    <string name="button_book_search">打开图书搜索</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_custom_product_search">自定义搜索</string>
+    <string name="button_dial">拨号</string>
+    <string name="button_done">完成</string>
+    <string name="button_email">发送email</string>
+    <string name="button_get_directions">获取地址</string>
+    <string name="button_google_shopper">谷歌购物</string>
+    <string name="button_mms">发送彩信</string>
+    <string name="button_ok">确定</string>
+    <string name="button_open_browser">打开浏览器</string>
+    <string name="button_product_search">打开产品搜索</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_search_book_contents">搜索图书内容</string>
+    <string name="button_share_app">共享应用</string>
+    <string name="button_share_bookmark">分享书签</string>
+    <string name="button_share_by_email">通过email分享</string>
+    <string name="button_share_by_sms">通过短信分享</string>
+    <string name="button_share_clipboard">分享剪切板</string>
+    <string name="button_share_contact">分享联系人</string>
+    <string name="button_show_map">显示地图</string>
+    <string name="button_sms">发送短信</string>
+    <string name="button_web_search">网页搜索</string>
+    <string name="button_wifi">连接到网络</string>
+    <string name="cargo_cate">货类</string>
+    <string name="cargo_guige">规格</string>
+    <string name="cargo_logo">货物图片</string>
+    <string name="cargo_name">货名</string>
+    <string name="cargo_num_box">箱量(个)</string>
+    <string name="cargo_num_ton">货量(吨)</string>
+    <string name="carriage_yuan">运费(元)</string>
+    <string name="carry_per_yuan_box">运价(元/个)</string>
+    <string name="carry_per_yuan_ton">运价(元/吨)</string>
+    <string name="change_pay_type"><u>更换支付方式</u></string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+    <string name="choose_logo">图片</string>
+    <string name="clear_log">清除日志</string>
+    <string name="contents_contact">联系人信息</string>
+    <string name="contents_email">Email地址</string>
+    <string name="contents_location">地理坐标</string>
+    <string name="contents_phone">电话号码</string>
+    <string name="contents_sms">短信地址</string>
+    <string name="contents_text">纯文本</string>
+    <string name="custom_text_hint">用户自定义行为打开的Activity</string>
+    <string name="deadline">期限</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="domestic_trade">内贸</string>
+    <string name="downTemplateDesc">下载“委托书模板”，然后填写、签名、盖章、拍照、上传</string>
+    <string name="empty_hint">文件夹为空</string>
+    <string name="end_port">到达港</string>
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="explain">船舶说明</string>
+    <string name="eyd_chat_attach_picture">图片</string>
+    <string name="eyd_chat_button_send">发送</string>
+    <string name="eyd_chat_cancel">取消</string>
+    <string name="eyd_chat_copy_message">复制消息</string>
+    <string name="eyd_chat_delete_message">删除消息</string>
+    <string name="eyd_chat_move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="eyd_chat_ok">确定</string>
+    <string name="eyd_chat_prompt">提示</string>
+    <string name="eyd_chat_search_header">S</string>
+    <string name="eyd_chat_text_ack_msg">已读</string>
+    <string name="eyd_chat_text_delivered_msg">送达</string>
+    <string name="fmt_afternoon">下午</string>
+    <string name="fmt_date">M月d日</string>
+    <string formatted="false" name="fmt_datetime">M月d日 %skk:mm</string>
+    <string name="fmt_dawn">凌晨</string>
+    <string name="fmt_evening">晚上</string>
+    <string formatted="false" name="fmt_iap_err">网络连接不可用，请稍候重试</string>
+    <string formatted="false" name="fmt_in60min">%d分钟前</string>
+    <string name="fmt_justnow">1分钟内</string>
+    <string name="fmt_longdate">yyyy年M月d日</string>
+    <string formatted="false" name="fmt_longtime">yyyy年M月d日 %skk:mm</string>
+    <string name="fmt_morning">早上</string>
+    <string name="fmt_noon">中午</string>
+    <string name="fmt_patime">kk:mm</string>
+    <string name="fmt_pre_yesterday">昨天</string>
+    <string name="foreign_trade">外贸</string>
+    <string name="get_from_wx_title">从微信接收</string>
+    <string name="get_token_from_weixin">获取微信访问Token</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="gross_ton">总吨</string>
+    <string name="hello">Hello World, SDKSampleActivity!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="history_clear_one_history_text">删除</string>
+    <string name="history_clear_text">删除历史</string>
+    <string name="history_email_title">条码扫描器历史</string>
+    <string name="history_empty">空的</string>
+    <string name="history_empty_detail">没有条码扫描已记录</string>
+    <string name="history_send">发送历史</string>
+    <string name="history_title">历史</string>
+    <string name="is_timeline">是否分享到朋友圈</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="line">航区</string>
+    <string name="log_tip">日志：</string>
+    <string name="login">登录</string>
+    <string name="media">Rich Media</string>
+    <string name="menu_encode_mecard">使用MECARD</string>
+    <string name="menu_encode_vcard">使用vCard</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_history">历史</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_share">分享</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="msg_default_format">格式</string>
+    <string name="msg_default_meta">元数据</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">请将条码置于取景框内扫描。  </string>
+    <string name="msg_default_time">时间</string>
+    <string name="msg_default_type">类型</string>
+    <string name="msg_encode_contents_failed">无法根据已有数据生成条码。   </string>
+    <string name="msg_google_books">谷歌图书</string>
+    <string name="msg_google_product">谷歌购物</string>
+    <string name="msg_google_shopper_missing">谷歌购物未安装</string>
+    <string name="msg_install_google_shopper">谷歌购物是一款将条码扫描和商品比价相结合的应用，谷歌购物不使用浏览器，您想尝试吗？</string>
+    <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+    <string name="msg_redirect">重定向</string>
+    <string name="msg_sbc_book_not_searchable">抱歉，无法找到此图书。</string>
+    <string name="msg_sbc_failed">抱歉，搜索时遇到错误。</string>
+    <string name="msg_sbc_no_page_returned">无页面返回</string>
+    <string name="msg_sbc_page">页面</string>
+    <string name="msg_sbc_results">结果</string>
+    <string name="msg_sbc_searching_book">搜索图书…</string>
+    <string name="msg_sbc_snippet_unavailable">摘录不可用</string>
+    <string name="msg_sbc_unknown_page">未知页面</string>
+    <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
+    <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+    <string name="msg_share_text">或键入一些文字</string>
+    <string name="msg_sure">你肯定吗？</string>
+    <string name="msg_unmount_usb">抱歉，SD卡不可访问。</string>
+    <string name="my_boat">账号设置</string>
+    <string name="my_boat_dt">收藏船舶</string>
+    <string name="my_boat_jk">历史回放</string>
+    <string name="my_cabin">船舶上报</string>
+    <string name="my_cargo">航次管理</string>
+    <string name="my_message">账号设置</string>
+    <string name="my_order">镜头</string>
+    <string name="my_phonebook">联系人</string>
+    <string name="my_settle">钱包</string>
+    <string name="net_ton">净吨</string>
+    <string name="nopic">暂无图片</string>
+    <string name="open_file_error_format">文件格式不正确</string>
+    <string name="open_file_failed">文件打开失败</string>
+    <string name="open_file_none">您没有选择任何文件</string>
+    <string name="owner">货主</string>
+    <string name="preferences_actions_title">找到条码时</string>
+    <string name="preferences_auto_focus_title">使用自动对焦</string>
+    <string name="preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+    <string name="preferences_bulk_mode_title">批量扫描模式</string>
+    <string name="preferences_copy_to_clipboard_title">复制到剪切板</string>
+    <string formatted="false" name="preferences_custom_product_search_summary">替换：％s=内容，％f=格式，％t=类型</string>
+    <string name="preferences_custom_product_search_title">自定义搜索网址</string>
+    <string name="preferences_decode_1D_title">扫描 一维条码</string>
+    <string name="preferences_decode_Data_Matrix_title">扫描 DM码</string>
+    <string name="preferences_decode_QR_title">扫描 QR码</string>
+    <string name="preferences_device_bug_workarounds_title">设备问题解决办法</string>
+    <string name="preferences_disable_continuous_focus_summary">只使用标准对焦模式</string>
+    <string name="preferences_disable_continuous_focus_title">没有持续关注</string>
+    <string name="preferences_disable_exposure_title">无曝光</string>
+    <string name="preferences_front_light_summary">前灯可用时，打开前灯</string>
+    <string name="preferences_front_light_title">前灯</string>
+    <string name="preferences_general_title">一般设置</string>
+    <string name="preferences_name">设置</string>
+    <string name="preferences_play_beep_title">提示音</string>
+    <string name="preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+    <string name="preferences_remember_duplicates_title">记住重复</string>
+    <string name="preferences_result_title">结果设置</string>
+    <string name="preferences_scanning_title">条码类型选择</string>
+    <string name="preferences_search_country">搜索国家</string>
+    <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+    <string name="preferences_supplemental_title">检索更多信息</string>
+    <string name="preferences_try_bsplus">尝试条码扫描器+</string>
+    <string name="preferences_try_bsplus_summary">增强新的功能和接口</string>
+    <string name="preferences_vibrate_title">振动</string>
+    <string name="price">总价</string>
+    <string name="price_tag">价格标语</string>
+    <string name="receive">从微信接收</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="register_as_weixin_app_sender">注册微信事件发送器</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="result_address_book">找到联系人信息</string>
+    <string name="result_calendar">找到日历事件</string>
+    <string name="result_email_address">找到email地址</string>
+    <string name="result_geo">找到地理坐标</string>
+    <string name="result_isbn">找到图书</string>
+    <string name="result_product">找到产品</string>
+    <string name="result_sms">找到短信地址</string>
+    <string name="result_tel">找到电话号码</string>
+    <string name="result_text">找到纯文本</string>
+    <string name="result_uri">找到URL</string>
+    <string name="result_wifi">发现网络配置</string>
+    <string name="rmb">元</string>
+    <string name="sbc_name">Google图书搜索</string>
+    <string name="sdcard_unmonted_hint">请先挂载SD卡</string>
+    <string name="search_boat">搜索</string>
+    <string name="send">发送到微信</string>
+    <string name="send_appdata">发送app消息</string>
+    <string name="send_emoji">发送表情消息</string>
+    <string name="send_img">发送图片</string>
+    <string name="send_img_file_not_exist">文件不存在</string>
+    <string name="send_music">发送音乐</string>
+    <string name="send_pic">发送照片</string>
+    <string name="send_text">发送文本</string>
+    <string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+    <string name="send_to_wx_title">发送到微信</string>
+    <string name="send_video">发送视频</string>
+    <string name="send_webpage">发送网页</string>
+    <string name="share_appdata_to_weixin">回应app消息到微信</string>
+    <string name="share_music_to_weixin">回应音乐到微信</string>
+    <string name="share_name">通过条码分享</string>
+    <string name="share_pic_to_weixin">回应图片到微信</string>
+    <string name="share_text_default">这段文字回应自微信SDK示例程序</string>
+    <string name="share_text_to_weixin">回应文本到微信</string>
+    <string name="share_url_to_weixin">回应URL到微信</string>
+    <string name="share_video_to_weixin">回应视频到微信</string>
+    <string name="ship_area">地区</string>
+    <string name="ship_att_type">委托类型</string>
+    <string name="ship_carrier">船东</string>
+    <string name="ship_class">船类</string>
+    <string name="ship_identity_back">身份证反面</string>
+    <string name="ship_identity_front">身份证正面</string>
+    <string name="ship_logo">船舶图片</string>
+    <string name="ship_name">船名</string>
+    <string name="ship_operation_certificate">船舶运营证</string>
+    <string name="ship_proxy">委托书</string>
+    <string name="ship_public">船盘发布</string>
+    <string name="ship_use">用途</string>
+    <string name="ship_zone">航区</string>
+    <string name="show_from_wx_tip">这个界面用于显示微信向第三方app请求显示的信息</string>
+    <string name="show_from_wx_title">显示微信请求的消息</string>
+    <string name="start_port">起运港</string>
+    <string name="tags_hint">请输入多个标签，以英文逗号隔开</string>
+    <string name="text_about">百度Push Android SDK 4.6.3\n\n更新时间:2016年5月11日\nChange Log：\n修复低端机器上WebView加载时可能的安全隐患。\n修复特殊场景下Push无法后台自启动的bug。\n暂停PushKeepAlive机制，防止小米部分机器上异常情况下的焦点丢失。</string>
+    <string name="text_btn_aidl">轻应用AIDL</string>
+    <string name="text_btn_delTags">删除标签</string>
+    <string name="text_btn_init">百度账号绑定</string>
+    <string name="text_btn_init1">更换百度账号</string>
+    <string name="text_btn_initAK">无账号绑定</string>
+    <string name="text_btn_off_app_msg">加入黑名单</string>
+    <string name="text_btn_off_lightapp">关闭所有轻消息</string>
+    <string name="text_btn_off_push">关闭Push</string>
+    <string name="text_btn_on_push">打开Push</string>
+    <string name="text_btn_on_shortcut">生成快捷图标</string>
+    <string name="text_btn_rich">富媒体消息</string>
+    <string name="text_btn_senior">高级功能</string>
+    <string name="text_btn_set">设置</string>
+    <string name="text_btn_setTags">设置标签</string>
+    <string name="text_btn_setunDisturb">免打扰时段</string>
+    <string name="text_btn_showTags">列举标签</string>
+    <string name="text_btn_unbind">解绑</string>
+    <string name="text_btn_unread_only_msg">只获取未读消息</string>
+    <string name="text_help">百度hi官方技术讨论群：1405944\nQQ群：324533810（可加）\n云推送微信公众账号：云推送（微信号：baidu-push）\n</string>
+    <string name="text_media_title">富媒体消息列表</string>
+    <string name="text_toast">设置成功，免打扰时段为：\n%1$s - %2$s</string>
+    <string name="title_activity_apply_edit">ApplyEditActivity</string>
+    <string name="title_activity_cargo">CargoActivity</string>
+    <string name="title_activity_cargo_preview">CargoPreviewActivity</string>
+    <string name="title_activity_home_cargo_cate">HomeCargoCateActivity</string>
+    <string name="title_activity_main">驳船调度</string>
+    <string name="title_activity_myship">MyshipActivity</string>
+    <string name="title_activity_price">PriceActivity</string>
+    <string name="title_activity_ship_basic">ShipBasicActivity</string>
+    <string name="title_activity_ship_dt">ShipDtActivity</string>
+    <string name="title_activity_simple_order">SimpleOrderActivity</string>
+    <string name="tonnage">载货量</string>
+    <string name="trade">内外贸</string>
+    <string name="unregister_from_weixin">从微信反注册</string>
+    <string name="verify_password_null_tip">密码不能为空，请输入密码</string>
+    <string name="water_date">建造日期</string>
+    <string name="wifi_changing_network">请求连接到网络\u2026</string>
+    <string name="wifi_ssid_label">网络SSID</string>
+    <string name="wifi_type_label">类型</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="zero">0</string>
+    <string name="zero_float">0.0</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="ChattingUIContent">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="ChattingUIFMessageText" parent="ChattingUIText">
+        <item name="android:textColor">@color/mm_pref_summary</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ChattingUIMailSenderText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#4271AD</item>
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxWidth">240dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ChattingUISenderText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#3F3F3F</item>
+        <item name="android:textSize">@dimen/SmallTextSize</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#A0FFFFFF</item>
+        <item name="android:maxWidth">240dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <style name="ChattingUISplit">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#A0FFFFFF</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    <style name="ChattingUISystem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#F0F0F0</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="ChattingUIText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/ChattingTextSize</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:maxWidth">240dp</item>
+        <item name="android:minHeight">15dp</item>
+    </style>
+    <style name="ChattingUIThumbnail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">240dp</item>
+    </style>
+    <style name="ChattingUIVoiceLength">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:textSize">@dimen/SmallTextSize</item>
+        <item name="android:shadowColor">#80FFFFFF</item>
+        <item name="android:shadowDy">1.4</item>
+        <item name="android:shadowDx">1.4</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="ChattingUIWordCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="ChoicePreferenceButton">
+        <item name="android:button">@null</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mm_choice_text_color</item>
+    </style>
+    <style name="DataSheetAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+    </style>
+    <style name="GridPasswordView"/>
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HyperText" parent="MMButton">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/mm_hyper_text</item>
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MMBlock">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MMBody">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">26dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">@null</item>
+    </style>
+    <style name="MMBriefText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#707070</item>
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+        <item name="android:shadowColor">#A0FFFFFF</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    <style name="MMButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/mm_btn_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
+    <style name="MMCheckBox">
+        <item name="android:background">@drawable/mm_checkbox_btn</item>
+    </style>
+    <style name="MMDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#B2B2B5</item>
+    </style>
+    <style name="MMEditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/mm_edit</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">43dp</item>
+        <item name="android:textColorHint">@color/lightgrey</item>
+    </style>
+    <style name="MMFontEmptyMsgLarge" parent="MMFontPreferenceLarge">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mm_pref_summary</item>
+    </style>
+    <style name="MMFontPreferenceLarge">
+        <item name="android:textAppearance">@style/MMPreferenceTextLarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MMFontPreferenceProfile" parent="MMFontPreferenceLarge">
+        <item name="android:textSize">@dimen/TitleTextSize</item>
+    </style>
+    <style name="MMFontPreferenceSmall">
+        <item name="android:textAppearance">@style/MMPreferenceTextSmall</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:shadowColor">#A0FFFFFF</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="MMFontPreferenceSummary" parent="MMFontPreferenceSmall">
+        <item name="android:textAppearance">@style/MMPreferenceTextSmall</item>
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+    </style>
+    <style name="MMFontTimeInList" parent="MMFontTipInList">
+        <item name="android:textSize">@dimen/SmallTextSize</item>
+        <item name="android:textColor">@color/mm_list_textcolor_time</item>
+    </style>
+    <style name="MMFontTipInList">
+        <item name="android:textSize">@dimen/SmallTextSize</item>
+        <item name="android:textColor">@color/mm_list_textcolor_two</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MMFontTitleInList">
+        <item name="android:textSize">@dimen/LargeTextSize</item>
+        <item name="android:textColor">@color/mm_list_textcolor_one</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <!--
+		<item name="android:shadowColor">#80A0A0A0</item>
+		<item name="android:shadowDy">1.2</item>
+		<item name="android:shadowDx">1.2</item>
+		<item name="android:shadowRadius">1</item>
+
+
+        -->
+    </style>
+    <style name="MMFooter">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:minHeight">54dp</item>
+    </style>
+    <style name="MMFriendListItem" parent="MMListItem">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    <style name="MMLabel" parent="MMBriefText">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MMLabelSplit">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MMLine">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MMLineActionButton" parent="@style/MMLineButton">
+        <item name="android:background">@drawable/btn_style_one</item>
+        <item name="android:textColor">@color/mm_style_one_btn_text</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="MMLineButton" parent="@style/MMButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mm_style_two_btn_text</item>
+    </style>
+    <style name="MMLineEditPass" parent="@style/MMLineEditText">
+        <item name="android:password">true</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <style name="MMLineEditText" parent="@style/MMEditText">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="MMLineLabel" parent="MMLabel">
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="MMListCatalog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#CED2D7</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#595C61</item>
+    </style>
+    <style name="MMListItem">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MMListView">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0px</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:listSelector">@drawable/list_selector_background</item>
+        <!-- cause some m9 crash -->
+        <!-- <item name="android:overScrollMode">always</item> -->
+    </style>
+    <style name="MMLogin" parent="MMLabel">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/LargeTextSize</item>
+    </style>
+    <style name="MMMultiLineEditText" parent="@style/MMLineEditText">
+        <item name="android:singleLine">false</item>
+        <item name="android:minLines">3</item>
+        <item name="android:gravity">top</item>
+    </style>
+    <style name="MMPreference">
+        <item name="android:layout">@layout/mm_preference</item>
+    </style>
+    <style name="MMPreference.Catagory">
+        <item name="android:layout">@layout/mm_preference_catalog</item>
+    </style>
+    <style name="MMPreference.CheckBoxPreference">
+        <item name="android:widgetLayout">@layout/mm_preference_checkbox</item>
+    </style>
+    <style name="MMPreference.Child">
+        <item name="android:layout">@layout/mm_preference_child</item>
+    </style>
+    <style name="MMPreference.DialogPreference">
+        <item name="android:positiveButtonText">@android:string/ok</item>
+        <item name="android:negativeButtonText">@android:string/cancel</item>
+    </style>
+    <style name="MMPreference.DialogPreference.EditTextPreference">
+        <item name="android:dialogLayout">@layout/mm_preference_dialog_edittext</item>
+    </style>
+    <style name="MMPreference.DialogPreference.YesNoPreference">
+        <item name="android:positiveButtonText">@android:string/yes</item>
+        <item name="android:negativeButtonText">@android:string/no</item>
+    </style>
+    <style name="MMPreference.Information">
+        <item name="android:layout">@layout/mm_preference</item>
+        <item name="android:enabled">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="MMPreference.RingtonePreference">
+        <item name="android:ringtoneType">ringtone</item>
+        <item name="android:showSilent">true</item>
+        <item name="android:showDefault">true</item>
+    </style>
+    <style name="MMPreferenceScreen">
+        <item name="android:layout">@layout/mm_preference</item>
+        <item name="android:widgetLayout">@layout/mm_preference_screen</item>
+    </style>
+    <style name="MMPreferenceTextLarge">
+        <item name="android:textSize">@dimen/LargeTextSize</item>
+        <item name="android:textColor">@color/mm_pref_title</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="MMPreferenceTextSmall">
+        <item name="android:textSize">@dimen/SmallTextSize</item>
+        <item name="android:textColor">@color/mm_pref_summary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="MMScroll">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <!-- <item name="android:fadingEdge">@null</item> -->
+    </style>
+    <style name="MMSplit">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MMTheme.Basic" parent="android:Theme">
+        <item name="android:listViewStyle">@style/MMListView</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:preferenceScreenStyle">@style/MMPreferenceScreen</item>
+        <item name="android:preferenceStyle">@style/MMPreference</item>
+        <item name="android:preferenceLayoutChild">@style/MMPreference.Child</item>
+        <item name="android:preferenceInformationStyle">@style/MMPreference.Information</item>
+        <item name="android:preferenceCategoryStyle">@style/MMPreference.Catagory</item>
+        <item name="android:checkBoxPreferenceStyle">@style/MMPreference.CheckBoxPreference</item>
+        <item name="android:ringtonePreferenceStyle">@style/MMPreference.RingtonePreference</item>
+        <item name="android:yesNoPreferenceStyle">@style/MMPreference.DialogPreference.YesNoPreference</item>
+        <item name="android:dialogPreferenceStyle">@style/MMPreference.DialogPreference</item>
+        <item name="android:editTextPreferenceStyle">@style/MMPreference.DialogPreference.EditTextPreference</item>
+        <item name="android:checkboxStyle">@style/MMCheckBox</item>
+    </style>
+    <style name="MMTheme.DataSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/mm_trans</item>
+        <item name="android:windowBackground">@drawable/mm_trans</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/DataSheetAnimation</item>
+    </style>
+    <style name="MMTheme.Launcher" parent="MMTheme.Basic">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@drawable/mm_trans</item>
+        <item name="android:windowBackground">@drawable/mm_trans</item>
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+    <style name="MMTheme.Preference" parent="MMTheme.Basic">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+    <style name="MMTheme.Search" parent="MMTheme.Basic">
+        <item name="android:windowBackground">@color/semitransparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+    <style name="MMTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="MMTitleButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">75dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="MMToolbarButton" parent="@style/MMButton">
+        <item name="android:minWidth">45dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">@dimen/SmallerTextSize</item>
+        <item name="android:textColor">#2C2C2C</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingLeft">19dp</item>
+    </style>
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+    <style name="RoboTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="custom_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/bgColor</item>
+    </style>
+    <style name="dot_style">
+        <item name="android:layout_width">5dip</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@drawable/drawable_point_indicator</item>
+        <item name="android:layout_marginLeft">1.5dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">1.5dip</item>
+    </style>
+    <style name="eyd_chat_MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="eyd_chat_chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="eyd_chat_chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">@color/eyd_chat_btn_gray_normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/eyd_chat_timestampe_bg</item>
+    </style>
+    <style name="eyd_chat_chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="home_search_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textColor"> #ff464646</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">13dp</item>
+    </style>
+    <style name="home_top_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textColor"> #ff464646</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">13dp</item>
+    </style>
+    <style name="info4_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#464646</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="info_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/home_arrow</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="information_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#5E5E5E</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="list_dialog_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="login_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor"> #c8c8c8</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginLeft">23dp</item>
+    </style>
+    <style name="noBgFullScreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="radioButton">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>
