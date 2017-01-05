@@ -103,5 +103,5 @@ public class ApplicationConstants {
 	public static final String noUpdate_SharedPreferences = "noUpdate";
 	public static final String ShipVoyageData_SharedPreferences = "ShipVoyageData";
 
-	//TODO something test
+	//TODO something test one
 }
