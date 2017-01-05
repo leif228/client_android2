@@ -44,13 +44,13 @@ public class ApplicationConstants {
 	public static final String VOICE_URL = SERVER_URL
 			+ "/mobile/download/voiceDownload?url=";
 	// 支付宝
-	public static final String ALIPAY_PARTNER = "2088811200378589";
-	public static final String ALIPAY_SELLER = "18927552166@163.com";
-	public static final String ALIPAY_SELLER_KEY = "ls3oeb4lzyr1ams3cz5d521i6fx3xelp";
+	public static final String ALIPAY_PARTNER = "";
+	public static final String ALIPAY_SELLER = "";
+	public static final String ALIPAY_SELLER_KEY = "";
 	// 企业私钥 ,TODO:改成服务端解密，私钥要保存在服务端，不可写在客户端
-	public static final String ALIPAY_RSA_PRIVATE = "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBALgdvEVsilj2+voi61HKxoYl5MqM5YExWRZGxFqzHBPiQjKylQEZJJZJ2JcxerfL6E+vXrsR+HaHboPkqqJ/c77iIXv28WXXA4b89Bt2erDmYst+1hTsSzFddhk99H7mfAd9u6nlw+iUgsjDK3zwGy4zgNfhQ8JowyXY9A4zVcTVAgMBAAECgYBnSdc7Iz8h1bzK4xgc1KM20r9dmlmOdr7BroWtVFnmFcKJaoIJEa/i2B64AzwTLENxoLKGQ/idljC7sWbArruhYNfqzLJfvA31GVCbO1bx/qllyBArEq/vW8MBVFLDy5NA1Ad6X5PhYXRWWy5QdH3vqR+sFdjRs03ir3XNmWvYaQJBAN4ACDqgKRMEsfY1xa3T6gl38OVZnurjJ2Opg8h/H3QQNAUamWjivCYFdR5SVQYrZ/jmqPEJMOksHqWWPixARMMCQQDUUGKIaESPpmwkNnhZKM7C/diDsUYmbaoq6c6EmGVLIP/UibxXEagq/h1n52B2GSIazNZfegEHt/aFn5dayFaHAkAxkxpDVT6244aGL83cGoWZ5bHi1ZeaZm2GYPVv0YuJlJC5Tw5REMjpSLC1u7cG8KyANaomYWINv+98FMf/g76XAkBu8YpriUC6Z9Z+ndAJlx9kGU24kzv6/Lc9MWvvMctMlPPaVhcK0Hk17g/jqa5oR/3gT0V+IrzDEchKTvjCQYmlAkAh8fxB0lW168tfkOhm/2I6F1BOKhQZ1xooN8bVNaZoa778kbOUWYqzWBIq0dj9A+/8C4CIa/xMDLguRjIPr6Ve";
+	public static final String ALIPAY_RSA_PRIVATE = "";
 	// 支付宝公钥
-	public static final String ALIPAY_RSA_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB";
+	public static final String ALIPAY_RSA_PUBLIC = "";
 	public static final String ALIPAY_NOTIFY_URL = SERVER_URL
 			+ "/payment/directPayNotify";
 	public static final String NOTIFY_URL_BABYIN = SERVER_URL
@@ -70,7 +70,7 @@ public class ApplicationConstants {
 	public static final String LF_SEARCH_SHIP_LIST = "shipSort";// 首页分类搜索时临时文件名称-船列表
 	
 	//平安SDK
-	public static final String APP_KEY = "88f7190cb48541198f5b5e3d7ff97126";
+	public static final String APP_KEY = "";
 	
 	
 	public static final String ZDJAVA_PRE_URL = "http://120.76.194.65:80/zdmanage";
