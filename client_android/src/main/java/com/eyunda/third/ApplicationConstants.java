@@ -73,13 +73,15 @@ public class ApplicationConstants {
 	public static final String APP_KEY = "";
 	
 	
-	public static final String ZDJAVA_PRE_URL = "http://120.76.194.65:80/zdmanage";
+//	public static final String ZDJAVA_PRE_URL = "http://120.76.194.65:80/zdmanage";
+	public static final String ZDJAVA_PRE_URL = "http://www.zdrlboat.com/zdmanage";
 //	public static final String ZDJAVA_PRE_URL = "http://120.236.139.134:8890/zdmanage";
 //	public static final String ZDJAVA_PRE_URL = "http://192.168.1.157:8080/zdmanage";
 	
 //	public static final String ZDPHP_PRE_URL = "http://120.236.139.134:8888";
-	public static final String ZDPHP_PRE_URL = "http://120.76.194.65:8888";
-	
+	public static final String ZDPHP_PRE_URL = "http://www.zdrlboat.com:8888";
+//	public static final String ZDPHP_PRE_URL = "http://120.76.194.65:8888";
+
 	public static final String PRE_URL = "http://www.hx-oil.com:8888";
 	public static final String clienttype = "Android";
 	
@@ -100,4 +102,6 @@ public class ApplicationConstants {
 	public static final String ModulePowerData_SharedPreferences = "ModulePowerData";
 	public static final String noUpdate_SharedPreferences = "noUpdate";
 	public static final String ShipVoyageData_SharedPreferences = "ShipVoyageData";
+
+	//TODO something test
 }
