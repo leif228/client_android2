@@ -33,7 +33,7 @@ dependencies {
     compile project(':signaturePadLibrary')
     compile project(':wheel')
     compile project(':cropper')
-    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.code.gson:gson:2.0'
     compile files('libs/75b28b2b-082a-3eec-bc0c-539989c64a77.jar')
     compile files('libs/alipaysdk.jar')
     compile files('libs/alipaysecsdk.jar')

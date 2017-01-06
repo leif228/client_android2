@@ -125,7 +125,6 @@ com/eyunda/third/adapters/cargo/CargoAdapter.class
 com/eyunda/tools/MapConvertUtil.class
 com/eyunda/third/activities/chat/ChatActivity$7.class
 com/google/zxing/client/android/share/LoadPackagesAsyncTask.class
-com/google/gson/annotations/JsonAdapter.class
 com/eyunda/third/activities/ship/ShipCabinActivity$1.class
 com/hangyi/zd/activity/NewShipGroupActivity$3.class
 com/hangyi/zd/activity/gridviewpage/AllAppListActivity.class
@@ -316,6 +315,7 @@ com/eyunda/third/adapters/chat/widget/ExpandGridView.class
 com/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory.class
 com/eyunda/third/activities/chat/ContactRoleListActivity$7.class
 com/eyunda/third/activities/home/HomeCategoryActivity.class
+com/google/gson/FieldAttributes.class
 com/eyunda/third/activities/account/BindBankCardActivity$18.class
 com/eyunda/main/SplashTwoActivity$5.class
 com/eyunda/third/activities/home/GasOrderInActivity$3.class
