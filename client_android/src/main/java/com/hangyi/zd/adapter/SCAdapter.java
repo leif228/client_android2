@@ -1,8 +1,5 @@
 package com.hangyi.zd.adapter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
@@ -11,17 +8,18 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import com.eyunda.main.view.DialogUtil;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.ShipSCData;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SCAdapter extends BaseAdapter {
 
@@ -34,7 +32,7 @@ public class SCAdapter extends BaseAdapter {
 
 		public TextView mmsi;
 
-		public CheckBox checkBox;
+		public ToggleButton checkBox;
 		
 	}
 	private ArrayList<ShipSCData> mAppList;
@@ -102,7 +100,7 @@ public class SCAdapter extends BaseAdapter {
 //			holder.shipId =(TextView)convertView.findViewById(R.id.shipId);
 //			holder.shipLogo = (ImageView) convertView.findViewById(R.id.shipLogo);
 			holder.shipName = (TextView) convertView.findViewById(R.id.shipName);
-			holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkBox);
+			holder.checkBox = (ToggleButton) convertView.findViewById(R.id.checkBox);
 //			holder.shipType =  (TextView) convertView.findViewById(R.id.shipType);
 //			holder.TypeCode =  (TextView) convertView.findViewById(R.id.TypeCode);
 //			holder.mmsi = (TextView) convertView.findViewById(R.id.mmsi);
@@ -167,7 +165,7 @@ public class SCAdapter extends BaseAdapter {
 		@Override
 		public void onClick(View v) {
 			ShipSCData s =mAppList.get(position);
-			CheckBox cb = (CheckBox) v;
+			ToggleButton cb = (ToggleButton) v;
 			if(!cb.isChecked()){
 				cb.setChecked(false);
 				s.setFocus("0");

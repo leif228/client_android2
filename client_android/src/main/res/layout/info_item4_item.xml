@@ -1,6 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:myattr="http://schemas.android.com/apk/res/com.eyunda.main"
     android:id="@+id/head1"
     android:visibility="gone"
     android:layout_width="fill_parent"

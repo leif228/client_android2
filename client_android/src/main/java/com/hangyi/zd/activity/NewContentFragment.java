@@ -1669,6 +1669,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			
 //			om.removeFromMap();
 			om.setData(mapPortOptionsList);
+
 			om.addToMap();
 			
 		}

@@ -1,5 +1,4 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.eyunda.main"
     android:id="@+id/rec_ship"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
