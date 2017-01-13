@@ -142,7 +142,7 @@ OnItemClickListener {
 	@Override
 	protected void onStart() {
 		super.onStart();
-		setTitle("收藏船舶");
+		setTitle("报警提醒");
 		setRight("保存", new OnClickListener() {
 
 			@Override

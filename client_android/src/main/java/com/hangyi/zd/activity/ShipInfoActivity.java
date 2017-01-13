@@ -25,6 +25,7 @@ import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.domain.location.ShipCooordData;
 import com.eyunda.third.loaders.Data_loader;
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.hangyi.tools.ParseJson;
 import com.hangyi.zd.R;
@@ -226,68 +227,71 @@ public class ShipInfoActivity extends CommonListActivity {
 		dataLoader.getZd_JavaManageResult(new AsyncHttpResponseHandler() {
 			@Override
 			public void onSuccess(String arg2) {
-				
-				if(arg2==null||"".equals(arg2)){
-//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
-					return;
+
+				try {
+					if(arg2==null||"".equals(arg2)){
+    //					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+					Gson gson = new Gson();
+					final HashMap<String, Object> rmap = gson.fromJson(
+                            arg2, new TypeToken<Map<String, Object>>() {
+                            }.getType());
+					if (rmap.get("returnCode").equals("Success")) {
+
+                        List<Map<String, Object>> map = (List<Map<String, Object>>) rmap.get("shipVoyageDatas");
+                        if(!map.isEmpty()){
+                            ShipVoyageData s = new ShipVoyageData(map.get(0));
+
+                            List<ShipVoyageNodeData> list = s.getNodes();
+                            if(!list.isEmpty()){
+                                Collections.sort(list, new Comparator<ShipVoyageNodeData>() {
+                                    @Override
+                                    public int compare(ShipVoyageNodeData o1, ShipVoyageNodeData o2) {
+                                        return Integer.valueOf(o1.getStage())
+                                                .compareTo(Integer.valueOf(o2.getStage()));
+                                    }
+                                });
+                                boolean isSetedLastData = false;
+                                for(int i=list.size()-1;i>=0;i--){
+                                    ShipVoyageNodeData iData = list.get(i);
+                                    if(Integer.valueOf(iData.getStage())>NodeCode.unloadingEnd.getN())
+                                        continue;
+                                    if(Integer.valueOf(iData.getStage())==NodeCode.unloadingEnd.getN()){
+                                        currState = NodeCode.unloadingEnd.getDescription();
+                                        zzs = "0";
+                                        break;
+                                    }else{
+                                        if(!isSetedLastData){
+                                            NodeCode code = NodeCode.getByN(Integer.valueOf(iData.getStage()));
+                                            if(code!=null){
+                                                currState = code.getDescription();
+                                                isSetedLastData = true;
+                                            }
+                                        }
+                                        if(String.valueOf(NodeCode.loadingEnd.getN()).equals(iData.getStage())){
+                                            zzs = iData.getValue();
+                                            break;
+                                        }
+                                    }
+
+                                }
+                            }
+                            startPort = s.getStartPort();
+                            endPort = s.getEndPort();
+
+                            Message message = new Message();
+                            message.what = 1;
+                            handler.sendMessage(message);
+                        }
+
+                    } else {
+    //					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+                    }
+				} catch (Exception e) {
 				}
-				
-				Gson gson = new Gson();
-				final HashMap<String, Object> rmap = gson.fromJson(
-						arg2, new TypeToken<Map<String, Object>>() {
-						}.getType());
-				if (rmap.get("returnCode").equals("Success")) {
-					
-					List<Map<String, Object>> map = (List<Map<String, Object>>) rmap.get("shipVoyageDatas");
-					if(!map.isEmpty()){
-						ShipVoyageData s = new ShipVoyageData(map.get(0));
-						
-						List<ShipVoyageNodeData> list = s.getNodes();
-						if(!list.isEmpty()){
-							Collections.sort(list, new Comparator<ShipVoyageNodeData>() {
-								@Override
-								public int compare(ShipVoyageNodeData o1, ShipVoyageNodeData o2) {
-									return Integer.valueOf(o1.getStage())
-											.compareTo(Integer.valueOf(o2.getStage()));
-								}
-							});
-							boolean isSetedLastData = false;
-							for(int i=list.size()-1;i>=0;i--){
-								ShipVoyageNodeData iData = list.get(i);
-								if(Integer.valueOf(iData.getStage())>NodeCode.unloadingEnd.getN())
-									continue;
-								if(Integer.valueOf(iData.getStage())==NodeCode.unloadingEnd.getN()){
-									currState = NodeCode.unloadingEnd.getDescription();
-									zzs = "0";
-									break;
-								}else{
-									if(!isSetedLastData){
-										NodeCode code = NodeCode.getByN(Integer.valueOf(iData.getStage()));
-										if(code!=null){
-											currState = code.getDescription();
-											isSetedLastData = true;
-										}
-									}
-									if(String.valueOf(NodeCode.loadingEnd.getN()).equals(iData.getStage())){
-										zzs = iData.getValue();
-										break;
-									}
-								}
-								
-							}
-						}
-						startPort = s.getStartPort();
-						endPort = s.getEndPort();
-						
-						Message message = new Message();
-						message.what = 1;
-						handler.sendMessage(message);
-					}
-					
-				} else {
-//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
-				}
-				
+
 			}
 			@Override
 			public void onFailure(Throwable error, String content) {
@@ -295,9 +299,5 @@ public class ShipInfoActivity extends CommonListActivity {
 
 			}
 		}, ApplicationUrls.currHCByShipId+PHPSESSID, apiParams, "get");	
-		
-		
-	
-		
 	}
 }

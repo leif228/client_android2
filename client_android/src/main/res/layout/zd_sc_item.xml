@@ -44,14 +44,27 @@
                     android:textColor="#000"
                     android:textSize="14sp" />
 
-                <CheckBox
+               <!-- <CheckBox
                     android:id="@+id/checkBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingLeft="3dp"
                     android:layout_marginRight="5dp"
-                    android:text="关注" />
+                    android:text="关注" />-->
+
+                <ToggleButton
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/switch_btn"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    android:checked="false" />
 
                 <TextView
                     android:id="@+id/shipId"

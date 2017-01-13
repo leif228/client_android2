@@ -42,9 +42,12 @@ import com.eyunda.third.domain.UpdateInfoData;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.third.loaders.SynData_loader;
 import com.eyunda.third.locatedb.NetworkUtils;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.hangyi.tools.CloseActivityClass;
 import com.hangyi.zd.ClearService;
 import com.hangyi.zd.R;
+import com.hangyi.zd.domain.ModulePower;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.ta.TAApplication;
 import com.ta.util.http.AsyncHttpResponseHandler;
@@ -167,6 +170,20 @@ public class AccountInfoActivity extends CommonListActivity {
 		scship.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				try {
+					SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+					String mpJson = sp.getString("ModulePower","");
+
+					if(!"".equals(mpJson)){
+						ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+						if(data!=null&&!data.isAlarmSetting()){
+							Toast.makeText(AccountInfoActivity.this, "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+				} catch (Exception e) {
+				}
+
 				startActivity(new Intent(AccountInfoActivity.this,
 						ShipSCActivity.class));
 			}
@@ -209,7 +226,7 @@ public class AccountInfoActivity extends CommonListActivity {
 	} 
 	public void setDialog() {
 		if(active){
-			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站：http://www.zd.com\n客服电话：+86 020-88888888\nEmail：zd@zdserver.com\n\n对于在使用的过程中的任何问题和意见，欢迎发邮件给我们。\n\n";
+			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站：http://www.zdrlboat.com\n客服电话：+86 020-37958062\nEmail：zd@zdserver.com\n\n对于在使用的过程中的任何问题和意见，欢迎发邮件给我们。\n\n";
 			AlertDialog ad = new AlertDialog.Builder(AccountInfoActivity.this)
 			.setTitle("珠电驳船调度系统").setMessage(str)
 			.setPositiveButton("确定", null).create();

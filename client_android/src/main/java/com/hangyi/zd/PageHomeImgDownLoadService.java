@@ -30,10 +30,10 @@ public class PageHomeImgDownLoadService extends Service {
 	
     @Override  
     public void onCreate() {  
-        super.onCreate();  
-        
-        dataLoader = new Data_loader();
-        pool = Executors.newFixedThreadPool(threadNum);
+        super.onCreate();
+
+		dataLoader = new Data_loader();
+		pool = Executors.newFixedThreadPool(threadNum);
     }  
     
     @Override
