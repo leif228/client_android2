@@ -1,20 +1,10 @@
 package com.hangyi.zd.activity;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.apache.http.cookie.Cookie;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.BaseAdapter;
@@ -24,16 +14,13 @@ import android.widget.Toast;
 
 import com.eyunda.main.CommonListActivity;
 import com.eyunda.main.data.Image_loader;
-import com.eyunda.main.reg.UpdateQA;
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.part1.data.PartData_loader;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.ApplicationUrls;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.activities.user.AgentActivity;
 import com.eyunda.third.chat.utils.LogUtil;
-import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.third.loaders.SynData_loader;
 import com.google.gson.Gson;
@@ -45,6 +32,13 @@ import com.hangyi.zd.domain.ModulePower;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.ta.TAApplication;
 import com.ta.util.http.AsyncHttpResponseHandler;
+
+import org.apache.http.cookie.Cookie;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class GroupActivity extends CommonListActivity {
 	private static final String LOGTAG = LogUtil
