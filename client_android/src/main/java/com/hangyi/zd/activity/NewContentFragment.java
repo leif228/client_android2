@@ -86,6 +86,7 @@ import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.tools.CalendarUtil;
 import com.eyunda.tools.DateUtils;
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.hangyi.tools.ParseJson;
 import com.hangyi.tools.Util;
@@ -97,6 +98,7 @@ import com.hangyi.zd.activity.dialog.TouchView;
 import com.hangyi.zd.activity.dialog.ViewArea;
 import com.hangyi.zd.activity.gridviewpage.AppAdapter;
 import com.hangyi.zd.domain.MapPortData;
+import com.hangyi.zd.domain.ModulePower;
 import com.hangyi.zd.domain.NodeCode;
 import com.hangyi.zd.domain.PoliceData;
 import com.hangyi.zd.domain.ShipModelCode;
@@ -557,6 +559,20 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			startActivity(intent);
 			break;
 		case R.id.history:
+			try {
+				SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+				String mpJson = sp.getString("ModulePower","");
+
+				if(!"".equals(mpJson)){
+                    ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+                    if(data!=null&&!data.isPlayBack()){
+                        Toast.makeText(getActivity(), "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                }
+			} catch (Exception e) {
+			}
+
 			if(curShip != null){
 				startActivity(new Intent(getActivity(),ZdShipDynamicActivity.class)
 				.putExtra("shipID", curShip.getShipID())
@@ -568,6 +584,20 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			}
 			break;
 		case R.id.msg:
+			try {
+				SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+				String mpJson = sp.getString("ModulePower","");
+
+				if(!"".equals(mpJson)){
+					ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+					if(data!=null&&!data.isAlarmMessage()){
+						Toast.makeText(getActivity(), "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+						return;
+					}
+				}
+			} catch (Exception e) {
+			}
+
 			startActivity(new Intent(getActivity(),
 					PoliceActivity.class));
 			break;
@@ -580,6 +610,21 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 //			getActivity().startActivityForResult(intent, 1);
 			
 //			hxPopupWindow.togglePopWindow(v);//启用的
+
+			try {
+				SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+				String mpJson = sp.getString("ModulePower","");
+
+				if(!"".equals(mpJson)){
+                    ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+                    if(data!=null&&!data.isVoyageManage()){
+                        Toast.makeText(getActivity(), "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                }
+			} catch (Exception e) {
+			}
+
 			startActivity(new Intent(getActivity(),
 			ShipHCActivity.class));
 			break;

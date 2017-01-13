@@ -2,10 +2,12 @@ package com.hangyi.zd.domain;
 
 import com.eyunda.third.domain.BaseData;
 
+import java.io.Serializable;
+
 /*这个是在获取权限时，json里面新添加功能模块授权的内容，分别是：
 （1）历史回放（2）多组镜头（3）航次管理（4）航线-按码头（5）航线-按船公司
 （6）航线-按客户（7）报警设置（8）报警信息（9）驳船统计*/
-public class ModulePower extends BaseData {
+public class ModulePower extends BaseData implements Serializable{
 
 	private static final long serialVersionUID = -1L;
 	private boolean PlayBack = true;

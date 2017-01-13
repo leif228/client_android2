@@ -27,6 +27,7 @@ import com.eyunda.main.data.Image_loader;
 import com.eyunda.main.reg.UpdateQA;
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.part1.data.PartData_loader;
+import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.ApplicationUrls;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
@@ -40,6 +41,7 @@ import com.google.gson.reflect.TypeToken;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.GroupCode;
 import com.hangyi.zd.domain.GroupData;
+import com.hangyi.zd.domain.ModulePower;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.ta.TAApplication;
 import com.ta.util.http.AsyncHttpResponseHandler;
@@ -80,6 +82,20 @@ public class GroupActivity extends CommonListActivity {
 		port.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				try {
+					SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+					String mpJson = sp.getString("ModulePower","");
+
+					if(!"".equals(mpJson)){
+						ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+						if(data!=null&&!data.isByPort()){
+							Toast.makeText(GroupActivity.this, "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+				} catch (Exception e) {
+				}
+
 				startActivity(new Intent(GroupActivity.this, GroupListActivity.class).putExtra("gType", GroupCode.gport.getDescription()));
 				finish();
 			}
@@ -88,6 +104,20 @@ public class GroupActivity extends CommonListActivity {
 
 			@Override
 			public void onClick(View v) {
+				try {
+					SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+					String mpJson = sp.getString("ModulePower","");
+
+					if(!"".equals(mpJson)){
+						ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+						if(data!=null&&!data.isByCustomer()){
+							Toast.makeText(GroupActivity.this, "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+				} catch (Exception e) {
+				}
+
 				startActivity(new Intent(GroupActivity.this, GroupListActivity.class).putExtra("gType", GroupCode.gkehu.getDescription()));
 				finish();
 			}
@@ -96,6 +126,20 @@ public class GroupActivity extends CommonListActivity {
 			
 			@Override
 			public void onClick(View v) {
+				try {
+					SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+					String mpJson = sp.getString("ModulePower","");
+
+					if(!"".equals(mpJson)){
+						ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+						if(data!=null&&!data.isByShipOwner()){
+							Toast.makeText(GroupActivity.this, "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+				} catch (Exception e) {
+				}
+
 				startActivity(new Intent(GroupActivity.this, GroupListActivity.class).putExtra("gType", GroupCode.gship.getDescription()));
 				finish();
 			}
@@ -104,6 +148,20 @@ public class GroupActivity extends CommonListActivity {
 			
 			@Override
 			public void onClick(View v) {
+				try {
+					SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+					String mpJson = sp.getString("ModulePower","");
+
+					if(!"".equals(mpJson)){
+						ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+						if(data!=null&&(!data.isByPort()||!data.isByCustomer()||!data.isByShipOwner())){
+							Toast.makeText(GroupActivity.this, "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+				} catch (Exception e) {
+				}
+
 				if(totalShipCooordDatas.size()>0){
 					postSC();
 				}else{

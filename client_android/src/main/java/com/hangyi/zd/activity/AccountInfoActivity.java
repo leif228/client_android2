@@ -42,9 +42,12 @@ import com.eyunda.third.domain.UpdateInfoData;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.third.loaders.SynData_loader;
 import com.eyunda.third.locatedb.NetworkUtils;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.hangyi.tools.CloseActivityClass;
 import com.hangyi.zd.ClearService;
 import com.hangyi.zd.R;
+import com.hangyi.zd.domain.ModulePower;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.ta.TAApplication;
 import com.ta.util.http.AsyncHttpResponseHandler;
@@ -167,6 +170,20 @@ public class AccountInfoActivity extends CommonListActivity {
 		scship.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				try {
+					SharedPreferences sp = GlobalApplication.getInstance().getSharedPreferences(ApplicationConstants.ModulePowerData_SharedPreferences, Context.MODE_PRIVATE);
+					String mpJson = sp.getString("ModulePower","");
+
+					if(!"".equals(mpJson)){
+						ModulePower data = new Gson().fromJson(mpJson, new TypeToken<ModulePower>() {}.getType());
+						if(data!=null&&!data.isAlarmSetting()){
+							Toast.makeText(AccountInfoActivity.this, "您无权限查看该功能！",Toast.LENGTH_SHORT).show();
+							return;
+						}
+					}
+				} catch (Exception e) {
+				}
+
 				startActivity(new Intent(AccountInfoActivity.this,
 						ShipSCActivity.class));
 			}

@@ -259,7 +259,7 @@ public class ChangUserLoginActivity extends CommonActivity implements OnClickLis
 				
 				UserPowerData userPowerData = ParseJson.parserUserPower(arg2);
 				
-				SharedPreferences sp = ChangUserLoginActivity.this.getSharedPreferences("UserPowerData", Context.MODE_PRIVATE);
+				SharedPreferences sp = ChangUserLoginActivity.this.getSharedPreferences(ApplicationConstants.UserPowerData_SharedPreferences, Context.MODE_PRIVATE);
 				Editor editor = sp.edit();
 				String s = userPowerData.getJsonString();
 				editor.putString("UserPower", s);
