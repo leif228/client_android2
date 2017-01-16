@@ -140,9 +140,9 @@ public class VoicePlayClickListener implements View.OnClickListener {
 
 	private void showAnimation() {
 		if (message.direct == ChatMessage.Direct.RECEIVE) {
-			voiceIconView.setImageResource(R.anim.voice_from_icon);
+			voiceIconView.setImageResource(R.drawable.voice_from_icon);
 		} else {
-			voiceIconView.setImageResource(R.anim.voice_to_icon);
+			voiceIconView.setImageResource(R.drawable.voice_to_icon);
 		}
 		voiceAnimation = (AnimationDrawable) voiceIconView.getDrawable();
 		voiceAnimation.start();
@@ -166,7 +166,7 @@ public class VoicePlayClickListener implements View.OnClickListener {
 					if ("".equals(sessionId)) {
 						activity.runOnUiThread(new Runnable() {
 							public void run() {
-								Toast.makeText(activity, "sessionId为空", 0)
+								Toast.makeText(activity, "sessionId为空", Toast.LENGTH_SHORT)
 										.show();
 								return;
 							}
@@ -216,7 +216,7 @@ public class VoicePlayClickListener implements View.OnClickListener {
 								if (f != null && f.exists())
 									f.delete();
 								message.status = ChatMessage.Status.FAIL;
-								Toast.makeText(activity, "下载语音失败: ", 0).show();
+								Toast.makeText(activity, "下载语音失败: ", Toast.LENGTH_SHORT).show();
 								fos.close();
 								is.close();
 								conn.disconnect();

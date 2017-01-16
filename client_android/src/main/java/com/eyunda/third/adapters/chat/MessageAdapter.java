@@ -1,17 +1,5 @@
 package com.eyunda.third.adapters.chat;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -58,6 +46,18 @@ import com.google.gson.reflect.TypeToken;
 import com.hangyi.zd.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.ta.util.http.AsyncHttpResponseHandler;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MessageAdapter extends BaseAdapter {
 
@@ -316,9 +316,9 @@ public class MessageAdapter extends BaseAdapter {
 							.getId())&&VoicePlayClickListener.isPlaying) {
 				AnimationDrawable voiceAnimation;
 				if (message.direct == ChatMessage.Direct.RECEIVE) {
-					holder.iv.setImageResource(R.anim.voice_from_icon);
+					holder.iv.setImageResource(R.drawable.voice_from_icon);
 				} else {
-					holder.iv.setImageResource(R.anim.voice_to_icon);
+					holder.iv.setImageResource(R.drawable.voice_to_icon);
 				}
 				voiceAnimation = (AnimationDrawable) holder.iv.getDrawable();
 				voiceAnimation.start();
@@ -359,7 +359,7 @@ public class MessageAdapter extends BaseAdapter {
 									activity.runOnUiThread(new Runnable() {
 										public void run() {
 											Toast.makeText(activity, "sessionId为空",
-													0).show();
+													Toast.LENGTH_SHORT).show();
 										}
 									});
 								}
@@ -700,7 +700,7 @@ public class MessageAdapter extends BaseAdapter {
 									holder.pb.setVisibility(View.INVISIBLE);
 									holder.tv.setVisibility(View.INVISIBLE);
 									holder.staus_iv.setVisibility(View.VISIBLE);
-									Toast.makeText(activity, "文件上传失败", 0).show();
+									Toast.makeText(activity, "文件上传失败", Toast.LENGTH_SHORT).show();
 									timer.cancel();
 								}
 							}
@@ -957,7 +957,7 @@ public class MessageAdapter extends BaseAdapter {
 			activity.startActivity(intent);
 		} catch (Exception exception) {
 			exception.printStackTrace();
-			Toast.makeText(activity, "找不到文件打开方式", 1).show();
+			Toast.makeText(activity, "找不到文件打开方式", Toast.LENGTH_LONG).show();
 		}
 	}
 

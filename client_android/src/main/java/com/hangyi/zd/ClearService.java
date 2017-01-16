@@ -61,7 +61,8 @@ public class ClearService extends Service {
     	
 //    	if(clearThread == null)
     		doDelete();
-    	
+
+
     	return super.onStartCommand(intent, flags, startId);
     }
   
