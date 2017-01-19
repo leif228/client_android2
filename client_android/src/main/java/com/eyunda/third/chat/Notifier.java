@@ -64,8 +64,8 @@ public class Notifier {
 			notification.defaults |= Notification.DEFAULT_VIBRATE;
 			notification.flags |= Notification.FLAG_AUTO_CANCEL;
 			notification.when = when;
-			notification.tickerText = "易运达";
-			notification.setLatestEventInfo(context, "易运达", "您有未读消息!", contentIntent);
+			notification.tickerText = " ";
+			notification.setLatestEventInfo(context, " ", "您有未读消息!", contentIntent);
 			notificationManager.notify(random.nextInt(), notification);
 	}
 

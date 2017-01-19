@@ -255,7 +255,7 @@ public class GeneralPayActivity extends CommonActivity implements OnClickListene
 		.putExtra("params", "")
 		.putExtra("method", "get")
 		.putExtra("url", ApplicationConstants.SERVER_URL+"/mobile/pinganpay/autoJump/?type=1&walletId="+walletData.getId()+"&feeItem="+fic.name())
-		.putExtra("title", "易运达")
+		.putExtra("title", " ")
 		);
 
 		
@@ -278,7 +278,7 @@ public class GeneralPayActivity extends CommonActivity implements OnClickListene
 						.putExtra("params", "")
 						.putExtra("method", "get")
 						.putExtra("url", ApplicationConstants.SERVER_URL+"/mobile/pinganpay/autoJump/?type=2&walletId="+walletData.getId()+"&plantBankId="+si.getData()+"&feeItem="+fic.name())
-						.putExtra("title", "易运达")
+						.putExtra("title", " ")
 				);
 				
 			}
@@ -322,7 +322,7 @@ public class GeneralPayActivity extends CommonActivity implements OnClickListene
 				.putExtra("orderNoVal", walletData.getPaymentNo())
 				.putExtra("orderNumVal", walletData.getTotalFee().toString())
 				.putExtra("orderDescVal", walletData.getBody())
-				.putExtra("payTypeVal", "易运达钱包")
+				.putExtra("payTypeVal", " 钱包")
 				.putExtra("type", fic.name())
 				.putExtra("walletId", walletData.getId())
 				.putExtra("source", 1)

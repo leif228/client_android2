@@ -584,7 +584,7 @@ public class RegisterActivity extends CommonListActivity implements
 			return;
 
 		} else if (!isagree) {
-			Toast.makeText(this, "请先阅读并同意《易运达货运电商平台服务协议》", Toast.LENGTH_LONG)
+			Toast.makeText(this, "请先阅读并同意《 货运电商平台服务协议》", Toast.LENGTH_LONG)
 					.show();
 			return;
 		}

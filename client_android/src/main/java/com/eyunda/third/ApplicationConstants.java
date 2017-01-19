@@ -12,15 +12,12 @@ public class ApplicationConstants {
     public static final String NOTIFICATION_ICON = "NOTIFICATION_ICON";
     public static final String HTTP_PRE = "http://";
 
-    public static final String HTTP_DOMAINNAME = ".eyd98.com";
+    public static final String HTTP_DOMAINNAME = "";
     public static final String ZD_DOMAINNAME = "http://www.zdrlboat.com";
 
-    //	public static final String HTTP_SERVERNAME = "www.eyd98.com";
-//	public static final int HTTP_SERVERPORT = 80;
-//	public static final String APPNAME = "";
     public static final String HTTP_SERVERNAME = "192.168.1.132";
     public static final int HTTP_SERVERPORT = 8080;
-    public static final String APPNAME = "/eyunda";
+    public static final String APPNAME = "";
 
     public static final String MINA_SERVERNAME = HTTP_SERVERNAME;
     public static final int MINA_SERVERPORT = 10168;
@@ -43,13 +40,10 @@ public class ApplicationConstants {
     // 语音文件下载地址
     public static final String VOICE_URL = SERVER_URL
             + "/mobile/download/voiceDownload?url=";
-    // 支付宝
     public static final String ALIPAY_PARTNER = "";
     public static final String ALIPAY_SELLER = "";
     public static final String ALIPAY_SELLER_KEY = "";
-    // 企业私钥 ,TODO:改成服务端解密，私钥要保存在服务端，不可写在客户端
     public static final String ALIPAY_RSA_PRIVATE = "";
-    // 支付宝公钥
     public static final String ALIPAY_RSA_PUBLIC = "";
     public static final String ALIPAY_NOTIFY_URL = SERVER_URL
             + "/payment/directPayNotify";
@@ -59,19 +53,16 @@ public class ApplicationConstants {
             + "/payment/shipDuesDirectPayNotify";
     public static final String NOTIFY_URL_GASORDERPAY = SERVER_URL
             + "/payment/gasOrderPayDirectPayNotify";
-    //平安银行接口地址
-    public static final String PINAN_BANK = "https://testebank.sdb.com.cn";
-    public static final String PINAN_KP_PAPAY = PINAN_BANK + "/corporbank/khPayment_papay_extend.do";
-    public static final String PINAN_KP_BIND = PINAN_BANK + "/khpayment/khPayment_bind.do";
+    public static final String PINAN_BANK = "";
+    public static final String PINAN_KP_PAPAY = PINAN_BANK + "";
+    public static final String PINAN_KP_BIND = PINAN_BANK + "";
 
     // 本地临时文件列表
     public static final String LF_AREA_NAME = "area";// 滚轮用的临时文件名称
     public static final String LF_SEARCH_CATEGORY_DLR = "searchCateDlr";// 首页分类搜索时临时文件名称-代理人
     public static final String LF_SEARCH_SHIP_LIST = "shipSort";// 首页分类搜索时临时文件名称-船列表
 
-    //平安SDK
     public static final String APP_KEY = "";
-
 
     public static final String ZDJAVA_PRE_URL = "http://120.76.194.65:80/zdmanage";
 //    public static final String ZDJAVA_PRE_URL = ZD_DOMAINNAME+"/zdmanage";

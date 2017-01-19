@@ -27,7 +27,7 @@ public class EydProtocolActivity extends CommonListActivity implements
 	@Override
 	public void onStart() {
 		super.onStart();
-		setTitle("易运达协议");
+		setTitle(" 协议");
 	}
 
 	@Override
