@@ -1,23 +1,21 @@
 package com.eyunda.third.activities.user;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.eyunda.third.common.CommonListActivity;
-import com.eyunda.tools.StringUtil;
 import com.hangyi.zd.R;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 
 public class EydProtocolActivity extends CommonListActivity implements
 		OnClickListener {
