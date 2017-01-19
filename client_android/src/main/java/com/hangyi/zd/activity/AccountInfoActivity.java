@@ -226,7 +226,7 @@ public class AccountInfoActivity extends CommonListActivity {
 	} 
 	public void setDialog() {
 		if(active){
-			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站："+ApplicationConstants.ZD_DOMAINNAME+"\n客服电话：+86 020-37958062\nEmail：zd@zdserver.com\n\n对于在使用的过程中的任何问题和意见，欢迎发邮件给我们。\n\n";
+			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站："+ApplicationConstants.ZD_DOMAINNAME+"\n客服电话：+86 020-37958062\n\n对于在使用的过程中的任何问题和意见，欢迎发邮件给我们。\n\n";
 			AlertDialog ad = new AlertDialog.Builder(AccountInfoActivity.this)
 			.setTitle("珠电驳船调度系统").setMessage(str)
 			.setPositiveButton("确定", null).create();
@@ -452,7 +452,12 @@ public class AccountInfoActivity extends CommonListActivity {
 	@Override
 	protected void onStart() {
 		super.onStart();
-		setTitle("账号设置");
+//		setTitle("账号设置");
+
+		SharedPreferences sp = this.getSharedPreferences(ApplicationConstants.UserInfoConfig_SharedPreferences, Context.MODE_PRIVATE);
+		String userName = sp.getString("UserName","");
+		setTitle(userName);
+
 		active = true;
 	};
 	@Override

@@ -104,7 +104,7 @@ public class ChangUserLoginActivity extends CommonActivity implements OnClickLis
 	}
 
 	private void saveOptionInfo() {		
-		SharedPreferences sp = this.getSharedPreferences("UserInfoConfig", Context.MODE_PRIVATE);
+		SharedPreferences sp = this.getSharedPreferences(ApplicationConstants.UserInfoConfig_SharedPreferences, Context.MODE_PRIVATE);
 		Editor editor = sp.edit();
 //		if(cb_AutoLogin.isChecked())
 //			editor.putString("AutoLogin", "true");

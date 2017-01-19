@@ -40,6 +40,8 @@ import com.hangyi.zd.ReLoginListenerService;
 import com.ta.util.http.AsyncHttpResponseHandler;
 import com.ta.util.http.PersistentCookieStore;
 
+import static com.eyunda.third.ApplicationConstants.UserInfoConfig_SharedPreferences;
+
 
 public class LoginActivity extends Activity implements OnClickListener {
 	private EditText etUserName = null;
@@ -94,7 +96,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 //	}
 
 	private void saveOptionInfo() {		
-		SharedPreferences sp = this.getSharedPreferences("UserInfoConfig", Context.MODE_PRIVATE);
+		SharedPreferences sp = this.getSharedPreferences(ApplicationConstants.UserInfoConfig_SharedPreferences, Context.MODE_PRIVATE);
 		Editor editor = sp.edit();
 //		if(cb_AutoLogin.isChecked())
 			editor.putString("AutoLogin", "true");
