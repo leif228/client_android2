@@ -1,5 +1,6 @@
 package com.hangyi.zd.adapter;
 
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
@@ -21,7 +22,9 @@ import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.activities.map.ShipLatestDynamicActivity;
 import com.hangyi.tools.Util;
 import com.hangyi.zd.R;
+import com.hangyi.zd.domain.NodeCode;
 import com.hangyi.zd.domain.ShipVoyageData;
+import com.hangyi.zd.domain.ShipVoyageNodeData;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
@@ -37,7 +40,9 @@ public class ShipHCListAdapter extends BaseAdapter {
 		public TextView mmsi;
 
 		public TextView shipv;
-		
+
+		public TextView cargo;
+
 	}
 	private List<ShipVoyageData> mAppList;
 	private LayoutInflater mInflater;
@@ -99,7 +104,7 @@ public class ShipHCListAdapter extends BaseAdapter {
 		if (convertView != null) {
 			holder = (buttonViewHolder) convertView.getTag();
 		} else {
-			convertView = mInflater.inflate(R.layout.eyd_shipmoniter_item, null);
+			convertView = mInflater.inflate(R.layout.eyd_shipmoniter_item3, null);
 			holder = new buttonViewHolder();
 			holder.shipId =(TextView)convertView.findViewById(R.id.shipId);
 			holder.shipLogo = (ImageView) convertView.findViewById(R.id.shipLogo);
@@ -112,6 +117,7 @@ public class ShipHCListAdapter extends BaseAdapter {
 			holder.endtime = (TextView) convertView.findViewById(R.id.endtime);
 			holder.dongtai = (TextView) convertView.findViewById(R.id.dongtai);
 			holder.shipv = (TextView) convertView.findViewById(R.id.shipv);
+			holder.cargo = (TextView) convertView.findViewById(R.id.cargo);
 			holder.btnPublish = (Button) convertView.findViewById(R.id.btnPublish);
 			convertView.setTag(holder);
 		}
@@ -126,16 +132,16 @@ public class ShipHCListAdapter extends BaseAdapter {
 //			holder.shipId.setText((String) appInfo.get("shipId"));
 			if(!appInfo.getNodes().isEmpty()){
 				
-				holder.shipName.setText(appInfo.getNodes().get(0).getOpTime()
+				holder.shipName.setText("时段："+appInfo.getNodes().get(0).getOpTime()
 						+" 到 "+appInfo.getNodes().get(appInfo.getNodes().size()-1).getOpTime());
-				holder.carrier.setText("航次时长："+Util.getFlightTimeOnLine(appInfo.getNodes().get(0).getOpTime()
+				holder.carrier.setText("时长："+Util.getFlightTimeOnLine(appInfo.getNodes().get(0).getOpTime()
 						,appInfo.getNodes().get(appInfo.getNodes().size()-1).getOpTime()));
 			}
 //			holder.shipType.setText((String) appInfo.get("shipType"));
 //			holder.TypeCode.setText((String) appInfo.get("TypeCode"));
 //			holder.mmsi.setText((String) appInfo.get("MMSI"));
-			holder.shipv.setText("航次编号："+appInfo.getVoyageNum());
-			holder.place.setText(appInfo.getStartPort()+" 到 "+appInfo.getEndPort());
+			holder.shipv.setText("编号："+appInfo.getVoyageNum());
+			holder.place.setText("航线："+appInfo.getStartPort()+" 到 "+appInfo.getEndPort());
 //			holder.endtime.setText((String) appInfo.get("endtime"));
 //			holder.dongtai.setText((String) appInfo.get("dongtai"));
 //			if((Boolean) appInfo.get("btnPublish")){
@@ -144,8 +150,37 @@ public class ShipHCListAdapter extends BaseAdapter {
 //			}else{
 //				holder.btnPublish.setVisibility(View.GONE);
 //			}
+			if(appInfo.getNodes()!=null&&!appInfo.getNodes().isEmpty()){
+				List<ShipVoyageNodeData> nodes = appInfo.getNodes();
+				String instr = " ";
+				String outstr = " ";
+				String s = " ";
 
-			
+				try {
+					for(ShipVoyageNodeData data:nodes){
+                        if(String.valueOf(NodeCode.loadingEnd.getN()).equals(data.getStage())) {
+                            instr = data.getValue();
+                        }
+                        if(String.valueOf(NodeCode.unloadingEnd.getN()).equals(data.getStage())) {
+                            outstr = data.getValue();
+                        }
+                    }
+
+					if(!"".equals(instr)&&!"".equals(outstr)
+							&&Double.valueOf(instr)!=0.0&&Double.valueOf(outstr)!=0.0){
+                        float inf= Float.valueOf(instr);
+                        float outf= Float.valueOf(outstr);
+
+                        float num = outf/inf*100;
+                        DecimalFormat df = new DecimalFormat("0.00");//格式化小数
+                        s = df.format(num);//返回的是String类型
+                    }
+				} catch (Exception e) {
+				}
+
+				holder.cargo.setText("货率："+"装 "+instr+"吨，"+"卸 "+outstr+"吨，"+"收货率 "+s+"%");
+			}
+
 		}
 		
 		return convertView;

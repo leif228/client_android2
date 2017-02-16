@@ -217,7 +217,7 @@ public class GlobalApplication extends TAApplication {
 		CrashHandler crashHandler = CrashHandler.getInstance();
 		crashHandler.init(getApplicationContext());
 		
-		initCookie();
+//		initCookie();
 //		initAPI_KEY();
 //		loadAPI_KEY();
 		//在APP应用启动的时候，进行初始化验证  
@@ -342,14 +342,14 @@ public class GlobalApplication extends TAApplication {
 					getCookieText();
 				}else {
 					
-					Editor editor = sp.edit();
-					editor.putString("AutoLogin", "false");
-					editor.putString("SavePassword", "false");
-					editor.putString("UserName", "");
-					editor.putString("UserPassword", "");
-					editor.commit();
-					
-					startActivity(new Intent(GlobalApplication.this,SplashActivity.class));
+//					Editor editor = sp.edit();
+//					editor.putString("AutoLogin", "false");
+//					editor.putString("SavePassword", "false");
+//					editor.putString("UserName", "");
+//					editor.putString("UserPassword", "");
+//					editor.commit();
+//
+//					startActivity(new Intent(GlobalApplication.this,SplashActivity.class));
 				}
 			}
 
