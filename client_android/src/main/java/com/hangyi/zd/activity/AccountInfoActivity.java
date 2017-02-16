@@ -458,6 +458,7 @@ public class AccountInfoActivity extends CommonListActivity {
 		String userName = sp.getString("UserName","");
 		setTitle(userName);
 
+
 		active = true;
 	};
 	@Override
