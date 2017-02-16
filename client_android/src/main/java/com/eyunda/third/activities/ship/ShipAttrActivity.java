@@ -163,7 +163,7 @@ public class ShipAttrActivity extends ShipinfoActivity implements OnClickListene
 						final Spinner spinner = new Spinner(
 								ShipAttrActivity.this);
 
-						spinner.setId(ids);
+						spinner.setId(R.id.my_view5);
 						spinner.setGravity(Gravity.CENTER);
 						att.setTypCode(AttrTypeCode.charcode);
 						// TODO 添加一个textView
@@ -228,7 +228,7 @@ public class ShipAttrActivity extends ShipinfoActivity implements OnClickListene
 						tv_editText.setGravity(Gravity.CENTER);
 						tv_editText.setTextSize(15);
 
-						et_charstr.setId(ids);
+						et_charstr.setId(R.id.my_view1);
 						att.setTypCode(AttrTypeCode.charstr);
 						// 添加一个子LinearLayout
 						LinearLayout linearLayout2 = new LinearLayout(
@@ -290,7 +290,7 @@ public class ShipAttrActivity extends ShipinfoActivity implements OnClickListene
 						btnDate.setOnClickListener(dateListener);
 						btnDate.setText(name.getCurrAttrValue().getAttrValue());
 						tv.setText(names);
-						btnDate.setId(ids);
+						btnDate.setId(R.id.my_view2);
 						att.setTypCode(AttrTypeCode.datetype);
 						// 添加一个子LinearLayout
 						LinearLayout linearLayout3 = new LinearLayout(ShipAttrActivity.this);
@@ -312,7 +312,7 @@ public class ShipAttrActivity extends ShipinfoActivity implements OnClickListene
 						EditText et_dblum = new EditText(ShipAttrActivity.this);
 						et_dblum.setText(name.getCurrAttrValue().getAttrValue());
 
-						et_dblum.setId(ids);
+						et_dblum.setId(R.id.my_view4);
 						att.setTypCode(AttrTypeCode.dblnum);
 						et_dblum.setInputType(InputType.TYPE_CLASS_NUMBER);
 						tv_editText2.setText(names);
@@ -340,7 +340,7 @@ public class ShipAttrActivity extends ShipinfoActivity implements OnClickListene
 						intnum = name.getAttrNameCode();// 标签名编码
 						EditText et_intnum = new EditText(ShipAttrActivity.this);
 						et_intnum.setText(name.getCurrAttrValue().getAttrValue());
-						et_intnum.setId(ids);
+						et_intnum.setId(R.id.my_view);
 						att.setTypCode(AttrTypeCode.intnum);
 						et_intnum.setInputType(InputType.TYPE_CLASS_NUMBER);
 						tv_editText3.setText(names);
@@ -376,7 +376,7 @@ public class ShipAttrActivity extends ShipinfoActivity implements OnClickListene
 				btnSave.setBackgroundColor(Color.parseColor("#E44647"));
 				btnSave.setText("保存");
 				btnSave.setTextColor(Color.parseColor("#ffffff"));
-				btnSave.setId(2);
+				btnSave.setId(R.id.my_view3);
 				if(attrvalue.isEmpty()){
 					btnSave.setVisibility(View.GONE);
 				}
