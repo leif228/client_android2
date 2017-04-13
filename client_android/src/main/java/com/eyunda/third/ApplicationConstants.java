@@ -13,7 +13,7 @@ public class ApplicationConstants {
     public static final String HTTP_PRE = "http://";
 
     public static final String HTTP_DOMAINNAME = "";
-    public static final String ZD_DOMAINNAME = "http://www.zdrlboat.com";
+    public static final String ZD_DOMAINNAME = "";
 
     public static final String HTTP_SERVERNAME = "192.168.1.132";
     public static final int HTTP_SERVERPORT = 8080;
@@ -64,14 +64,9 @@ public class ApplicationConstants {
 
     public static final String APP_KEY = "";
 
-    public static final String ZDJAVA_PRE_URL = "http://120.76.194.65:80/zdmanage";
-//    public static final String ZDJAVA_PRE_URL = ZD_DOMAINNAME+"/zdmanage";
-//	public static final String ZDJAVA_PRE_URL = "http://120.236.139.134:8890/zdmanage";
-//	public static final String ZDJAVA_PRE_URL = "http://192.168.1.157:8080/zdmanage";
+    public static final String ZDJAVA_PRE_URL = "";
 
-    //	public static final String ZDPHP_PRE_URL = "http://120.236.139.134:8888";
-//    public static final String ZDPHP_PRE_URL = ZD_DOMAINNAME+":8888";
-	public static final String ZDPHP_PRE_URL = "http://120.76.194.65:8888";
+	public static final String ZDPHP_PRE_URL = "";
 
     public static final String PRE_URL = "http://www.hx-oil.com:8888";
     public static final String clienttype = "Android";
