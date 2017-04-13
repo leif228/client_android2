@@ -64,6 +64,7 @@ import com.hangyi.zd.domain.NodeCode;
 import com.hangyi.zd.domain.PoliceData;
 import com.hangyi.zd.domain.PositionData;
 import com.hangyi.zd.domain.ShipCKGpssData;
+import com.hangyi.zd.domain.ShipControlData;
 import com.hangyi.zd.domain.ShipGpsData;
 import com.hangyi.zd.domain.ShipModelCode;
 import com.hangyi.zd.domain.ShipModelData;
@@ -134,6 +135,8 @@ public class ShipPoliceActivity extends CommonListActivity implements OnClickLis
 	public static final int LoadedShipPosition = 3;
 	public static final int LoadedMoreTRoutePoliceSSTime = 2;
 	public static final int LoadedPortArea = 1;
+	ShipControlData sc;
+	public static final int RShipControlData = 20;
 	
 	Handler handler = new Handler() {
 		public void handleMessage(Message msg) {
@@ -164,10 +167,17 @@ public class ShipPoliceActivity extends CommonListActivity implements OnClickLis
 			case LoadedPoliceInfo:
 				initView();
 				postReadFlag();
+				getShipControlData();
 				loadPortArea();
 				loadDataOneMin(eventTime);
 				loadShipCurrHC("0x"+shipId,hcNum);//Function=25&ShipID=0x112F&str=航次编号
 				loadShipCKHX(start,end);;
+				break;
+			case RShipControlData:
+				if(sc!=null){
+					tv_lat3.setText("船队："+sc.getContact());
+					tv_lat4.setText("船队："+sc.getContact());
+				}
 				break;
 			case ParseCKJsonIsEmpty:
 				Toast.makeText(ShipPoliceActivity.this, "参考航线数据为空",
@@ -276,6 +286,53 @@ public class ShipPoliceActivity extends CommonListActivity implements OnClickLis
 
 			}
 		}, ApplicationUrls.portarea.replaceAll(" ", "%20"), apiParams, "get");	
+	}
+
+	protected void getShipControlData() {
+		String shipID = shipId;
+		if(shipID!=null&&shipID.startsWith("0x"))
+			shipID = shipID.substring(2);
+
+		Map<String, Object> apiParams = new HashMap<String, Object>();
+
+		dataLoader.getZd_JavaManageResult(new AsyncHttpResponseHandler() {
+			@Override
+			public void onSuccess(String arg2) {
+
+				try {
+					if(arg2==null||"".equals(arg2)){
+						//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+						return;
+					}
+
+					Gson gson = new Gson();
+					final HashMap<String, Object> rmap = gson.fromJson(
+							arg2, new TypeToken<Map<String, Object>>() {
+							}.getType());
+					if (rmap.get("returnCode").equals("Success")) {
+
+						Map<String, Object> map = (Map<String, Object>) rmap.get("shipAttrData");
+						if(!map.isEmpty()){
+							sc = new ShipControlData(map);
+
+							Message message = new Message();
+							message.what = RShipControlData;
+							handler.sendMessage(message);
+						}
+
+					} else {
+						//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+					}
+				} catch (Exception e) {
+				}
+
+			}
+			@Override
+			public void onFailure(Throwable error, String content) {
+				super.onFailure(error, content);
+
+			}
+		}, ApplicationUrls.shipInfo2+shipID, apiParams, "get");
 	}
 	
 	private void loadSSDistance(String startTime,String endTime){
@@ -715,7 +772,7 @@ public class ShipPoliceActivity extends CommonListActivity implements OnClickLis
 			tv37.setText("参考里程(km)：");
 			tv38.setText("运行里程(km)：");
 			tv_speed3.setText("航速："+curShip.getGpsSpeed()+"节");
-			tv_lat3.setText("航向："+curShip.getGpsCourse());
+//			tv_lat3.setText("航向："+curShip.getGpsCourse());
 			tv_j3.setText("经度："+curShip.getGpsLongitude());
 			tv_w3.setText("纬度："+curShip.getGpsLatitude());
 			
@@ -728,7 +785,7 @@ public class ShipPoliceActivity extends CommonListActivity implements OnClickLis
 			tv47.setText("运行里程(km)：");
 			tv48.setText("时间："+eventTime);
 			tv_speed4.setText("航速："+curShip.getGpsSpeed()+"节");
-			tv_lat4.setText("航向："+curShip.getGpsCourse());
+//			tv_lat4.setText("航向："+curShip.getGpsCourse());
 			tv_j4.setText("经度："+curShip.getGpsLongitude());
 			tv_w4.setText("纬度："+curShip.getGpsLatitude());
 		}

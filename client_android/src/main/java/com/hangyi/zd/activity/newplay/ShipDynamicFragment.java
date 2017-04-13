@@ -77,6 +77,7 @@ import com.hangyi.zd.activity.dialog.CustomDialog;
 import com.hangyi.zd.activity.gridviewpage.AppAdapter;
 import com.hangyi.zd.activity.newplay.CommonVideoView.CommonVideoChangLintener;
 import com.hangyi.zd.domain.ShipCKGpssData;
+import com.hangyi.zd.domain.ShipControlData;
 import com.hangyi.zd.domain.ShipGpsData;
 import com.hangyi.zd.domain.ShipModelCode;
 import com.hangyi.zd.domain.ShipModelData;
@@ -145,6 +146,9 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 	Thread parseJsonThread1 = null;
 	List<ShipOneCKHcData> ckGpsData;
 	ShipGpsData cPoint;
+
+	ShipControlData sc;
+	public static final int RShipControlData = 20;
 	
 	BitmapDescriptor mTexture = null;
 	BitmapDescriptor mPurpleTexture = BitmapDescriptorFactory.fromAsset("icon_road_purple_arrow.png");
@@ -266,6 +270,11 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 				}else if(msg.what == ParseCKJsonIsError){
 					Toast.makeText(getActivity(), "参考航线数据解析异常",
 							Toast.LENGTH_SHORT).show();
+				}else if(msg.what == RShipControlData){
+					if (sc!=null){
+						tv_lat3.setText("船队："+sc.getContact());
+						tv_lat4.setText("船队："+sc.getContact());
+					}
 				}
 				super.handleMessage(msg);
 			}
@@ -316,6 +325,7 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 		
 		initView(startTime,endTime);
 		initShipPowerChannels();
+		getShipControlData();
 		
 		PowerManager pm = (PowerManager) getActivity().getSystemService(Context.POWER_SERVICE);
 		mWakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag"); 
@@ -372,6 +382,54 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 		
 		gps = (ImageView) getActivity().findViewById(R.id.gps);
 		gps.setOnClickListener(this);
+	}
+
+	protected void getShipControlData() {
+
+		String shipId = shipID;
+		if(shipId!=null&&shipId.startsWith("0x"))
+			shipId = shipId.substring(2);
+
+		Map<String, Object> apiParams = new HashMap<String, Object>();
+
+		dataLoader.getZd_JavaManageResult(new AsyncHttpResponseHandler() {
+			@Override
+			public void onSuccess(String arg2) {
+
+				try {
+					if(arg2==null||"".equals(arg2)){
+						//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+						return;
+					}
+
+					Gson gson = new Gson();
+					final HashMap<String, Object> rmap = gson.fromJson(
+							arg2, new TypeToken<Map<String, Object>>() {
+							}.getType());
+					if (rmap.get("returnCode").equals("Success")) {
+
+						Map<String, Object> map = (Map<String, Object>) rmap.get("shipAttrData");
+						if(!map.isEmpty()){
+							sc = new ShipControlData(map);
+
+							Message message = new Message();
+							message.what = RShipControlData;
+							handler.sendMessage(message);
+						}
+
+					} else {
+						//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+					}
+				} catch (Exception e) {
+				}
+
+			}
+			@Override
+			public void onFailure(Throwable error, String content) {
+				super.onFailure(error, content);
+
+			}
+		}, ApplicationUrls.shipInfo2+shipId, apiParams, "get");
 	}
 
 	@Override
@@ -564,7 +622,7 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 				
 				tv_time3.setText("最后时间："+loseLastTime);
 				tv_speed3.setText("航速：未知");
-				tv_lat3.setText("航向：未知");
+//				tv_lat3.setText("航向：未知");
 				tv_j3.setText("经度：未知");
 				tv_w3.setText("纬度：未知");
 				
@@ -577,7 +635,7 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 				
 				tv_time4.setText("最后时间："+loseLastTime);
 				tv_speed4.setText("航速：未知");
-				tv_lat4.setText("航向：未知");
+//				tv_lat4.setText("航向：未知");
 				tv_j4.setText("经度：未知");
 				tv_w4.setText("纬度：未知");
 				
@@ -607,7 +665,7 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 					
 					tv_time3.setText("最后时间："+curShip.getGpsTime());
 					tv_speed3.setText("航速："+curShip.getGpsSpeed()+"节");
-					tv_lat3.setText("航向："+curShip.getGpsCourse());
+//					tv_lat3.setText("航向："+curShip.getGpsCourse());
 					tv_j3.setText("经度："+curShip.getGpsLongitude());
 					tv_w3.setText("纬度："+curShip.getGpsLatitude());
 					
@@ -660,7 +718,7 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 					
 					tv_time4.setText("最后时间："+curShip.getGpsTime());
 					tv_speed4.setText("航速："+curShip.getGpsSpeed()+"节");
-					tv_lat4.setText("航向："+curShip.getGpsCourse());
+//					tv_lat4.setText("航向："+curShip.getGpsCourse());
 					tv_j4.setText("经度："+curShip.getGpsLongitude());
 					tv_w4.setText("纬度："+curShip.getGpsLatitude());
 					

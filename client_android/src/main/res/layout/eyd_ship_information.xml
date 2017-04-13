@@ -85,7 +85,7 @@
                             style="@style/information_text"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="5dp"
-                            android:text="船舶卫星定位"
+                            android:text="卫星定位"
                             android:textColor="#464646"
                             android:textSize="18dp" />
                     </RelativeLayout>
@@ -154,7 +154,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginRight="5dp"
                             android:background="@null"
-                            android:text="卫星时间："
+                            android:text="时间："
                             android:textColor="#464646"
                             android:textSize="18dp" />
                     </LinearLayout>
@@ -365,6 +365,122 @@
                             android:textColor="#464646"
                             android:textSize="18dp" />
                     </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/g1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船舶经营人："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船舶所有人："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船型："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船长："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船宽："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="A级载货量："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="B级载货量："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/g8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="空载吃水："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/g9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="满载吃水："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -372,7 +488,8 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="25dp"
                         android:background="#fff"
-                        android:orientation="vertical" >
+                        android:orientation="vertical"
+                        android:visibility="gone">
 
                         <TextView
                             android:id="@+id/gk1"

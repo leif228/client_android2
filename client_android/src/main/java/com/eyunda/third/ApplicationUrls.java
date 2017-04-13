@@ -32,6 +32,7 @@ public class ApplicationUrls {
 	public static final String bugUpload = "/client/push/bugUpload";
 	public static final String groups = "/client/group/getMobGroups";
 	public static final String currHCByShipId = "/client/route/mobCurrRoutesByShipId/?PHPSESSID=";
+	public static final String shipInfo2 = "/client/monitor/getShipInfo/?shipID=";
 	public static final String excuteHC = "/client/route/mobExcuteRoutes/?PHPSESSID=";
 	public static final String historyHC = "/client/route/historyRoutes/?PHPSESSID=";
 	public static final String saveMobGroups = "/client/group/saveMobGroups";

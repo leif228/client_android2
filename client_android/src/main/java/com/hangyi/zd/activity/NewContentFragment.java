@@ -101,6 +101,7 @@ import com.hangyi.zd.domain.MapPortData;
 import com.hangyi.zd.domain.ModulePower;
 import com.hangyi.zd.domain.NodeCode;
 import com.hangyi.zd.domain.PoliceData;
+import com.hangyi.zd.domain.ShipControlData;
 import com.hangyi.zd.domain.ShipModelCode;
 import com.hangyi.zd.domain.ShipModelData;
 import com.hangyi.zd.domain.ShipModelNoData;
@@ -157,6 +158,8 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 	private ImageView gps;
 	private ConcurrentHashMap<String,List<ShipModelNoData>> maplist = new ConcurrentHashMap<String,List<ShipModelNoData>>();// 船舶授权的镜头数
 	private volatile ShipCooordData curShip;
+	ShipControlData sc;
+	public static final int RShipControlData = 20;
 	private LinearLayout search_ll;
 	private LinearLayout shipgroupsz;
 	private ShipOverlayManager overlayManager;
@@ -237,6 +240,13 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				
 				tv_zz3.setText(zzStr);
 				tv_zz4.setText(zzStr);
+				break;
+
+			case RShipControlData:
+				if(sc!=null){
+					tv_lat3.setText("船队："+sc.getContact());
+					tv_lat4.setText("船队："+sc.getContact());
+				}
 				break;
 //			case showShipImg:
 //				showShipImg();
@@ -729,6 +739,58 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		}
 		
 	}
+
+	protected void getShipControlData() {
+		if(curShip==null)
+			return;
+		String shipid = curShip.getShipID();
+		if(curShip.getShipID().startsWith("0x"))
+			shipid = shipid.substring(2);
+
+		if(sc!=null&&shipid.equals(sc.getShipId()))
+			return;
+
+		Map<String, Object> apiParams = new HashMap<String, Object>();
+
+		dataLoader.getZd_JavaManageResult(new AsyncHttpResponseHandler() {
+			@Override
+			public void onSuccess(String arg2) {
+
+				try {
+					if(arg2==null||"".equals(arg2)){
+						//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+						return;
+					}
+
+					Gson gson = new Gson();
+					final HashMap<String, Object> rmap = gson.fromJson(
+							arg2, new TypeToken<Map<String, Object>>() {
+							}.getType());
+					if (rmap.get("returnCode").equals("Success")) {
+
+						Map<String, Object> map = (Map<String, Object>) rmap.get("shipAttrData");
+						if(!map.isEmpty()){
+							sc = new ShipControlData(map);
+
+							Message message = new Message();
+							message.what = RShipControlData;
+							handler.sendMessage(message);
+						}
+
+					} else {
+						//					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+					}
+				} catch (Exception e) {
+				}
+
+			}
+			@Override
+			public void onFailure(Throwable error, String content) {
+				super.onFailure(error, content);
+
+			}
+		}, ApplicationUrls.shipInfo2+shipid, apiParams, "get");
+	}
 	
 	private void addClickedMarker(ShipCooordData scd) {
 		if(scd == null)
@@ -836,6 +898,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 						}
 					}
 			}
+			getShipControlData();
 			showShipImg();
 			
 			parseJsonThread3 = new Thread(new Runnable() {
@@ -873,7 +936,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				tv_time3.setText("最后时间："+curShip.getGpsTime());
 				tv_speed3.setText("航速："+curShip.getGpsSpeed()+"节");
 				tv_zz3.setText(zzStr);
-				tv_lat3.setText("航向："+curShip.getGpsCourse());
+//				tv_lat3.setText("航向："+curShip.getGpsCourse());
 				tv_j3.setText("经度："+curShip.getGpsLongitude());
 				tv_w3.setText("纬度："+curShip.getGpsLatitude());
 				
@@ -889,7 +952,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				tv_time4.setText("最后时间："+curShip.getGpsTime());
 				tv_zz4.setText(zzStr);
 				tv_speed4.setText("航速："+curShip.getGpsSpeed()+"节");
-				tv_lat4.setText("航向："+curShip.getGpsCourse());
+//				tv_lat4.setText("航向："+curShip.getGpsCourse());
 				tv_j4.setText("经度："+curShip.getGpsLongitude());
 				tv_w4.setText("纬度："+curShip.getGpsLatitude());
 				

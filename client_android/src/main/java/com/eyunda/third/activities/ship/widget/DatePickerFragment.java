@@ -15,13 +15,24 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-public class DatePickerFragment extends DialogFragment implements  
+public class DatePickerFragment extends DialogFragment implements
 DatePickerDialog.OnDateSetListener , TimePickerDialog.OnTimeSetListener {  
 	private TextView tv;
 	public DatePickerFragment(TextView tv) {
 		this.tv=tv;
 	}
-	
+	public DatePickerFragment() {
+	}
+
+//	public static DatePickerFragment newInstance(TextView tv) {
+//		DatePickerFragment newFragment = new DatePickerFragment();
+//		Bundle bundle = new Bundle();
+//
+//		newFragment.setArguments(bundle);
+//		return newFragment;
+//
+//	}
+
 	//返回日期或时间选择
 	@Override  
 	public Dialog onCreateDialog(Bundle savedInstanceState) {  

@@ -30,13 +30,14 @@ import com.google.gson.reflect.TypeToken;
 import com.hangyi.tools.ParseJson;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.NodeCode;
+import com.hangyi.zd.domain.ShipControlData;
 import com.hangyi.zd.domain.ShipInfoData;
 import com.hangyi.zd.domain.ShipVoyageData;
 import com.hangyi.zd.domain.ShipVoyageNodeData;
 import com.ta.util.http.AsyncHttpResponseHandler;
 
 public class ShipInfoActivity extends CommonListActivity {
-	TextView dw1, dw2, dw5, sb1, sb2, gk1, gk2, gk3, gk4, gk5, gk6, gk7, gk8, gk9, gk10,zz1,zz2,zz3,zz4;
+	TextView dw1, dw2, dw5, sb1, sb2, gk1, gk2, gk3, gk4, gk5, gk6, gk7, gk8, gk9, gk10,zz1,zz2,zz3,zz4, g1, g2, g3, g4, g5, g6, g7, g8, g9;
 	private ShipCooordData shipCooordData;
 	private TextView dw3;
 	private TextView dw4;
@@ -44,6 +45,7 @@ public class ShipInfoActivity extends CommonListActivity {
 	private TextView sb4;
 	Data_loader dataLoader;
 	ShipInfoData shipInfoData;
+	ShipControlData sc;
 	String shipId = "";
 	String currState = "";
 	String startPort = "";
@@ -73,8 +75,9 @@ public class ShipInfoActivity extends CommonListActivity {
 		if(shipCooordData!=null)
 			shipId = shipCooordData.getShipID();
 		initview();
-		loadDate();
+//		loadDate();
 		loadDate2();
+		loadDate3();
 		
 	}
 
@@ -98,6 +101,15 @@ public class ShipInfoActivity extends CommonListActivity {
 		gk8 = (TextView) findViewById(R.id.gk8);
 		gk9 = (TextView) findViewById(R.id.gk9);
 		gk10 = (TextView) findViewById(R.id.gk10);
+		g1 = (TextView) findViewById(R.id.g1);
+		g2 = (TextView) findViewById(R.id.g2);
+		g3 = (TextView) findViewById(R.id.g3);
+		g4 = (TextView) findViewById(R.id.g4);
+		g5 = (TextView) findViewById(R.id.g5);
+		g6 = (TextView) findViewById(R.id.g6);
+		g7 = (TextView) findViewById(R.id.g7);
+		g8 = (TextView) findViewById(R.id.g8);
+		g9 = (TextView) findViewById(R.id.g9);
 		zz1 = (TextView) findViewById(R.id.zz1);
 		zz2 = (TextView) findViewById(R.id.zz2);
 		zz3 = (TextView) findViewById(R.id.zz3);
@@ -124,7 +136,7 @@ public class ShipInfoActivity extends CommonListActivity {
 			dw2.setText("纬度："+shipCooordData.getGpsLatitude());
 			dw3.setText("航速："+shipCooordData.getGpsSpeed()+"节");
 			dw4.setText("航向："+shipCooordData.getGpsCourse());
-			dw5.setText("卫星时间："+shipCooordData.getGpsTime());
+			dw5.setText("时间："+shipCooordData.getGpsTime());
 			
 			sb1.setText("主电源电压："+shipCooordData.getMainVoltage());
 			sb2.setText("备电源电压："+shipCooordData.getBackUpVoltage());
@@ -143,6 +155,17 @@ public class ShipInfoActivity extends CommonListActivity {
 			gk8.setText("船舶所属公司："+shipInfoData.getShipOwner());
 			gk9.setText("联系人："+shipInfoData.getContact());
 			gk10.setText("电话："+shipInfoData.getTel());
+		}
+		if(sc!=null){
+			g1.setText("船舶经营人："+sc.getContact());
+			g2.setText("船舶所有人："+sc.getShipOwner());
+			g3.setText("船型："+sc.getShiptype());
+			g4.setText("船长："+sc.getLength());
+			g5.setText("船宽："+sc.getBreadth());
+			g6.setText("A级载货量："+sc.getaTons());
+			g7.setText("B级载货量："+sc.getbTons());
+			g8.setText("空载吃水："+sc.getLightDraught());
+			g9.setText("满载吃水："+sc.getLoadDraught());
 		}
 		
 		if(true){
@@ -299,5 +322,51 @@ public class ShipInfoActivity extends CommonListActivity {
 
 			}
 		}, ApplicationUrls.currHCByShipId+PHPSESSID, apiParams, "get");	
+	}
+	protected void loadDate3() {
+		String shipID = shipId;
+		if(shipID!=null&&shipID.startsWith("0x"))
+			shipID = shipID.substring(2);
+
+		Map<String, Object> apiParams = new HashMap<String, Object>();
+
+		dataLoader.getZd_JavaManageResult(new AsyncHttpResponseHandler() {
+			@Override
+			public void onSuccess(String arg2) {
+
+				try {
+					if(arg2==null||"".equals(arg2)){
+    //					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+					Gson gson = new Gson();
+					final HashMap<String, Object> rmap = gson.fromJson(
+                            arg2, new TypeToken<Map<String, Object>>() {
+                            }.getType());
+					if (rmap.get("returnCode").equals("Success")) {
+
+                        Map<String, Object> map = (Map<String, Object>) rmap.get("shipAttrData");
+                        if(!map.isEmpty()){
+                            sc = new ShipControlData(map);
+
+                            Message message = new Message();
+                            message.what = 1;
+                            handler.sendMessage(message);
+                        }
+
+                    } else {
+    //					Toast.makeText(ShipHCListIngActivity.this, "加载数据失败", Toast.LENGTH_SHORT).show();
+                    }
+				} catch (Exception e) {
+				}
+
+			}
+			@Override
+			public void onFailure(Throwable error, String content) {
+				super.onFailure(error, content);
+
+			}
+		}, ApplicationUrls.shipInfo2+shipID, apiParams, "get");
 	}
 }

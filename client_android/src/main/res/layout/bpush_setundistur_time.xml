@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center_horizontal"
-            android:text="免打扰时段设置"
+            android:text="报警信息免打扰时段设置"
             android:textSize="18sp" />
 
     </LinearLayout>
