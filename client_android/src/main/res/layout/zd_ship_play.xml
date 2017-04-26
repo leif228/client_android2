@@ -10,7 +10,7 @@
 
     <fragment  
         android:id="@+id/fragment_content"  
-        android:name="com.hangyi.zd.activity.newplay.ShipDynamicFragment"  
+        android:name="com.hangyi.zd.activity.newplay.ShipDynamicFragment2"
         android:layout_width="fill_parent"  
         android:layout_height="fill_parent" /> 
 

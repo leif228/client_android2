@@ -30,7 +30,7 @@ public class PlayListenerTimer extends Timer {
 			playListenerTimerTask.cancel(); // 将原任务从队列中移除
 		}
 		playListenerTimerTask = new PlayListenerTimerTask();
-		instance.schedule(playListenerTimerTask, 0, 1  * 1000);
+		instance.schedule(playListenerTimerTask, 0, 5  * 1000);
 	}
 	
 	public void stopPlayListenerTimer() {
@@ -54,42 +54,43 @@ public class PlayListenerTimer extends Timer {
 			if(handler!=null){
 				if(LoadedList.needTotalSize<=LoadedList.preLoadedPlay){
 					if(!CommonVideoView.isPlaying&&LoadedList.getInstance().loadedSize()==LoadedList.needTotalSize){
-						handler.sendEmptyMessage(CommonVideoView.pauseState);
+//						handler.sendEmptyMessage(CommonVideoView.pauseState);
 					}
 				}else{
 					if(LoadedList.getInstance().loadedSize()!=LoadedList.needTotalSize){
-						if(LoadedList.getInstance().loadedSize()-ShipDynamicFragment.currPlayPosition>=LoadedList.preLoadedPlay){
+						if(LoadedList.getInstance().loadedSize()-ShipDynamicFragment2.currPlayPosition>=LoadedList.preLoadedPlay){
 							if(CommonVideoView.isPlaying){
-								handler.sendEmptyMessage(CommonVideoView.playState);
+//								handler.sendEmptyMessage(CommonVideoView.playState);
 							}else{
 								if(selfPause){
 									selfPause = false;
 									CommonVideoView.isPlaying = true;
-									handler.sendEmptyMessage(CommonVideoView.playState);
-								}else
-									handler.sendEmptyMessage(CommonVideoView.pauseState);
+//									handler.sendEmptyMessage(CommonVideoView.playState);
+								}
+//								else
+//									handler.sendEmptyMessage(CommonVideoView.pauseState);
 							}
 						}else{
-							if(LoadedList.needTotalSize-ShipDynamicFragment.currPlayPosition>LoadedList.preLoadedPlay){
+							if(LoadedList.needTotalSize-ShipDynamicFragment2.currPlayPosition>LoadedList.preLoadedPlay){
 								if(CommonVideoView.isPlaying){
 									selfPause = true;
 									CommonVideoView.isPlaying = false;
-									handler.sendEmptyMessage(CommonVideoView.cacheState);
+//									handler.sendEmptyMessage(CommonVideoView.cacheState);
 								}else{
-									handler.sendEmptyMessage(CommonVideoView.cacheState);
+//									handler.sendEmptyMessage(CommonVideoView.cacheState);
 								}
 							}else{
-								if(LoadedList.getInstance().loadedSize() <= ShipDynamicFragment.currPlayPosition){
+								if(LoadedList.getInstance().loadedSize() <= ShipDynamicFragment2.currPlayPosition){
 									CommonVideoView.isPlaying = false;
-									handler.sendEmptyMessage(CommonVideoView.cacheState);
+//									handler.sendEmptyMessage(CommonVideoView.cacheState);
 								}
 							}
 						}
 					}else{
-						if(CommonVideoView.isPlaying)
-							handler.sendEmptyMessage(CommonVideoView.playState);
-						else
-							handler.sendEmptyMessage(CommonVideoView.pauseState);
+//						if(CommonVideoView.isPlaying)
+//							handler.sendEmptyMessage(CommonVideoView.playState);
+//						else
+//							handler.sendEmptyMessage(CommonVideoView.pauseState);
 					}
 				}	
 				

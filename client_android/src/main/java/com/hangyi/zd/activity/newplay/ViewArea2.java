@@ -40,7 +40,6 @@ public class ViewArea2 extends FrameLayout
      * @param b 
      * @param context
      * @param view 
-     * @param resId 图片资源id,当然也可以用别的方式获取图片
      */
     public ViewArea2(final CustomDialog.Builder b, Context context,ShipGpsData curShip,int i, ImageView view)
     {
@@ -73,7 +72,7 @@ public class ViewArea2 extends FrameLayout
         
         String imgStr31 = ShipDynamicFragment.getUrl(curShip,String.valueOf(i));
 		if(imgStr31 !=null )
-			touchView.setImageDrawable(AppAdapter.createDrawable(context, BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
+			touchView.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
         
 
         // Bitmap img =
@@ -175,13 +174,13 @@ public class ViewArea2 extends FrameLayout
     public void playImg(ShipGpsData curShip){
     	String imgStr31 = ShipDynamicFragment.getUrl(curShip,String.valueOf(i));
 		if(imgStr31 !=null )
-			touchView.setImageDrawable(AppAdapter.createDrawable(context, BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
+			touchView.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
 		else
-			touchView.setImageDrawable(AppAdapter.createDrawable(context, ShipDynamicFragment.lose_imgBitmap, null, curShip.getGpsTime()));
+			touchView.setImageDrawable(AppAdapter.createDrawable(ShipDynamicFragment.lose_imgBitmap, null, curShip.getGpsTime()));
     }
 
 	public void playLoseImg(String time) {
-    	touchView.setImageDrawable(AppAdapter.createDrawable(context, ShipDynamicFragment.lose_gpsBitmap, null, time));
+    	touchView.setImageDrawable(AppAdapter.createDrawable(ShipDynamicFragment.lose_gpsBitmap, null, time));
     }
     
 

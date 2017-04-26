@@ -1,43 +1,33 @@
-package com.hangyi.zd.activity.dialog;
-
-import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.adapters.chat.widget.photoview.PhotoView;
-import com.eyunda.third.domain.location.ShipCooordData;
-import com.hangyi.zd.R;
-import com.hangyi.zd.activity.NewContentFragment;
-import com.hangyi.zd.activity.ShipDynamicFragment;
-import com.hangyi.zd.activity.dialog.CustomDialog.Builder;
-import com.hangyi.zd.activity.gridviewpage.AppAdapter;
-import com.hangyi.zd.domain.ShipGpsData;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
+package com.hangyi.zd.activity.newplay;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.Gravity;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+
+import com.eyunda.third.GlobalApplication;
+import com.eyunda.third.domain.location.ShipCooordData;
+import com.hangyi.zd.activity.dialog.CustomDialog;
+import com.hangyi.zd.activity.dialog.TouchView;
+import com.hangyi.zd.activity.dialog.TouchView1;
+import com.hangyi.zd.activity.gridviewpage.AppAdapter;
+import com.hangyi.zd.domain.ShipGpsData;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 /**
  * 前面说了ViewArea是一个布局， 所以这里当然要继承一个布局了,LinearLayout也可以
  * @author kun.zhang
  * @since DSM Appstore
  */
-public class ViewArea2 extends FrameLayout
+public class ViewArea3 extends FrameLayout
 {
     private int imgDisplayW;
     private int imgDisplayH;
     private int imgW;
     private int imgH;
-    private TouchView touchView;
+    private TouchView1 touchView;
     ImageLoader mImageLoader;
     ShipCooordData curShip;
     Context context;
@@ -48,11 +38,11 @@ public class ViewArea2 extends FrameLayout
 
     /**
      * 构造函数
-     * @param b 
+     * @param b
      * @param context
-     * @param view 
+     * @para
      */
-    public ViewArea2(final CustomDialog.Builder b, Context context,ShipGpsData curShip,int i, ImageView view)
+    public ViewArea3(final CustomDialog.Builder b, Context context, ShipGpsData curShip, int i)
     {
         super(context);
         this.context=context;
@@ -67,24 +57,25 @@ public class ViewArea2 extends FrameLayout
         imgDisplayH = ((Activity) context).getWindowManager().getDefaultDisplay().getHeight();
 
         // 这句就是我们的自定义ImageView
-        touchView = new TouchView(context, imgDisplayW, imgDisplayH,view,b);
+        touchView = new TouchView1(context, imgDisplayW, imgDisplayH,b);
         touchView.setAdjustViewBounds(true);
         // 给我们的自定义imageView设置要显示的图片
         // touchView.setImageResource(resId);
 //        touchView.setImageBitmap(resId);
 //        touchView.setOnClickListener(new OnClickListener() {
-//			
+//
 //			@Override
 //			public void onClick(View v) {
 //				b.dismiss();
 //			}
 //		});
 //        NewContentFragment.displayImage(mImageLoader,context,touchView,curShip,i);
-        
+
         String imgStr31 = ShipDynamicFragment.getUrl(curShip,String.valueOf(i));
 		if(imgStr31 !=null )
 			touchView.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
-        
+        else
+            touchView.setImageDrawable(AppAdapter.createDrawable(null, null, curShip.getGpsTime()));
 
         // Bitmap img =
         // BitmapFactory.decodeResource(context.getResources(),
@@ -122,7 +113,7 @@ public class ViewArea2 extends FrameLayout
         // 建议用FreamLayout或者LinearLayout。
 
         // 这是自定义imageView的大小，也就是触摸范围
-        FrameLayout.LayoutParams paramst = new FrameLayout.LayoutParams(
+        LayoutParams paramst = new LayoutParams(
         		imgDisplayW-50, imgDisplayH*3/5);
             paramst.gravity = Gravity.CENTER_HORIZONTAL;
             touchView.setLayoutParams(paramst);
@@ -186,6 +177,12 @@ public class ViewArea2 extends FrameLayout
     	String imgStr31 = ShipDynamicFragment.getUrl(curShip,String.valueOf(i));
 		if(imgStr31 !=null )
 			touchView.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
+		else
+			touchView.setImageDrawable(AppAdapter.createDrawable(ShipDynamicFragment.lose_imgBitmap, null, curShip.getGpsTime()));
+    }
+
+	public void playLoseImg(String time) {
+    	touchView.setImageDrawable(AppAdapter.createDrawable(ShipDynamicFragment.lose_gpsBitmap, null, time));
     }
     
 

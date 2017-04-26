@@ -87,14 +87,14 @@ public class ShowBigImage extends Activity {
 
 			@Override
 			public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(ShowBigImage.this,loadedImage,shipName,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(loadedImage,shipName,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
 			}
 
 			@Override
 			public void onLoadingFailed(String arg0, View view,
 					FailReason arg2) {
 				((ImageView)view).setDrawingCacheEnabled(true);
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(ShowBigImage.this,((ImageView)view).getDrawingCache(),shipName,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(((ImageView)view).getDrawingCache(),shipName,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
 				((ImageView)view).setDrawingCacheEnabled(false);
 				
 			}

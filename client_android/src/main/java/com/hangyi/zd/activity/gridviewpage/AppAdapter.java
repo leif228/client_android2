@@ -106,14 +106,14 @@ public class AppAdapter extends BaseAdapter {
 
 					@Override
 					public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-						((ImageView)view).setImageDrawable(createDrawable(mContext,loadedImage,appInfo.getShipName(),DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
+						((ImageView)view).setImageDrawable(createDrawable(loadedImage,appInfo.getShipName(),DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
 					}
 
 					@Override
 					public void onLoadingFailed(String arg0, View view,
 							FailReason arg2) {
 						((ImageView)view).setDrawingCacheEnabled(true);
-						((ImageView)view).setImageDrawable(createDrawable(mContext,((ImageView)view).getDrawingCache(),appInfo.getShipName(),DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
+						((ImageView)view).setImageDrawable(createDrawable(((ImageView)view).getDrawingCache(),appInfo.getShipName(),DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
 						((ImageView)view).setDrawingCacheEnabled(false);
 						
 					}
@@ -126,7 +126,7 @@ public class AppAdapter extends BaseAdapter {
     	
         return convertView;  
     }  
-    public static Bitmap createDrawable2(Context mContext,Bitmap imgMarker,String shipName,String time) {  
+    public static Bitmap createDrawable2(Bitmap imgMarker,String shipName,String time) {
     	if(imgMarker == null){
 //    		Resources res=mContext.getResources();
 //    		Drawable drawable=res.getDrawable(R.drawable.home_default);
@@ -157,18 +157,18 @@ public class AppAdapter extends BaseAdapter {
     	canvas.save(Canvas.ALL_SAVE_FLAG);  
     	canvas.restore();  
     	
-    	if(!imgMarker.isRecycled()){
-    		imgMarker.recycle();
-    		imgMarker=null;
-    	}
+//    	if(!imgMarker.isRecycled()){
+//    		imgMarker.recycle();
+//    		imgMarker=null;
+//    	}
     	
 //        saveMyBitmap(imgTemp,letter);
     	return imgTemp;  
     	
     }  
-    public static Drawable createDrawable(Context mContext,Bitmap imgMarker,String shipName,String time) {  
+    public static Drawable createDrawable(Bitmap imgMarker,String shipName,String time) {
     	if(imgMarker == null){
-    		Resources res=mContext.getResources();
+    		Resources res=GlobalApplication.getInstance().getResources();
     		Drawable drawable=res.getDrawable(R.drawable.home_default);
     		return drawable;
     	}
@@ -198,7 +198,7 @@ public class AppAdapter extends BaseAdapter {
         canvas.restore(); 
         
 //        saveMyBitmap(imgTemp,letter);
-        return (Drawable) new BitmapDrawable(mContext.getResources(),imgTemp);  
+        return (Drawable) new BitmapDrawable(GlobalApplication.getInstance().getResources(),imgTemp);
   
     }  
     public static void saveMyBitmap(Bitmap bitmap, String bitName) { 

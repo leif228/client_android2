@@ -410,17 +410,17 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 //					img31.setOnTouchListener(new MyOnTouchListener(curShip,1,img31));
 					String imgStr31 = getUrl(curShip,channels.get(0));
 					if(imgStr31 !=null )
-						img31.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
+						img31.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr31), null, curShip.getGpsTime()));
 					
 //					img32.setOnTouchListener(new MyOnTouchListener(curShip,2,img32));
 					String imgStr32 = getUrl(curShip,channels.get(1));
 					if(imgStr32 !=null )
-						img32.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr32), null, curShip.getGpsTime()));
+						img32.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr32), null, curShip.getGpsTime()));
 					
 //					img33.setOnTouchListener(new MyOnTouchListener(curShip,3,img33));
 					String imgStr33 = getUrl(curShip,channels.get(2));
 					if(imgStr33 !=null )
-						img33.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr33), null, curShip.getGpsTime()));
+						img33.setImageDrawable(AppAdapter.createDrawable( BitmapFactory.decodeFile(imgStr33), null, curShip.getGpsTime()));
 				}else{
 					shipImg.setVisibility(View.VISIBLE);
 					shipImg4.setVisibility(View.VISIBLE);
@@ -464,7 +464,7 @@ public class ShipDynamicFragment extends Fragment implements OnClickListener,
 							
 							String imgStr21 = getUrl(curShip,channels.get(i-1));
 							if(imgStr21 !=null )
-								view.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+								view.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 ////						view.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 						}
 //					}

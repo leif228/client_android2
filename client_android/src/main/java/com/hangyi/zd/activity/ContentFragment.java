@@ -481,14 +481,14 @@ public class ContentFragment extends Fragment implements OnClickListener,
 
 			@Override
 			public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(getActivity(),loadedImage,null,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(loadedImage,null,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
 			}
 
 			@Override
 			public void onLoadingFailed(String arg0, View view,
 					FailReason arg2) {
 				((ImageView)view).setDrawingCacheEnabled(true);
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(getActivity(),((ImageView)view).getDrawingCache(),null,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(((ImageView)view).getDrawingCache(),null,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
 				((ImageView)view).setDrawingCacheEnabled(false);
 				
 			}

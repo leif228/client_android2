@@ -31,7 +31,7 @@ public class CommonVideoView extends FrameLayout implements
 	public final static int pauseState = 14;
 	public final static int playState = 15;
 	public final static int cacheState = 16;
-
+	private boolean selfPause = false;
 	private Context context;
 	private LinearLayout videoPauseBtn;
 	private LinearLayout screenSwitchBtn;
@@ -67,15 +67,17 @@ public class CommonVideoView extends FrameLayout implements
 						.loadedSize());
 				if (isPlaying) {
 					if(videoSeekBar.getProgress() != LoadedList.needTotalSize){
-						videoSeekBar.setProgress(ShipDynamicFragment.currPlayPosition);
+						videoSeekBar.setProgress(ShipDynamicFragment2.currPlayPosition);
 					}else{
-						ShipDynamicFragment.currPlayPosition=0;
-						ShipDynamicFragment.flagFirst=true;
-						ShipDynamicFragment.flag = 0;
+						ShipDynamicFragment2.currPlayPosition=0;
+						ShipDynamicFragment2.flagFirst=true;
+						ShipDynamicFragment2.flag = 0;
 						onCompletionState();
 						isPlaying=false;
 					}
 				}
+
+				doPlayListener();
 				break;
 			}
 		}
@@ -383,9 +385,9 @@ public class CommonVideoView extends FrameLayout implements
 	public void onProgressChanged(SeekBar seekBar, int progress,
 			boolean fromUser) {
 		if (progress <= LoadedList.getInstance().loadedSize()) {
-			ShipDynamicFragment.currPlayPosition = progress;
+			ShipDynamicFragment2.currPlayPosition = progress;
 		} else {
-			ShipDynamicFragment.currPlayPosition = LoadedList.getInstance()
+			ShipDynamicFragment2.currPlayPosition = LoadedList.getInstance()
 					.loadedSize();
 		}
 	}
@@ -407,8 +409,8 @@ public class CommonVideoView extends FrameLayout implements
 		CacheSeekBarTimer.getInstance().setHandler(seekBarHandler);
 		CacheSeekBarTimer.getInstance().startCacheSeekBarTimer();
 
-		PlayListenerTimer.getInstance().setHandler(seekBarHandler);
-		PlayListenerTimer.getInstance().startPlayListenerTimer();
+//		PlayListenerTimer.getInstance().setHandler(seekBarHandler);
+//		PlayListenerTimer.getInstance().startPlayListenerTimer();
 
 	}
 
@@ -417,4 +419,49 @@ public class CommonVideoView extends FrameLayout implements
 		// TODO Auto-generated method stub
 		
 	}
+
+	private void doPlayListener(){
+		if(LoadedList.needTotalSize<=LoadedList.preLoadedPlay){
+			if(!CommonVideoView.isPlaying&&LoadedList.getInstance().loadedSize()==LoadedList.needTotalSize){
+//						handler.sendEmptyMessage(CommonVideoView.pauseState);
+			}
+		}else{
+			if(LoadedList.getInstance().loadedSize()!=LoadedList.needTotalSize){
+				if(LoadedList.getInstance().loadedSize()-ShipDynamicFragment2.currPlayPosition>=LoadedList.preLoadedPlay){
+					if(CommonVideoView.isPlaying){
+//								handler.sendEmptyMessage(CommonVideoView.playState);
+					}else{
+						if(selfPause){
+							selfPause = false;
+							CommonVideoView.isPlaying = true;
+//									handler.sendEmptyMessage(CommonVideoView.playState);
+						}
+//								else
+//									handler.sendEmptyMessage(CommonVideoView.pauseState);
+					}
+				}else{
+					if(LoadedList.needTotalSize-ShipDynamicFragment2.currPlayPosition>LoadedList.preLoadedPlay){
+						if(CommonVideoView.isPlaying){
+							selfPause = true;
+							CommonVideoView.isPlaying = false;
+//									handler.sendEmptyMessage(CommonVideoView.cacheState);
+						}else{
+//									handler.sendEmptyMessage(CommonVideoView.cacheState);
+						}
+					}else{
+						if(LoadedList.getInstance().loadedSize() <= ShipDynamicFragment2.currPlayPosition){
+							CommonVideoView.isPlaying = false;
+//									handler.sendEmptyMessage(CommonVideoView.cacheState);
+						}
+					}
+				}
+			}else{
+//						if(CommonVideoView.isPlaying)
+//							handler.sendEmptyMessage(CommonVideoView.playState);
+//						else
+//							handler.sendEmptyMessage(CommonVideoView.pauseState);
+			}
+		}
+	}
+
 }

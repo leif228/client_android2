@@ -160,16 +160,18 @@ OnItemClickListener {
 						
 						for(Map<String, Object> m:map){
 							GroupData gd = new GroupData(m);
+
+							totalShipCooordDatas.add(gd);
 							//0表示客户，1表示船公司
 							if(GroupCode.gkehu.getDescription().equals(gType)&&"0".equals(gd.getGroupType())){
-								if("所有".equals(gd.getGroupName()))
+								if("所有".equals(gd.getGroupName())) {
 									continue;
-								
+								}
+
 								gs.add(gd);
 							}else if(GroupCode.gship.getDescription().equals(gType)&&"1".equals(gd.getGroupType())){
 								gs.add(gd);
 							}
-							totalShipCooordDatas.add(gd);
 						}
 						if(gs.size()>0){
 							

@@ -18,6 +18,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import org.apache.http.cookie.Cookie;
 
@@ -117,7 +119,7 @@ import com.ta.util.http.AsyncHttpResponseHandler;
 
 public class NewContentFragment extends Fragment implements OnClickListener,
 		OnMarkerClickListener, OnMapClickListener {
-	
+	private ExecutorService pool;
 	Data_loader dataLoader;
 	ImageLoader mImageLoader;
 	TextView unread_msg_number;
@@ -172,12 +174,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 	LinearLayout llNav1;
 	public static int unReadMsgs = 0;
 	ZdUnReadMsgBroadcastReceiver receiver;
-	Thread parseJsonThread = null;
-	Thread parseJsonThread3 = null;
-	Thread parseJsonThread4 = null;
-	UserImgPowerThread userImgPowerThread = null;
-	AllOverlayThread allOverlayThread = null;
-	
+
 	MapPortOverlayManager om = null;
 	
 	BitmapDescriptor mapspBitmap = BitmapDescriptorFactory.fromResource(R.drawable.mapsp);
@@ -217,8 +214,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			}
 			switch (msg.what) {
 			case 1:
-				parseJsonThread = null;
-				
+
 				if(viewArea!=null){
 					viewArea.setCurShip(curShip);
 				}
@@ -226,8 +222,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				loadShipImg();
 				break;
 			case 7:
-				parseJsonThread4 = null;
-				
+
 				if(unReadMsgs>0){
 					unread_msg_number.setVisibility(View.VISIBLE);
 					unread_msg_number.setText(String.valueOf(unReadMsgs));
@@ -236,8 +231,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				}
 				break;
 			case ZHUANGZHAI:
-				parseJsonThread3 = null;
-				
+
 				tv_zz3.setText(zzStr);
 				tv_zz4.setText(zzStr);
 				break;
@@ -248,23 +242,11 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 					tv_lat4.setText("船队："+sc.getContact());
 				}
 				break;
-//			case showShipImg:
-//				showShipImg();
-//				parseJsonThread3 = new Thread(new Runnable() {
-//					@Override
-//					public void run() {
-//						loadDate2();
-//					}
-//				});
-//				parseJsonThread3.setDaemon(true);
-//				parseJsonThread3.start();
-//				break;
 			case showShipOverlay:
-				allOverlayThread = null;
-				
+
 				float curz = (Float) msg.obj;
 				
-				if (optionsList.size() > 0) {
+//				if (optionsList.size() > 0) {
 					
 					overlayManager.removeFromMap();
 					overlayManager.setData(optionsList);
@@ -277,7 +259,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 						overlayManager.zoomToSpan();
 						center = false;
 					}
-				}
+//				}
 				
 				break;
 
@@ -315,6 +297,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		dataLoader = new Data_loader();
+		pool = Executors.newFixedThreadPool(5);
 //		mImageLoader = ImageLoader.getInstance();
 //		mImageLoader.init(GlobalApplication.getInstance().getImageLoaderConfiguration());
 		
@@ -345,22 +328,24 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		mImageLoader = ImageLoader.getInstance();
 		mImageLoader.init(GlobalApplication.getInstance().getImageLoaderConfiguration());
 		
-		parseJsonThread4 = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				loadUnReadMsgs();
-			}
-		});
-		parseJsonThread4.setDaemon(true);
-		parseJsonThread4.start();
+		if(pool!=null)
+			pool.execute(new LoadUnReadMsg());
 		
 		super.onStart();
 	}
+
+	class LoadUnReadMsg implements Runnable{
+		@Override
+		public void run() {
+			loadUnReadMsgs();
+		}
+	}
+
 	class DistributeTimerTask extends TimerTask{
 
 		@Override
 		public void run() {
-			loadDataOneMin();
+			loadDataOneMin(false);
 		}
 	};
 	private void initView() { 
@@ -442,19 +427,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		shipzx.setVisibility(View.GONE);
 		
 	}
-	private void initShipCooordData(){
-		
-		if (shipCooordTimer != null) {
-			if (distributeTask != null) {
-				distributeTask.cancel(); // 将原任务从队列中移除
-			}
-		}else{
-			shipCooordTimer = new Timer(true);
-		}
-		distributeTask = new DistributeTimerTask();
-		shipCooordTimer.schedule(distributeTask,0,1*60*1000); 
-	}
-	
+
 	   public static String getAssetsCacheFile(Context context,String fileName)   {
 	        File cacheFile = new File(context.getCacheDir(), fileName);
 	        try {
@@ -821,7 +794,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		}
 	}
 	
-	class UserImgPowerThread extends Thread {
+	class UserImgPowerThread implements  Runnable {
 
 		@Override
 		public void run() {
@@ -859,9 +832,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 
 	private void loadShipImg() {
 		if(curShip!=null){
-//			userImgPowerThread = new UserImgPowerThread();
-//			userImgPowerThread.start();
-			
+
 			List<ShipModelNoData> list = maplist.get(curShip.getShipID());
 			if(list == null){
 				
@@ -901,17 +872,19 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			getShipControlData();
 			showShipImg();
 			
-			parseJsonThread3 = new Thread(new Runnable() {
-				@Override
-				public void run() {
-					loadDate2();
-				}
-			});
-			parseJsonThread3.setDaemon(true);
-			parseJsonThread3.start();
+			if(pool!=null)
+				pool.execute(new LoadDate2());
 		}
 		
 	}
+
+	class LoadDate2 implements Runnable{
+		@Override
+		public void run() {
+			loadDate2();
+		}
+	}
+
 	private void showShipImg(){
 		if(curShip == null)
 			 return;
@@ -1028,12 +1001,12 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		if (shipChannelCacheImg.exists()) {
 			Bitmap b = Util.getLoacalBitmap(shipChannelCacheImg.getAbsolutePath());
 			if (b != null) {
-				view.setImageDrawable(AppAdapter.createDrawable(mContext, b, null, curShip.getGpsTime()));
+				view.setImageDrawable(AppAdapter.createDrawable( b, null, curShip.getGpsTime()));
 				return;
 			}
 		}
 
-		view.setImageDrawable(AppAdapter.createDrawable(mContext, defaultBitmap, null, curShip.getGpsTime()));
+		view.setImageDrawable(AppAdapter.createDrawable(defaultBitmap, null, curShip.getGpsTime()));
 	}
 	
 	public static void displayImageForPolice(ImageLoader mImageLoader,final Context mContext,ImageView view,final ShipCooordData curShip,final int i ){
@@ -1052,7 +1025,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			@Override
 			public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
 //				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(getActivity(),loadedImage,null,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(mContext,loadedImage,null,curShip.getGpsTime()));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(loadedImage,null,curShip.getGpsTime()));
 				
 				File shipCacheDir = new File(cacheDir + "/" +curShip.getShipID());
 				if (!shipCacheDir.exists()) {  
@@ -1073,7 +1046,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 //				((ImageView)view).setDrawingCacheEnabled(false);
 				
 				((ImageView)view).setDrawingCacheEnabled(true);
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(mContext,((ImageView)view).getDrawingCache(),null,curShip.getGpsTime()));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(((ImageView)view).getDrawingCache(),null,curShip.getGpsTime()));
 				((ImageView)view).setDrawingCacheEnabled(false);
 			}
 			
@@ -1099,7 +1072,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			@Override
 			public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
 //				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(getActivity(),loadedImage,null,DateUtils.getTime("yyyy-MM-dd HH:mm:ss")));
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(mContext,loadedImage,null,curShip.getGpsTime()));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(loadedImage,null,curShip.getGpsTime()));
 				
 				File shipCacheDir = new File(cacheDir + "/" +curShip.getShipID());
 				if (!shipCacheDir.exists()) {  
@@ -1127,7 +1100,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 					Bitmap b = Util.getLoacalBitmap(shipChannelCacheImg.getAbsolutePath());
 					if(b!=null){
 						((ImageView)view).setDrawingCacheEnabled(true);
-						((ImageView)view).setImageDrawable(AppAdapter.createDrawable(mContext,b,null,curShip.getGpsTime()));
+						((ImageView)view).setImageDrawable(AppAdapter.createDrawable(b,null,curShip.getGpsTime()));
 						((ImageView)view).setDrawingCacheEnabled(false);
 						
 						return;
@@ -1135,7 +1108,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				}
 				
 				((ImageView)view).setDrawingCacheEnabled(true);
-				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(mContext,((ImageView)view).getDrawingCache(),null,curShip.getGpsTime()));
+				((ImageView)view).setImageDrawable(AppAdapter.createDrawable(((ImageView)view).getDrawingCache(),null,curShip.getGpsTime()));
 				((ImageView)view).setDrawingCacheEnabled(false);
 				
 				loadBigImage(viewArea, i);
@@ -1248,7 +1221,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 
 	private boolean setCenterFlag = true;
 
-	protected synchronized void loadDataOneMin() {
+	protected synchronized void loadDataOneMin(final boolean isChangGroupReLoad) {
 		Map<String, Object> apiParams = new HashMap<String, Object>();
 		
 		dataLoader.getZd_ApiResult(new AsyncHttpResponseHandler() {
@@ -1258,47 +1231,8 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 				if(!isAdded()){
 					return;
 				}
-				parseJsonThread = new Thread(new Runnable() {
-					@Override
-					public void run() {
-//						shipCooordDatas.clear();
-						ArrayList<ShipCooordData> shipCooordDatas2 = ParseJson.parserHome(arg2);
-						
-						if(shipCooordDatas2.size()>0){
-							SharedPreferences sp = getActivity().getSharedPreferences(ApplicationConstants.SearchShipData_SharedPreferences, Context.MODE_PRIVATE);
-							Editor editor = sp.edit();
-							Gson gson = new Gson();
-							String s = gson.toJson(shipCooordDatas2);
-							editor.putString("SearchShipData", s);
-							editor.commit();
-							
-//							mBinderService.startThreadLoadImg(shipCooordDatas2);
-							
-							if(curShip!=null){
-								for(ShipCooordData scd:shipCooordDatas2){
-									if(curShip.getShipID().equals(scd.getShipID())){
-										curShip = scd;
-										break;
-									}
-								}
-							}
-							
-							shipCooordDatas.clear();
-							shipCooordDatas.addAll(shipCooordDatas2);
-							
-						}
-						Message message = new Message();
-						message.what = 1;
-						handler.sendMessage(message);
-						
-//						else{
-//							loadCache();
-//						}
-					}
-					
-				});
-				parseJsonThread.setDaemon(true);
-				parseJsonThread.start();
+				if(pool!=null)
+					pool.execute(new ParserHome(arg2,isChangGroupReLoad));
 			}
 			@Override
 			public void onFailure(Throwable error, String content) {
@@ -1335,6 +1269,54 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			}
 		}, ApplicationUrls.pageHomeGps+getCurrTimeStr(), apiParams, "get");
 	}
+
+	class ParserHome implements Runnable{
+		String arg2 = "";
+		boolean isChangGroupReLoad = false;
+		public ParserHome(String arg2,boolean isChangGroupReLoad) {
+			this.arg2 = arg2;
+			this.isChangGroupReLoad = isChangGroupReLoad;
+		}
+
+		@Override
+		public void run() {
+//						shipCooordDatas.clear();
+			ArrayList<ShipCooordData> shipCooordDatas2 = ParseJson.parserHome(arg2);
+
+			if(shipCooordDatas2.size()>0){
+				SharedPreferences sp = getActivity().getSharedPreferences(ApplicationConstants.SearchShipData_SharedPreferences, Context.MODE_PRIVATE);
+				Editor editor = sp.edit();
+				Gson gson = new Gson();
+				String s = gson.toJson(shipCooordDatas2);
+				editor.putString("SearchShipData", s);
+				editor.commit();
+
+//							mBinderService.startThreadLoadImg(shipCooordDatas2);
+
+				if(curShip!=null){
+					for(ShipCooordData scd:shipCooordDatas2){
+						if(curShip.getShipID().equals(scd.getShipID())){
+							curShip = scd;
+							break;
+						}
+					}
+				}
+
+				shipCooordDatas.clear();
+				shipCooordDatas.addAll(shipCooordDatas2);
+
+			}else if(isChangGroupReLoad){
+				shipCooordDatas.clear();
+			}
+			Message message = new Message();
+			message.what = 1;
+			handler.sendMessage(message);
+
+//						else{
+//							loadCache();
+//						}
+		}
+	}
 	
 	private void loadCache(){
 		SharedPreferences sp = getActivity().getSharedPreferences("SearchShipData", Context.MODE_PRIVATE);
@@ -1367,26 +1349,10 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		super.onDestroy();
 		mapHistory.onDestroy();
 		getActivity().unregisterReceiver(receiver);
-		
-		if(parseJsonThread!=null){
-			parseJsonThread.interrupt();
-			parseJsonThread = null;
-		}
-		if(parseJsonThread3!=null){
-			parseJsonThread3.interrupt();
-			parseJsonThread3 = null;
-		}
-		if(parseJsonThread4!=null){
-			parseJsonThread4.interrupt();
-			parseJsonThread4 = null;
-		}
-		if(userImgPowerThread!=null){
-			userImgPowerThread.interrupt();
-			userImgPowerThread = null;
-		}
-		if(allOverlayThread!=null){
-			allOverlayThread.interrupt();
-			allOverlayThread = null;
+
+		if(pool!=null){
+			pool.shutdownNow();
+			pool = null;
 		}
 		
 		if(shipCooordTimer!=null){
@@ -1498,7 +1464,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 		return bitmap;
     }
     
-    class AllOverlayThread extends Thread{
+    class AllOverlayThread implements Runnable{
     	float curz;
     	public AllOverlayThread(float curz){
     		this.curz = curz;
@@ -1625,9 +1591,13 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 //		if(curz>smallz)
 //			mapAddPort(getActivity(),bmHistory);
 ////		optionsList.clear();
-		if (shipCooordDatas.size() > 0) {
-			allOverlayThread = new AllOverlayThread(curz);
-			allOverlayThread.start();
+//		if (shipCooordDatas.size() > 0) {
+			if(pool!=null){
+				pool.execute(new AllOverlayThread(curz));
+			}
+
+//			allOverlayThread = new AllOverlayThread(curz);
+//			allOverlayThread.start();
 			
 //			for (ShipCooordData pd : shipCooordDatas) {
 //				// LatLng point = MapConvertUtil.convertFromGPS(new
@@ -1722,7 +1692,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 //					optionsList.add(textOption);
 //				}
 //			}
-		}
+//		}
 //		if (optionsList.size() > 0) {
 //			overlayManager = new ShipOverlayManager(bmHistory);
 //			overlayManager.removeFromMap();
@@ -2043,8 +2013,9 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 
 
 	public void loadChang() {
+		boolean isChangGroupReLoad = true;
 		hideCurrShip();
-		loadDataOneMin();
+		loadDataOneMin(isChangGroupReLoad);
 	}
 
 
@@ -2094,7 +2065,6 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 			@Override
 			public void onFailure(Throwable error, String content) {
 				super.onFailure(error, content);
-				parseJsonThread4 = null;
 			}
 		}, ApplicationUrls.policeList+NewContentFragment.getUrlTimeStr(startTime)+"&EndTime="+NewContentFragment.getUrlTimeStr(endTime), apiParams, "get");	
 		}
@@ -2102,14 +2072,9 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 	private class ZdUnReadMsgBroadcastReceiver extends BroadcastReceiver {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			parseJsonThread4 = new Thread(new Runnable() {
-				@Override
-				public void run() {
-					loadUnReadMsgs();
-				}
-			});
-			parseJsonThread4.setDaemon(true);
-			parseJsonThread4.start();
+			if(pool!=null)
+				pool.execute(new LoadUnReadMsg());
+
 //			handler.sendEmptyMessage(7);
 				// 记得把广播给终结掉
 				abortBroadcast();

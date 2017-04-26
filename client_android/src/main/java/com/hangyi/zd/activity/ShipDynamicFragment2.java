@@ -439,14 +439,14 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 				imgBig2.setVisibility(View.VISIBLE);
 				String imgStr21 = getUrl(curShip,channels.get(i-1));
 				if(imgStr21 !=null )
-					imgBig2.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+					imgBig2.setImageDrawable(AppAdapter.createDrawable( BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 			} else if(size == 3){
 				if(i ==3){
 					imgBig4.setVisibility(View.VISIBLE);
 					
 					String imgStr21 = getUrl(curShip,channels.get(i-1));
 					if(imgStr21 !=null )
-						imgBig4.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+						imgBig4.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 //						imgBig4.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 					break;
 				}
@@ -456,7 +456,7 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 				
 				String imgStr21 = getUrl(curShip,channels.get(i-1));
 				if(imgStr21 !=null )
-					view.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+					view.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 //					view.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 			}else {
 				
@@ -466,7 +466,7 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 				
 				String imgStr21 = getUrl(curShip,channels.get(i-1));
 				if(imgStr21 !=null )
-					view.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+					view.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 //					view.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 			}
 		}
@@ -533,7 +533,7 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 						img2.setVisibility(View.VISIBLE);
 						String imgStr12 = getUrl(curShip,channels.get(i-1));
 						if(imgStr12 !=null )
-							img2.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr12), null, curShip.getGpsTime()));
+							img2.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr12), null, curShip.getGpsTime()));
 //						img2.setImageBitmap(BitmapFactory.decodeFile(imgStr12));
 					} else if(size == 3){
 						if(i ==3){
@@ -541,7 +541,7 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 							
 							String imgStr21 = getUrl(curShip,channels.get(i-1));
 							if(imgStr21 !=null )
-								img4.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+								img4.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 //							img4.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 							break;
 						}
@@ -551,7 +551,7 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 						
 						String imgStr21 = getUrl(curShip,channels.get(i-1));
 						if(imgStr21 !=null )
-							view.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+							view.setImageDrawable(AppAdapter.createDrawable(BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 //						view.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 					}else {
 						
@@ -561,7 +561,7 @@ public class ShipDynamicFragment2 extends Fragment implements OnClickListener,
 						
 						String imgStr21 = getUrl(curShip,channels.get(i-1));
 						if(imgStr21 !=null )
-							view.setImageDrawable(AppAdapter.createDrawable(getActivity(), BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
+							view.setImageDrawable(AppAdapter.createDrawable( BitmapFactory.decodeFile(imgStr21), null, curShip.getGpsTime()));
 //						view.setImageBitmap(BitmapFactory.decodeFile(imgStr21));
 					}
 				}

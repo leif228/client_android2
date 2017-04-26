@@ -396,7 +396,6 @@ public class Data_loader {
 	 * 获取更新版本
 	 * 
 	 * @param handler
-	 * @param cid
 	 */
 	public void getVersion(AsyncHttpResponseHandler handler) {
 
