@@ -1,6 +1,6 @@
 package com.eyunda.third;
 
-import com.eyunda.third.chat.mina.MessageThread;
+//import com.eyunda.third.chat.mina.MessageThread;
 
 import android.app.Service;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 
 public class PushService extends Service {
-	MessageThread thread;
+//	MessageThread thread;
 	private PowerManager.WakeLock wakeLock;
 	
 	@Override
@@ -26,8 +26,8 @@ public class PushService extends Service {
     	wakeLock = ((PowerManager) getSystemService(Context.POWER_SERVICE)).newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "run");
     	wakeLock.acquire();
     	
-    	thread = new MessageThread();
-    	thread.start();
+//    	thread = new MessageThread();
+//    	thread.start();
     }   
 
     @Override  
@@ -40,6 +40,6 @@ public class PushService extends Service {
     		wakeLock.release();
     	wakeLock = null;
     	
-    	thread.interrupt();
+//    	thread.interrupt();
     }   
 }

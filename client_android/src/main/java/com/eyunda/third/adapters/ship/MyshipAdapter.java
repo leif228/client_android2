@@ -24,12 +24,12 @@ import android.widget.Toast;
 
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.activities.ship.ConfirmPublicActivity;
-import com.eyunda.third.activities.ship.MyshipActivity;
-import com.eyunda.third.activities.ship.ShipDataSource;
-import com.eyunda.third.activities.ship.ShipDuesActivity;
-import com.eyunda.third.activities.ship.ShipGasOrderActivity;
-import com.eyunda.third.activities.ship.ShipinfoActivity;
+//import com.eyunda.third.activities.ship.ConfirmPublicActivity;
+//import com.eyunda.third.activities.ship.MyshipActivity;
+//import com.eyunda.third.activities.ship.ShipDataSource;
+//import com.eyunda.third.activities.ship.ShipDuesActivity;
+//import com.eyunda.third.activities.ship.ShipGasOrderActivity;
+//import com.eyunda.third.activities.ship.ShipinfoActivity;
 import com.eyunda.third.domain.enumeric.CollectCode;
 import com.eyunda.third.domain.ship.ShipData;
 import com.eyunda.third.loaders.Data_loader;
@@ -238,13 +238,13 @@ public class MyshipAdapter extends BaseAdapter {
 			HashMap<String, Object> curMap = (HashMap<String, Object>) mAppList.get(position);
 			// shipId = curMap.get("shipId").toString();
 			if (vid == holder.btnEdit.getId()) {
-				Intent intent = new Intent(mContext, ShipinfoActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
-				bundle.putSerializable("shipInfo", (ShipData) curMap.get("shipData"));
-				intent.putExtras(bundle);
-				// shipData = (ShipData) curMap.get("shipData");
-				mContext.startActivity(intent);
+//				Intent intent = new Intent(mContext, ShipinfoActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
+//				bundle.putSerializable("shipInfo", (ShipData) curMap.get("shipData"));
+//				intent.putExtras(bundle);
+//				// shipData = (ShipData) curMap.get("shipData");
+//				mContext.startActivity(intent);
 
 			}
 
@@ -274,33 +274,33 @@ public class MyshipAdapter extends BaseAdapter {
 			}
 			if (vid == holder.btnSetting.getId()) {
 				// 设置数据来源
-				Intent intent = new Intent(mContext, ShipDataSource.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
-				bundle.putString("mmsi", curMap.get("MMSI").toString().substring(5));// shipId
-				intent.putExtras(bundle);
-				mContext.startActivity(intent);
+//				Intent intent = new Intent(mContext, ShipDataSource.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
+//				bundle.putString("mmsi", curMap.get("MMSI").toString().substring(5));// shipId
+//				intent.putExtras(bundle);
+//				mContext.startActivity(intent);
 			}
 			if (vid == holder.btnPower.getId()) {
 
 			}
 			if (vid == holder.btnDues.getId()) {
 				// 权限
-				Intent intent = new Intent(mContext, ShipDuesActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
-				bundle.putString("shipName", curMap.get("shipName").toString());// shipId
-				intent.putExtras(bundle);
-				mContext.startActivity(intent);
+//				Intent intent = new Intent(mContext, ShipDuesActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
+//				bundle.putString("shipName", curMap.get("shipName").toString());// shipId
+//				intent.putExtras(bundle);
+//				mContext.startActivity(intent);
 			}
 			if (vid == holder.btnGasOrder.getId()) {
 				// 权限
-				Intent intent = new Intent(mContext, ShipGasOrderActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
-				bundle.putString("shipName", curMap.get("shipName").toString());// shipId
-				intent.putExtras(bundle);
-				mContext.startActivity(intent);
+//				Intent intent = new Intent(mContext, ShipGasOrderActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("shipId", curMap.get("shipId").toString());// shipId
+//				bundle.putString("shipName", curMap.get("shipName").toString());// shipId
+//				intent.putExtras(bundle);
+//				mContext.startActivity(intent);
 			}
 			if (vid == holder.btnJudge.getId()) {
 				new AlertDialog.Builder(mContext).setTitle("提交船舶审核信息").setMessage("确定要提交审核吗？")
@@ -377,15 +377,15 @@ public class MyshipAdapter extends BaseAdapter {
 
 			@Override
 			public void onSuccess(String arg0) {
-				pd.dismiss();
-				Gson gson = new Gson();
-				HashMap<String, Object> result = gson.fromJson((String) arg0, new TypeToken<Map<String, Object>>() {
-				}.getType());
-				if (result.get("returnCode").equals("Success")) {
-					Intent intent = new Intent(mContext, MyshipActivity.class);
-					mContext.startActivity(intent);
-				}
-				Toast.makeText(mContext, result.get("message").toString(), Toast.LENGTH_SHORT).show();
+//				pd.dismiss();
+//				Gson gson = new Gson();
+//				HashMap<String, Object> result = gson.fromJson((String) arg0, new TypeToken<Map<String, Object>>() {
+//				}.getType());
+//				if (result.get("returnCode").equals("Success")) {
+//					Intent intent = new Intent(mContext, MyshipActivity.class);
+//					mContext.startActivity(intent);
+//				}
+//				Toast.makeText(mContext, result.get("message").toString(), Toast.LENGTH_SHORT).show();
 			}
 
 			@Override
@@ -404,29 +404,29 @@ public class MyshipAdapter extends BaseAdapter {
 
 	// 取消发布
 	public void unpublish(int position) {
-		Map<String, Object> ida = mAppList.get(position);
-		Long shipId = Long.parseLong((String) ida.get("shipId"));
-		Intent intent = new Intent(mContext, ConfirmPublicActivity.class);
-		intent.putExtra("id", shipId);
-		intent.putExtra("page", 1);
-		intent.putExtra("pubFlag", false);
-		intent.putExtra("source", 1);
-		mContext.startActivity(intent);
-		((Activity) mContext).finish();
+//		Map<String, Object> ida = mAppList.get(position);
+//		Long shipId = Long.parseLong((String) ida.get("shipId"));
+//		Intent intent = new Intent(mContext, ConfirmPublicActivity.class);
+//		intent.putExtra("id", shipId);
+//		intent.putExtra("page", 1);
+//		intent.putExtra("pubFlag", false);
+//		intent.putExtra("source", 1);
+//		mContext.startActivity(intent);
+//		((Activity) mContext).finish();
 
 	}
 
 	// 发布
 	public void publish(final int position) {
-		Map<String, Object> ida = mAppList.get(position);
-		Long shipId = Long.parseLong((String) ida.get("shipId"));
-		Intent intent = new Intent(mContext, ConfirmPublicActivity.class);
-		intent.putExtra("id", shipId);
-		intent.putExtra("page", 1);
-		intent.putExtra("pubFlag", true);
-		intent.putExtra("source", 1);
-		mContext.startActivity(intent);
-		((Activity) mContext).finish();
+//		Map<String, Object> ida = mAppList.get(position);
+//		Long shipId = Long.parseLong((String) ida.get("shipId"));
+//		Intent intent = new Intent(mContext, ConfirmPublicActivity.class);
+//		intent.putExtra("id", shipId);
+//		intent.putExtra("page", 1);
+//		intent.putExtra("pubFlag", true);
+//		intent.putExtra("source", 1);
+//		mContext.startActivity(intent);
+//		((Activity) mContext).finish();
 	}
 
 	public void addItem(Map<String, Object> item) {

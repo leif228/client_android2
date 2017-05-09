@@ -29,19 +29,8 @@ import com.eyunda.main.view.MenuHorizontalScrollView;
 import com.eyunda.main.view.callback.SizeCallBackForMenu;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.account.WalletHomeActivity;
-import com.eyunda.third.activities.chat.ContactRoleListActivity;
-import com.eyunda.third.activities.home.HomeCategoryActivity;
-import com.eyunda.third.activities.home.HomeSearchResultActivity;
-import com.eyunda.third.activities.home.UserSiteActivity;
-import com.eyunda.third.activities.notice.NoticeListActivity;
-import com.eyunda.third.activities.order.MyOrderActivity;
-import com.eyunda.third.activities.ship.DynamicActivity;
-import com.eyunda.third.activities.ship.ShipMoniterActivity;
 import com.eyunda.third.adapters.CommonAdapter;
 import com.eyunda.third.adapters.ViewHolder;
-import com.eyunda.third.adapters.chat.domain.User;
-import com.eyunda.third.chat.event.LoginStatusCode;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.account.OperatorData;
 import com.eyunda.third.domain.account.UserData;
@@ -137,7 +126,7 @@ public class PageHomeMainActivity extends BaseActivity {
 		
 		loadData();
 		scrollTop();
-		currentUser = GlobalApplication.getInstance().getUserData();
+//		currentUser = GlobalApplication.getInstance().getUserData();
 		
 		
 	}
@@ -215,11 +204,11 @@ public class PageHomeMainActivity extends BaseActivity {
 			if (arg0.getId() == R.id.top_left_but)// 左边菜单
 				scrollView.clickMenuBtn();
 			else if (arg0.getId() == R.id.top_right_but){
-				if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-					startActivity(new Intent(PageHomeMainActivity.this,CaptureActivity.class));
-				}else{
-					Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
-				}
+//				if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//					startActivity(new Intent(PageHomeMainActivity.this,CaptureActivity.class));
+//				}else{
+//					Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
+//				}
 			}
 		}
 	};
@@ -234,13 +223,13 @@ public class PageHomeMainActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				
-				Intent intent = new Intent(getApplicationContext(),HomeSearchResultActivity.class);
-				Bundle bundleAgent = new Bundle();
-				bundleAgent.putString("param", UserRoleCode.broker.name());
-				bundleAgent.putString("title", "代理人");
-				bundleAgent.putLong("type",HomeCategoryActivity.MSG_DLR_LIST);
-				intent.putExtras(bundleAgent);
-				startActivity(intent);
+//				Intent intent = new Intent(getApplicationContext(),HomeSearchResultActivity.class);
+//				Bundle bundleAgent = new Bundle();
+//				bundleAgent.putString("param", UserRoleCode.broker.name());
+//				bundleAgent.putString("title", "代理人");
+//				bundleAgent.putLong("type",HomeCategoryActivity.MSG_DLR_LIST);
+//				intent.putExtras(bundleAgent);
+//				startActivity(intent);
 				
 				//startActivity(new Intent(getApplicationContext(), NoticeListActivity.class));
 			}
@@ -263,12 +252,12 @@ public class PageHomeMainActivity extends BaseActivity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				OperatorData nd = (OperatorData)parent.getAdapter().getItem(position);
-				Intent intent = new Intent(PageHomeMainActivity.this, UserSiteActivity.class);
-				User user = new User();
-				user.setUserData(nd.getUserData());
-				intent.putExtra("toChatUser", user);
-				startActivity(intent);
+//				OperatorData nd = (OperatorData)parent.getAdapter().getItem(position);
+//				Intent intent = new Intent(PageHomeMainActivity.this, UserSiteActivity.class);
+//				User user = new User();
+//				user.setUserData(nd.getUserData());
+//				intent.putExtra("toChatUser", user);
+//				startActivity(intent);
 			}
 		});
 	}
@@ -313,63 +302,63 @@ public class PageHomeMainActivity extends BaseActivity {
 	//动态按钮
 	@OnClick({R.id.imageview3, R.id.textView3}) 
 	void clickInsurance(){
-		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-			Intent  intent= new Intent(getApplicationContext(), DynamicActivity.class);
-			startActivity(intent);
-		}else{
-			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
-		}
+//		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//			Intent  intent= new Intent(getApplicationContext(), DynamicActivity.class);
+//			startActivity(intent);
+//		}else{
+//			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
+//		}
 	}
 	//联系人按钮
 	@OnClick({R.id.imageview4, R.id.textView4}) 
 	public void clickContect(){
-		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-				startActivity(new Intent(PageHomeMainActivity.this,
-						ContactRoleListActivity.class));
-		}else{
-			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
-		}
+//		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//				startActivity(new Intent(PageHomeMainActivity.this,
+//						ContactRoleListActivity.class));
+//		}else{
+//			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
+//		}
 	}
 	//合同按钮
 	@OnClick({R.id.imageview5, R.id.textView5}) 
 	public void clickOrder(){
-		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-			Intent  intent= new Intent(getApplicationContext(), MyOrderActivity.class);
-			startActivity(intent);
-		}else{
-			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
-		}
+//		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//			Intent  intent= new Intent(getApplicationContext(), MyOrderActivity.class);
+//			startActivity(intent);
+//		}else{
+//			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
+//		}
 	}
 
 	//监控按钮
 	@OnClick({R.id.imageview7, R.id.textView7}) 
 	public void clickMonitor(){
-		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-			startActivity(new Intent(getApplicationContext(),ShipMoniterActivity.class));
-		}else{
-			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
-		}
+//		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//			startActivity(new Intent(getApplicationContext(),ShipMoniterActivity.class));
+//		}else{
+//			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
+//		}
 	}
 	//钱包按钮
 	@OnClick({R.id.imageview8, R.id.textView8}) 
 	public void clickQianbao(){
-		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-			Intent  intent= new Intent(getApplicationContext(), WalletHomeActivity.class);
-			startActivity(intent);
-		}else{
-			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
-		}
+//		if(GlobalApplication.getInstance().getUserData() != null && GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//			Intent  intent= new Intent(getApplicationContext(), WalletHomeActivity.class);
+//			startActivity(intent);
+//		}else{
+//			Toast.makeText(getApplicationContext(), "请先登陆！", Toast.LENGTH_SHORT).show();
+//		}
 
 	}
 	//代理人按钮
 	@OnClick({R.id.imageview6, R.id.textView6}) 
 	public void clickHelp(){
-		Intent intent = new Intent(getApplicationContext(),HomeSearchResultActivity.class);
-		Bundle bundleAgent = new Bundle();
-		bundleAgent.putString("param", UserRoleCode.broker.name());
-		bundleAgent.putString("title", "代理人");
-		bundleAgent.putLong("type",HomeCategoryActivity.MSG_DLR_LIST);
-		intent.putExtras(bundleAgent);
-		startActivity(intent);
+//		Intent intent = new Intent(getApplicationContext(),HomeSearchResultActivity.class);
+//		Bundle bundleAgent = new Bundle();
+//		bundleAgent.putString("param", UserRoleCode.broker.name());
+//		bundleAgent.putString("title", "代理人");
+//		bundleAgent.putLong("type",HomeCategoryActivity.MSG_DLR_LIST);
+//		intent.putExtras(bundleAgent);
+//		startActivity(intent);
 	}
 }

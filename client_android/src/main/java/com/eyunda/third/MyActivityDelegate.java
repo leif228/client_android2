@@ -24,20 +24,20 @@ public class MyActivityDelegate {
 
 		if (isNetworkConnected(ac)) {
 
-			String sessionId = GlobalApplication.getInstance().getUserData().getSessionId();
-			if (sessionId.equals("")) {
-				System.out.println("MyActivityDelegate内 sessionId丢失了");
-				String localClassName = ac.getLocalClassName();
-
-				NeedSessionIdCode needSessionIdCode = NeedSessionIdCode.getByClassPath(localClassName);
-					if (needSessionIdCode!=null) {
-						// 从SplashActivity自动登入
-						Intent intent = new Intent(ac.getApplication(),
-								SplashActivity.class).putExtra("gotoActivity",needSessionIdCode.getGotoPath());
-						ac.startActivity(intent);
-						ac.finish();
-					}
-			}
+//			String sessionId = GlobalApplication.getInstance().getUserData().getSessionId();
+//			if (sessionId.equals("")) {
+//				System.out.println("MyActivityDelegate内 sessionId丢失了");
+//				String localClassName = ac.getLocalClassName();
+//
+//				NeedSessionIdCode needSessionIdCode = NeedSessionIdCode.getByClassPath(localClassName);
+//					if (needSessionIdCode!=null) {
+//						// 从SplashActivity自动登入
+//						Intent intent = new Intent(ac.getApplication(),
+//								SplashActivity.class).putExtra("gotoActivity",needSessionIdCode.getGotoPath());
+//						ac.startActivity(intent);
+//						ac.finish();
+//					}
+//			}
 		} else {
 			Toast.makeText(ac.getBaseContext(), "网络连接不上", Toast.LENGTH_LONG)
 					.show();

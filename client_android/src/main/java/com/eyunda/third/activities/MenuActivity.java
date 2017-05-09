@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 import com.eyunda.main.data.Image_loader;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.order.PayActivity;
-import com.eyunda.third.activities.user.UserInfoActivity;
+//import com.eyunda.third.activities.order.PayActivity;
+//import com.eyunda.third.activities.user.UserInfoActivity;
 import com.hangyi.zd.R;
 import com.hangyi.zd.activity.AccountInfoActivity;
 import com.hangyi.zd.activity.LSShipListActivity;

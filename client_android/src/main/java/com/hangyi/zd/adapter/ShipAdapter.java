@@ -6,8 +6,8 @@ import java.util.Map;
 
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.activities.map.ShipLatestDynamicActivity;
-import com.eyunda.third.adapters.ship.MyshipAdapter;
+//import com.eyunda.third.activities.map.ShipLatestDynamicActivity;
+//import com.eyunda.third.adapters.ship.MyshipAdapter;
 import com.eyunda.third.loaders.Data_loader;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.UserPowerShipData;

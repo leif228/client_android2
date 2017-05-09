@@ -3,7 +3,7 @@ package com.hangyi.zd.activity.dialog;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.adapters.chat.widget.photoview.PhotoView;
+//import com.eyunda.third.adapters.chat.widget.photoview.PhotoView;
 import com.eyunda.third.domain.location.ShipCooordData;
 import com.hangyi.zd.R;
 import com.hangyi.zd.activity.NewContentFragment;
@@ -49,7 +49,6 @@ public class ViewArea extends FrameLayout
      * @param b 
      * @param context
      * @param view 
-     * @param resId 图片资源id,当然也可以用别的方式获取图片
      */
     public ViewArea(final CustomDialog.Builder b, Context context,ShipCooordData curShip,int i, ImageView view)
     {

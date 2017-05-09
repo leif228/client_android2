@@ -27,9 +27,9 @@ import com.eyunda.main.update.UpdateManager;
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.viewPage.ViewPagerActivity;
-import com.eyunda.third.chat.event.LoginStatusCode;
-import com.eyunda.third.chat.utils.SIMCardInfo;
+//import com.eyunda.third.activities.viewPage.ViewPagerActivity;
+//import com.eyunda.third.chat.event.LoginStatusCode;
+//import com.eyunda.third.chat.utils.SIMCardInfo;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.UpdateInfoData;
 import com.eyunda.third.domain.account.UserData;
@@ -76,10 +76,10 @@ public class SplashTwoActivity extends CommonActivity {
 			editor.putBoolean("isfirst", false);
 			editor.commit();
 			Intent intent = new Intent();
-			intent.setClass(getApplicationContext(), ViewPagerActivity.class);
-			startActivity(intent);
-			finish();
-			return;
+//			intent.setClass(getApplicationContext(), ViewPagerActivity.class);
+//			startActivity(intent);
+//			finish();
+//			return;
 		}
 
 		if (updateLater) {
@@ -88,11 +88,11 @@ public class SplashTwoActivity extends CommonActivity {
 					"eyundaBindingCode", MODE_PRIVATE);
 			String bindingCode = sp.getString("bindingCode", "");
 
-			String simCardNo = SIMCardInfo.getInstance(ctx).getSimCardNumber();
-
-			autoLogin(bindingCode, simCardNo);
-
-			initData();
+//			String simCardNo = SIMCardInfo.getInstance(ctx).getSimCardNumber();
+//
+//			autoLogin(bindingCode, simCardNo);
+//
+//			initData();
 
 		}
 		uploadBug();
@@ -140,8 +140,8 @@ public class SplashTwoActivity extends CommonActivity {
 							editor.commit();
 
 							// 保存sessionId
-							GlobalApplication.getInstance().setUserData(userData);
-							GlobalApplication.getInstance().setLoginStatus(LoginStatusCode.logined);
+//							GlobalApplication.getInstance().setUserData(userData);
+//							GlobalApplication.getInstance().setLoginStatus(LoginStatusCode.logined);
 
 							// 是否进入gotoActivity
 							startActivity(new Intent(
@@ -154,9 +154,9 @@ public class SplashTwoActivity extends CommonActivity {
 						}
 					} else {
 						// 自动登入失败时
-						GlobalApplication.getInstance().setUserData(null);
-						GlobalApplication.getInstance().setLoginStatus(
-								LoginStatusCode.noLogin);
+//						GlobalApplication.getInstance().setUserData(null);
+//						GlobalApplication.getInstance().setLoginStatus(
+//								LoginStatusCode.noLogin);
 
 						SharedPreferences sp = SplashTwoActivity.this
 								.getSharedPreferences("eyundaBindingCode",
@@ -182,9 +182,9 @@ public class SplashTwoActivity extends CommonActivity {
 					super.onFailure(error, content);
 
 					// 自动登入失败时
-					GlobalApplication.getInstance().setUserData(null);
-					GlobalApplication.getInstance().setLoginStatus(
-							LoginStatusCode.noLogin);
+//					GlobalApplication.getInstance().setUserData(null);
+//					GlobalApplication.getInstance().setLoginStatus(
+//							LoginStatusCode.noLogin);
 
 					if (content != null && content.equals("can't resolve host"))
 						Toast.makeText(SplashTwoActivity.this, "网络连接异常",

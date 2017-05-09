@@ -106,7 +106,7 @@ public class SynData_loader extends AsyncHttpClient {
 		//判断是否存在sessionID
 		String sessionId = "";
 		if(GlobalApplication.getInstance() != null){
-			sessionId = GlobalApplication.getInstance().getUserData().getSessionId();
+//			sessionId = GlobalApplication.getInstance().getUserData().getSessionId();
 		}
 		if(!apiParams.containsKey(ApplicationConstants.SESSIONID)){
 			apiParams.put(ApplicationConstants.SESSIONID, sessionId);

@@ -24,9 +24,9 @@ import android.widget.Toast;
 
 import com.eyunda.main.CommonListActivity;
 import com.eyunda.main.data.Data_loader;
-import com.eyunda.third.activities.chat.ChatActivity;
-import com.eyunda.third.activities.ship.ShipPreviewActivity;
-import com.eyunda.third.adapters.chat.domain.User;
+//import com.eyunda.third.activities.chat.ChatActivity;
+//import com.eyunda.third.activities.ship.ShipPreviewActivity;
+//import com.eyunda.third.adapters.chat.domain.User;
 import com.hangyi.zd.R;
 /**
  *

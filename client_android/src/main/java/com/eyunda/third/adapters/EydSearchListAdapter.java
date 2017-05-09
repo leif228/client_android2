@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.activities.order.AddOrderTYRActivity;
-import com.eyunda.third.activities.order.MyOrderActivity;
-import com.eyunda.third.activities.ship.ShipPreviewActivity;
+//import com.eyunda.third.activities.order.AddOrderTYRActivity;
+//import com.eyunda.third.activities.order.MyOrderActivity;
+//import com.eyunda.third.activities.ship.ShipPreviewActivity;
 import com.hangyi.zd.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -171,11 +171,11 @@ public class EydSearchListAdapter extends BaseAdapter {
 			int vid = v.getId();
 			Map<String, Object> curMap = (Map<String, Object>)getItem(position);
 			if (vid == holder.unitPrice.getId()){
-				Intent intent = new Intent(mContext,ShipPreviewActivity.class);
-				intent.putExtra("id", curMap.get("boat_id").toString());
-				intent.putExtra("name",curMap.get("boat_name").toString());
-				intent.putExtra("phone",curMap.get("boat_phone").toString());
-				mContext.startActivity(intent);
+//				Intent intent = new Intent(mContext,ShipPreviewActivity.class);
+//				intent.putExtra("id", curMap.get("boat_id").toString());
+//				intent.putExtra("name",curMap.get("boat_name").toString());
+//				intent.putExtra("phone",curMap.get("boat_phone").toString());
+//				mContext.startActivity(intent);
 			}
 		}
 	}

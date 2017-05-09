@@ -28,13 +28,7 @@ import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.MenuActivity;
-import com.eyunda.third.activities.cargo.CargoPreviewActivity;
-import com.eyunda.third.activities.chat.NewChatAllHistoryActivity;
-import com.eyunda.third.activities.order.MyOrderActivity;
-import com.eyunda.third.activities.ship.MyshipActivity;
-import com.eyunda.third.activities.viewPage.ViewPagerActivity;
-import com.eyunda.third.chat.event.LoginStatusCode;
-import com.eyunda.third.chat.utils.SIMCardInfo;
+
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.UpdateInfoData;
 import com.eyunda.third.domain.account.UserData;
@@ -79,27 +73,27 @@ public class SplashActivity extends CommonActivity {
 		SharedPreferences sf = getSharedPreferences("eyunda",
 				Context.MODE_PRIVATE);
 		if (sf.getBoolean("isfirst", true)) {
-			Editor editor = sf.edit();
-			editor.putBoolean("isfirst", false);
-			editor.commit();
-			Intent intent = new Intent();
-			intent.setClass(getApplicationContext(), ViewPagerActivity.class);
-			startActivity(intent);
-			finish();
+//			Editor editor = sf.edit();
+//			editor.putBoolean("isfirst", false);
+//			editor.commit();
+//			Intent intent = new Intent();
+//			intent.setClass(getApplicationContext(), ViewPagerActivity.class);
+//			startActivity(intent);
+//			finish();
 			return;
 		}
 
 		if (updateLater) {
-			Context ctx = SplashActivity.this;
-			SharedPreferences sp = ctx.getSharedPreferences(
-					"eyundaBindingCode", MODE_PRIVATE);
-			String bindingCode = sp.getString("bindingCode", "");
-
-			String simCardNo = SIMCardInfo.getInstance(ctx).getSimCardNumber();
-
-			autoLogin(bindingCode, simCardNo);
-
-			initData();
+//			Context ctx = SplashActivity.this;
+//			SharedPreferences sp = ctx.getSharedPreferences(
+//					"eyundaBindingCode", MODE_PRIVATE);
+//			String bindingCode = sp.getString("bindingCode", "");
+//
+//			String simCardNo = SIMCardInfo.getInstance(ctx).getSimCardNumber();
+//
+//			autoLogin(bindingCode, simCardNo);
+//
+//			initData();
 
 		} else {
 			getVersion();
@@ -150,16 +144,16 @@ public class SplashActivity extends CommonActivity {
 							
 							// 保存sessionId
 							GlobalApplication.getInstance().setUserData(userData);
-							GlobalApplication.getInstance().setLoginStatus(LoginStatusCode.logined);
+//							GlobalApplication.getInstance().setLoginStatus(LoginStatusCode.logined);
 
 							// 是否进入gotoActivity
 							if(gotoNewChatAllHistoryActivity){
 								Intent mainIntent = new Intent(SplashActivity.this, MenuActivity.class);
 								 mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-								 Intent goIntent = new Intent(SplashActivity.this, NewChatAllHistoryActivity.class).putExtra("selTab", "chat");
-								 Intent[] intents = {mainIntent, goIntent};
-								 startActivities(intents);
-								 finish();
+//								 Intent goIntent = new Intent(SplashActivity.this, NewChatAllHistoryActivity.class).putExtra("selTab", "chat");
+//								 Intent[] intents = {mainIntent, goIntent};
+//								 startActivities(intents);
+//								 finish();
 							}else{
 								if(notifyGotoArgs == null){
 									startActivity(new Intent(
@@ -167,27 +161,27 @@ public class SplashActivity extends CommonActivity {
 											com.eyunda.third.activities.MenuActivity.class));
 									finish();
 								}else{
-									Intent mainIntent = new Intent(context, MenuActivity.class);
-									mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-									
-									String activity = notifyGotoArgs.getString("activity");
-									Intent goIntent = null;
-									if(activity.equals("NewChatAllHistoryActivity")){
-									 	goIntent = new Intent(SplashActivity.this,
-												NewChatAllHistoryActivity.class).putExtra("selTab", notifyGotoArgs.getString("selTab"));
-									}else if(activity.equals("CargoPreviewActivity")){ 
-										goIntent = new Intent(SplashActivity.this,
-												CargoPreviewActivity.class).putExtra("id", notifyGotoArgs.getString("id"));
-									}else if(activity.equals("MyshipActivity")){  //系统生成的通知消息，消息内容不带“发送者:”。  处理船舶加油
-										goIntent = new Intent(SplashActivity.this,
-												MyshipActivity.class);
-									} else {
-										goIntent = new Intent(SplashActivity.this,
-												MyOrderActivity.class);
-									}
-								 	Intent[] intents = {mainIntent, goIntent};
-						            context.startActivities(intents);
-						            finish();
+//									Intent mainIntent = new Intent(context, MenuActivity.class);
+//									mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//
+//									String activity = notifyGotoArgs.getString("activity");
+//									Intent goIntent = null;
+//									if(activity.equals("NewChatAllHistoryActivity")){
+//									 	goIntent = new Intent(SplashActivity.this,
+//												NewChatAllHistoryActivity.class).putExtra("selTab", notifyGotoArgs.getString("selTab"));
+//									}else if(activity.equals("CargoPreviewActivity")){
+//										goIntent = new Intent(SplashActivity.this,
+//												CargoPreviewActivity.class).putExtra("id", notifyGotoArgs.getString("id"));
+//									}else if(activity.equals("MyshipActivity")){  //系统生成的通知消息，消息内容不带“发送者:”。  处理船舶加油
+//										goIntent = new Intent(SplashActivity.this,
+//												MyshipActivity.class);
+//									} else {
+//										goIntent = new Intent(SplashActivity.this,
+//												MyOrderActivity.class);
+//									}
+//								 	Intent[] intents = {mainIntent, goIntent};
+//						            context.startActivities(intents);
+//						            finish();
 								}
 							}
 						} catch (Exception e) {
@@ -196,8 +190,8 @@ public class SplashActivity extends CommonActivity {
 					} else {
 						// 自动登入失败时
 						GlobalApplication.getInstance().setUserData(null);
-						GlobalApplication.getInstance().setLoginStatus(
-								LoginStatusCode.noLogin);
+//						GlobalApplication.getInstance().setLoginStatus(
+//								LoginStatusCode.noLogin);
 
 						SharedPreferences sp = SplashActivity.this
 								.getSharedPreferences("eyundaBindingCode",
@@ -218,10 +212,10 @@ public class SplashActivity extends CommonActivity {
 									com.eyunda.third.activities.MenuActivity.class));
 							finish();
 						}else{
-							startActivity(new Intent(
-									SplashActivity.this,
-									com.eyunda.third.activities.user.LoginActivity.class));
-							finish();
+//							startActivity(new Intent(
+//									SplashActivity.this,
+//									com.eyunda.third.activities.user.LoginActivity.class));
+//							finish();
 						}
 					}
 				}
@@ -232,8 +226,8 @@ public class SplashActivity extends CommonActivity {
 
 					// 自动登入失败时
 					GlobalApplication.getInstance().setUserData(null);
-					GlobalApplication.getInstance().setLoginStatus(
-							LoginStatusCode.noLogin);
+//					GlobalApplication.getInstance().setLoginStatus(
+//							LoginStatusCode.noLogin);
 
 					if (content != null && content.equals("can't resolve host"))
 						Toast.makeText(SplashActivity.this, "网络连接异常",
@@ -246,9 +240,9 @@ public class SplashActivity extends CommonActivity {
 								com.eyunda.third.activities.MenuActivity.class));
 						finish();
 					}else{
-						startActivity(new Intent(
-								SplashActivity.this,
-								com.eyunda.third.activities.user.LoginActivity.class));
+//						startActivity(new Intent(
+//								SplashActivity.this,
+//								com.eyunda.third.activities.user.LoginActivity.class));
 						finish();
 					}
 				}
@@ -264,9 +258,9 @@ public class SplashActivity extends CommonActivity {
 						com.eyunda.third.activities.MenuActivity.class));
 				finish();
 			}else{
-				startActivity(new Intent(
-						SplashActivity.this,
-						com.eyunda.third.activities.user.LoginActivity.class));
+//				startActivity(new Intent(
+//						SplashActivity.this,
+//						com.eyunda.third.activities.user.LoginActivity.class));
 				finish();
 			}
 		}
@@ -307,9 +301,9 @@ public class SplashActivity extends CommonActivity {
 									"eyundaBindingCode", MODE_PRIVATE);
 							String bindingCode = sp
 									.getString("bindingCode", "");
-							String simCardNo = SIMCardInfo.getInstance(ctx)
-									.getSimCardNumber();
-							autoLogin(bindingCode, simCardNo);
+//							String simCardNo = SIMCardInfo.getInstance(ctx)
+//									.getSimCardNumber();
+//							autoLogin(bindingCode, simCardNo);
 							initData();
 						} else {
 							UpdateManager mUpdateManager = new UpdateManager(
@@ -344,9 +338,9 @@ public class SplashActivity extends CommonActivity {
 			SharedPreferences sp = ctx.getSharedPreferences(
 					"eyundaBindingCode", MODE_PRIVATE);
 			String bindingCode = sp.getString("bindingCode", "");
-			String simCardNo = SIMCardInfo.getInstance(ctx).getSimCardNumber();
-			autoLogin(bindingCode, simCardNo);
-			initData();
+//			String simCardNo = SIMCardInfo.getInstance(ctx).getSimCardNumber();
+//			autoLogin(bindingCode, simCardNo);
+//			initData();
 		}
 	}
 

@@ -7,8 +7,6 @@ import java.util.Map;
 
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.activities.map.ShipLatestDynamicActivity;
-import com.eyunda.third.adapters.ship.MyshipAdapter;
 import com.eyunda.third.loaders.Data_loader;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.GroupData;
@@ -158,19 +156,7 @@ public class GroupListAdapter extends BaseAdapter {
 
 		@Override
 		public void onClick(View v) {
-//			int vid = v.getId();
-//			Map<Long, Object> curMap = (Map<Long, Object>)getItem(position);
-//			Map<String, Object> ida =mAppList.get(position);
-//			if (vid == holder.btnPublish.getId()){
-//				String shipId =(String)ida.get("shipId");
-//				Intent intent = new Intent(mContext,ShipLatestDynamicActivity.class);
-//				intent.putExtra("id", shipId+"");// Ship ID
-//				intent.putExtra("mmsi", (String)ida.get("MMSI"));// mmsi
-//				intent.putExtra("shipName", (String)ida.get("shipName"));// mmsi
-//				intent.putExtra("startTime", "");// mmsi
-//				intent.putExtra("endTime", "");// mmsi
-//				intent.putExtra("type", "1");
-//				mContext.startActivity(intent);
+
 			}
 
 		

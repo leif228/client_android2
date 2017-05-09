@@ -60,6 +60,10 @@
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable-hdpi\\camera.png"
     },
     {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\toggle_btn_checked.png",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable-hdpi\\toggle_btn_checked.png"
+    },
+    {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\home_but1.png",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable-hdpi\\home_but1.png"
     },
@@ -1298,6 +1302,10 @@
     {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ee_32.png",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable-hdpi\\ee_32.png"
+    },
+    {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\toggle_btn_unchecked.png",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable-hdpi\\toggle_btn_unchecked.png"
     },
     {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\surance.png",

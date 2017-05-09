@@ -1,6 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:myattr="http://schemas.android.com/apk/res/com.eyunda.main"
     android:id="@+id/head1"
     android:visibility="gone"
     android:layout_width="fill_parent"
@@ -194,7 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/info_item4_serch_normal_but"
-            android:hint="选择地区"
+            android:hint="@string/select_area"
             android:padding="5dp"
             android:textSize="18dp" />
 

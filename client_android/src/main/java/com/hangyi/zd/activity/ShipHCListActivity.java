@@ -24,7 +24,7 @@ import com.eyunda.main.CommonActivity;
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.activities.ship.ShipLineListActivity;
+//import com.eyunda.third.activities.ship.ShipLineListActivity;
 import com.eyunda.third.domain.location.ShipCooordData;
 import com.eyunda.third.loaders.Data_loader;
 import com.google.gson.Gson;

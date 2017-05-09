@@ -7,7 +7,7 @@
      <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -16,8 +16,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center_horizontal"
-            android:text="免打扰时段设置"
-            android:textSize="18sp" />
+            android:text="报警信息免打扰时段设置"
+            android:textSize="22sp" />
 
     </LinearLayout>
 

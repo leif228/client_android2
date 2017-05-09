@@ -20,7 +20,7 @@ import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.ApplicationUrls;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.chat.utils.LogUtil;
+//import com.eyunda.third.chat.utils.LogUtil;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.third.loaders.SynData_loader;
 import com.google.gson.Gson;
@@ -41,8 +41,8 @@ import java.util.List;
 import java.util.Map;
 
 public class GroupActivity extends CommonListActivity {
-	private static final String LOGTAG = LogUtil
-			.makeLogTag(GroupActivity.class);
+//	private static final String LOGTAG = LogUtil
+//			.makeLogTag(GroupActivity.class);
 	ImageView user_head;
 	DialogUtil dialogUtil;
 	RelativeLayout port,kh,cd,all;

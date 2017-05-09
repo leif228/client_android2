@@ -129,10 +129,10 @@ public class Data_loader {
 		RequestParams params = new RequestParams();
 		// 判断是否存在sessionID
 		String sessionId = "";
-		if (GlobalApplication.getInstance().getUserData() != null) {
-			sessionId = GlobalApplication.getInstance().getUserData()
-					.getSessionId();
-		}
+//		if (GlobalApplication.getInstance().getUserData() != null) {
+//			sessionId = GlobalApplication.getInstance().getUserData()
+//					.getSessionId();
+//		}
 		if (!apiParams.containsKey(ApplicationConstants.SESSIONID)) {
 			apiParams.put(ApplicationConstants.SESSIONID, sessionId);
 		}

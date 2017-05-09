@@ -17,15 +17,15 @@ import com.eyunda.main.CommonListActivity;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.MenuActivity;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.chat.utils.LogUtil;
+//import com.eyunda.third.chat.utils.LogUtil;
 import com.eyunda.tools.SystemUtil;
 import com.hangyi.tools.Util;
 import com.hangyi.zd.SplashActivity;
 
 public class NotifyDetailActivity extends CommonListActivity {
 
-	private static final String LOGTAG = LogUtil
-			.makeLogTag(NotifyDetailActivity.class);
+//	private static final String LOGTAG = LogUtil
+//			.makeLogTag(NotifyDetailActivity.class);
 	public static final String fromPush = "fromPush";
 
 	String notificationId = "";

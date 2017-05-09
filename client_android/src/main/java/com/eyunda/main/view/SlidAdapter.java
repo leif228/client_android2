@@ -15,10 +15,10 @@ import android.widget.Toast;
 import com.eyunda.main.data.Image_loader;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.cargo.CargoPreviewActivity;
-import com.eyunda.third.activities.home.WebSiteActivity;
-import com.eyunda.third.activities.oil.OilListActivity;
-import com.eyunda.third.activities.ship.ShipPreviewActivity;
+//import com.eyunda.third.activities.cargo.CargoPreviewActivity;
+//import com.eyunda.third.activities.home.WebSiteActivity;
+//import com.eyunda.third.activities.oil.OilListActivity;
+//import com.eyunda.third.activities.ship.ShipPreviewActivity;
 import com.hangyi.zd.R;
 import com.ta.TAApplication;
 
@@ -71,17 +71,17 @@ public class SlidAdapter extends PagerAdapter {
 				//TODO:首页图片点击事件,根据adtype类型，跳转到不同的显示页面
 //				// 1、船舶信息，2、航线信息，3、油品展示页，4、外部链接
 				if(_dataSource.get(index).adtype.equals("1")){
-					Intent intent = new Intent(_context, CargoPreviewActivity.class);
-					intent.putExtra("id", _dataSource.get(index).cid+"");
-					intent.putExtra("name",_dataSource.get(index).ename);
-					_context.startActivity(intent);
+//					Intent intent = new Intent(_context, CargoPreviewActivity.class);
+//					intent.putExtra("id", _dataSource.get(index).cid+"");
+//					intent.putExtra("name",_dataSource.get(index).ename);
+//					_context.startActivity(intent);
 				}
 				else if(_dataSource.get(index).adtype.equals("3")){
 					//进入油品展示页
-					Intent intent = new Intent(_context, OilListActivity.class);
-					intent.putExtra("id", _dataSource.get(index).cid+"");
-					intent.putExtra("name",_dataSource.get(index).ename);
-					_context.startActivity(intent);
+//					Intent intent = new Intent(_context, OilListActivity.class);
+//					intent.putExtra("id", _dataSource.get(index).cid+"");
+//					intent.putExtra("name",_dataSource.get(index).ename);
+//					_context.startActivity(intent);
 
 //				}else if(_dataSource.get(index).adtype.equals("5")){
 //					Intent intent = new Intent(_context,PlugInfo.class);
@@ -100,13 +100,13 @@ public class SlidAdapter extends PagerAdapter {
 //						e.printStackTrace();
 //					}
 					
-					Intent intent = new Intent(_context, WebSiteActivity.class);
-					intent.putExtra("id", _dataSource.get(index).cid+"");
-					String url=	_dataSource.get(index).ename;
-					if(!url.startsWith("http://"))url=ApplicationConstants.SERVER_URL+url;
-					intent.putExtra("title", _dataSource.get(index).name);
-					intent.putExtra("url",url);
-					_context.startActivity(intent);
+//					Intent intent = new Intent(_context, WebSiteActivity.class);
+//					intent.putExtra("id", _dataSource.get(index).cid+"");
+//					String url=	_dataSource.get(index).ename;
+//					if(!url.startsWith("http://"))url=ApplicationConstants.SERVER_URL+url;
+//					intent.putExtra("title", _dataSource.get(index).name);
+//					intent.putExtra("url",url);
+//					_context.startActivity(intent);
 				}else{
 					Toast.makeText(_context,_dataSource.get(index).name,Toast.LENGTH_SHORT).show();
 				}

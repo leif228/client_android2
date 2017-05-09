@@ -17,13 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.cargo.AddCargoActivity;
-import com.eyunda.third.activities.home.AdvCargoSearchActivity;
-import com.eyunda.third.activities.home.AdvShipSearchActivity;
-import com.eyunda.third.activities.home.CargoFragment;
-import com.eyunda.third.activities.home.ShipFragment;
-import com.eyunda.third.activities.ship.ShipinfoActivity;
-import com.eyunda.third.chat.event.LoginStatusCode;
+//import com.eyunda.third.activities.cargo.AddCargoActivity;
+//import com.eyunda.third.activities.home.AdvCargoSearchActivity;
+//import com.eyunda.third.activities.home.AdvShipSearchActivity;
+//import com.eyunda.third.activities.home.CargoFragment;
+//import com.eyunda.third.activities.home.ShipFragment;
+//import com.eyunda.third.activities.ship.ShipinfoActivity;
+//import com.eyunda.third.chat.event.LoginStatusCode;
 import com.eyunda.third.domain.SpinnerItem;
 import com.eyunda.third.domain.account.UserData;
 import com.eyunda.third.domain.enumeric.SearchRlsCode;
@@ -36,8 +36,8 @@ public class SiteHomeActivity extends PageHomeActivity{
 	private int selectedColor, unSelectedColor;
 	private TextView tv1,tv2;
 	private EditText startPort;
-	ShipFragment   mTab01;
-	CargoFragment  mTab02;
+//	ShipFragment   mTab01;
+//	CargoFragment  mTab02;
 	int plug_Interval = 1;//模块间间距
 	PartEntity entity = null;
 	private FragmentManager fragmentManager;
@@ -69,15 +69,15 @@ public class SiteHomeActivity extends PageHomeActivity{
 	}
 	private void setDefaultFragment(int type) {
 		FragmentTransaction transaction = fragmentManager.beginTransaction();
-		if(type == 1){
-			mTab01 = new ShipFragment();
-			transaction.replace(R.id.id_content, mTab01);
-			startPort.setHint("船类/船名/MMSI/船东");
-		}else{
-			mTab02 = new CargoFragment();
-			transaction.replace(R.id.id_content, mTab02);
-			startPort.setHint("货类/货名/起始港/到达港/托运人");
-		}
+//		if(type == 1){
+//			mTab01 = new ShipFragment();
+//			transaction.replace(R.id.id_content, mTab01);
+//			startPort.setHint("船类/船名/MMSI/船东");
+//		}else{
+//			mTab02 = new CargoFragment();
+//			transaction.replace(R.id.id_content, mTab02);
+//			startPort.setHint("货类/货名/起始港/到达港/托运人");
+//		}
 		transaction.commit();
 	}
 	private void initView() {
@@ -117,13 +117,13 @@ public class SiteHomeActivity extends PageHomeActivity{
 
 					Intent intent = null;
 					String si = SearchRlsCode.shipsearch.toString();
-					if(type == 1){
-						intent = new Intent(SiteHomeActivity.this,AdvShipSearchActivity.class);
-						si = SearchRlsCode.shipsearch.toString();
-					}else{
-						intent = new Intent(SiteHomeActivity.this,AdvCargoSearchActivity.class);
-						si = SearchRlsCode.cargosearch.toString();
-					}
+//					if(type == 1){
+//						intent = new Intent(SiteHomeActivity.this,AdvShipSearchActivity.class);
+//						si = SearchRlsCode.shipsearch.toString();
+//					}else{
+//						intent = new Intent(SiteHomeActivity.this,AdvCargoSearchActivity.class);
+//						si = SearchRlsCode.cargosearch.toString();
+//					}
 					intent.putExtra("area", ((SpinnerItem)spCate.getSelectedItem()).getId());
 					intent.putExtra("key", key.trim());
 					intent.putExtra("c", si);
@@ -146,35 +146,35 @@ public class SiteHomeActivity extends PageHomeActivity{
 		}else{
 			top_text.setText("货盘");
 		}
-		if(GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
-			user = GlobalApplication.getInstance().getUserData();
-			if(user!=null){
-				if(type==1){
-					top_right_but.setBackgroundResource(R.drawable.zx_faver_top);
-					top_right_but.setVisibility(View.VISIBLE);
-				}else{
-					if(user.isRealUser()){
-						top_right_but.setBackgroundResource(R.drawable.zx_faver_top);
-						top_right_but.setVisibility(View.VISIBLE);
-					}
-					
-				}
-			}
-		}
+//		if(GlobalApplication.getInstance().getLoginStatus().equals(LoginStatusCode.logined)){
+//			user = GlobalApplication.getInstance().getUserData();
+//			if(user!=null){
+//				if(type==1){
+//					top_right_but.setBackgroundResource(R.drawable.zx_faver_top);
+//					top_right_but.setVisibility(View.VISIBLE);
+//				}else{
+//					if(user.isRealUser()){
+//						top_right_but.setBackgroundResource(R.drawable.zx_faver_top);
+//						top_right_but.setVisibility(View.VISIBLE);
+//					}
+//
+//				}
+//			}
+//		}
 		top_right_but.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent();
-				if(type == 1){
-					intent.setClass(SiteHomeActivity.this, ShipinfoActivity.class);
-					intent.putExtra("shipId", "0");
-				}else{
-					intent.setClass(SiteHomeActivity.this,  AddCargoActivity.class);
-					intent.putExtra("type", 3L);
-					intent.putExtra("cargoId", 0L);
-				}
-				startActivity(intent);
+//				Intent intent = new Intent();
+//				if(type == 1){
+//					intent.setClass(SiteHomeActivity.this, ShipinfoActivity.class);
+//					intent.putExtra("shipId", "0");
+//				}else{
+//					intent.setClass(SiteHomeActivity.this,  AddCargoActivity.class);
+//					intent.putExtra("type", 3L);
+//					intent.putExtra("cargoId", 0L);
+//				}
+//				startActivity(intent);
 			}
 		});
 		
@@ -234,31 +234,31 @@ public class SiteHomeActivity extends PageHomeActivity{
 		switch (index){
 		case 0:
 			// 当点击了船舶tab时，改变控件的图片和文字颜色
-			tv1.setTextColor(selectedColor);
-			tv1.setVisibility(View.GONE);
-			tv2.setVisibility(View.GONE);
-			if (mTab01 == null) {
-				// 如果ShipFragment为空，则创建一个并添加到界面上
-				mTab01 = new ShipFragment();
-				transaction.add(R.id.id_content, mTab01);
-			} else {
-				// 如果ShipFragment不为空，则直接将它显示出来
-				transaction.show(mTab01);
-			}
+//			tv1.setTextColor(selectedColor);
+//			tv1.setVisibility(View.GONE);
+//			tv2.setVisibility(View.GONE);
+//			if (mTab01 == null) {
+//				// 如果ShipFragment为空，则创建一个并添加到界面上
+//				mTab01 = new ShipFragment();
+//				transaction.add(R.id.id_content, mTab01);
+//			} else {
+//				// 如果ShipFragment不为空，则直接将它显示出来
+//				transaction.show(mTab01);
+//			}
 			break;
 		case 1:
 			// 当点击了货物tab时，改变控件的图片和文字颜色
-			tv2.setTextColor(selectedColor);
-			tv1.setVisibility(View.GONE);
-			tv2.setVisibility(View.GONE);
-			if (mTab02 == null) {
-				// 如果CargoFragment为空，则创建一个并添加到界面上
-				mTab02 = new CargoFragment();
-				transaction.add(R.id.id_content, mTab02);
-			} else {
-				// 如果CargoFragment不为空，则直接将它显示出来
-				transaction.show(mTab02);
-			}
+//			tv2.setTextColor(selectedColor);
+//			tv1.setVisibility(View.GONE);
+//			tv2.setVisibility(View.GONE);
+//			if (mTab02 == null) {
+//				// 如果CargoFragment为空，则创建一个并添加到界面上
+//				mTab02 = new CargoFragment();
+//				transaction.add(R.id.id_content, mTab02);
+//			} else {
+//				// 如果CargoFragment不为空，则直接将它显示出来
+//				transaction.show(mTab02);
+//			}
 			break;
 
 		}
@@ -272,14 +272,14 @@ public class SiteHomeActivity extends PageHomeActivity{
 
 	}
 	private void hideFragments(FragmentTransaction transaction) {
-		if (mTab01 != null) {
-			transaction.attach(mTab01);
-			transaction.hide(mTab01);
-		}
-		if (mTab02 != null) {
-			transaction.attach(mTab02);
-			transaction.hide(mTab02);
-		}
+//		if (mTab01 != null) {
+//			transaction.attach(mTab01);
+//			transaction.hide(mTab01);
+//		}
+//		if (mTab02 != null) {
+//			transaction.attach(mTab02);
+//			transaction.hide(mTab02);
+//		}
 
 	}
 

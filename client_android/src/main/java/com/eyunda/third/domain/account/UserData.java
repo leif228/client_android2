@@ -6,7 +6,6 @@ import java.util.Map;
 
 import android.text.TextUtils;
 
-import com.eyunda.third.chat.event.OnlineStatusCode;
 import com.eyunda.third.domain.BaseData;
 import com.eyunda.third.domain.enumeric.ApplyStatusCode;
 import com.eyunda.third.domain.enumeric.UserRoleCode;
@@ -48,7 +47,6 @@ public class UserData extends BaseData {
 	private String stamp = ""; // 图章
 	private String createTime = ""; // 注册时间
 
-	private OnlineStatusCode onlineStatus = OnlineStatusCode.ofline;
 	private String sessionId = "";
 	private ApplyStatusCode applyStatus = ApplyStatusCode.approve;
 
@@ -118,7 +116,6 @@ public class UserData extends BaseData {
 				this.userBankData = new UserBankData((Map<String, Object>) params.get("userBankData"));
 			}
 			this.applyStatus = ApplyStatusCode.valueOf((String) params.get("applyStatus"));
-			this.onlineStatus = OnlineStatusCode.valueOf((String) params.get("onlineStatus"));
 			this.sessionId = (String) params.get("sessionId");
 		}
 	}
@@ -352,13 +349,6 @@ public class UserData extends BaseData {
 		this.createTime = createTime;
 	}
 
-	public OnlineStatusCode getOnlineStatus() {
-		return onlineStatus;
-	}
-
-	public void setOnlineStatus(OnlineStatusCode onlineStatus) {
-		this.onlineStatus = onlineStatus;
-	}
 
 	public String getSessionId() {
 		return sessionId;

@@ -24,8 +24,8 @@ import com.eyunda.main.reg.UpdateQA;
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.part1.data.PartData_loader;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.user.AgentActivity;
-import com.eyunda.third.chat.utils.LogUtil;
+//import com.eyunda.third.activities.user.AgentActivity;
+//import com.eyunda.third.chat.utils.LogUtil;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.third.loaders.SynData_loader;
@@ -35,8 +35,8 @@ import com.ta.TAApplication;
 import com.ta.util.http.AsyncHttpResponseHandler;
 
 public class ShipHCActivity extends CommonListActivity {
-	private static final String LOGTAG = LogUtil
-			.makeLogTag(ShipHCActivity.class);
+//	private static final String LOGTAG = LogUtil
+//			.makeLogTag(ShipHCActivity.class);
 	ImageView user_head;
 	DialogUtil dialogUtil;
 	RelativeLayout chang_user,modify_pw,user_logout;

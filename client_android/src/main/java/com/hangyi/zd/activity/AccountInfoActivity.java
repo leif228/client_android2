@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -25,6 +26,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -36,7 +38,7 @@ import com.eyunda.main.view.DialogUtil;
 import com.eyunda.part1.data.PartData_loader;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.chat.utils.LogUtil;
+//import com.eyunda.third.chat.utils.LogUtil;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.UpdateInfoData;
 import com.eyunda.third.loaders.Data_loader;
@@ -53,8 +55,8 @@ import com.ta.TAApplication;
 import com.ta.util.http.AsyncHttpResponseHandler;
 
 public class AccountInfoActivity extends CommonListActivity {
-	private static final String LOGTAG = LogUtil
-			.makeLogTag(AccountInfoActivity.class);
+//	private static final String LOGTAG = LogUtil
+//			.makeLogTag(AccountInfoActivity.class);
 	ImageView user_head;
 	DialogUtil dialogUtil;
 	RelativeLayout chang_user,modify_pw,user_logout,clear,pushSet,scship,hc,help;
@@ -226,7 +228,67 @@ public class AccountInfoActivity extends CommonListActivity {
 	} 
 	public void setDialog() {
 		if(active){
-			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站："+ApplicationConstants.ZD_DOMAINNAME+"\n客服电话：+86 020-37958062\n\n对于在使用的过程中的任何问题和意见，欢迎发邮件给我们。\n\n";
+			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站："+ApplicationConstants.ZD_DOMAINNAME+"\n客服电话：+86 020-37958062\n\n对于在使用的过程中的任何问题和意见，欢迎联系给我们。\n\n";
+			final AlertDialog ad = new AlertDialog.Builder(AccountInfoActivity.this).create();
+			ad.setCanceledOnTouchOutside(true);// 设置点击Dialog外部任意区域关闭Dialog
+			ad.show();
+
+			Window window = ad.getWindow();
+			window.setContentView(R.layout.version_dialog);
+
+			TextView vt = (TextView) window.findViewById(R.id.version_text);
+			TextView wt = (TextView) window.findViewById(R.id.web_text);
+			TextView tt = (TextView) window.findViewById(R.id.telephone_text);
+			Button bs = (Button) window.findViewById(R.id.btn_set);
+
+			vt.setText(getVersionName());
+			wt.setText(ApplicationConstants.ZD_DOMAINNAME);
+			tt.setText(ApplicationConstants.ZD_TELEPHONE);
+
+			wt.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					AccountInfoActivity.this.runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							Intent intent = new Intent();
+							intent.setAction("android.intent.action.VIEW");
+							Uri content_url = Uri.parse(ApplicationConstants.ZD_DOMAINNAME);
+							intent.setData(content_url);
+							startActivity(intent);
+						}
+					});
+				}
+
+			});
+			tt.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					AccountInfoActivity.this.runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							Intent intent = new Intent(Intent.ACTION_CALL);
+							intent.setData(Uri.parse("tel:"+ApplicationConstants.ZD_TELEPHONE_CALL));
+							startActivity(intent);
+						}
+					});
+
+				}
+
+			});
+			bs.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					ad.cancel();
+				}
+
+			});
+
+		}
+	}
+	public void setDialog2() {
+		if(active){
+			String str = "当前版本："+getVersionName()+"\n本软件下载、安装免费，使用中的通信流量费由运营商收取。\n\n官方网站："+ApplicationConstants.ZD_DOMAINNAME+"\n客服电话：+86 020-37958062\n\n对于在使用的过程中的任何问题和意见，欢迎联系我们。\n\n";
 			AlertDialog ad = new AlertDialog.Builder(AccountInfoActivity.this)
 			.setTitle("珠电驳船调度系统").setMessage(str)
 			.setPositiveButton("确定", null).create();
@@ -247,9 +309,9 @@ public class AccountInfoActivity extends CommonListActivity {
 				@Override
 				public void onSuccess(String arg0) {
 					super.onSuccess(arg0);
-					
+
 					ConvertData cd = new ConvertData(arg0);
-					if (cd.getReturnCode().equalsIgnoreCase("success")) {
+					if ("success".equalsIgnoreCase(cd.getReturnCode())) {
 						HashMap<String, Object> var = (HashMap<String, Object>) cd
 								.getContent();
 						UpdateInfoData up = new UpdateInfoData(var);

@@ -391,7 +391,7 @@
                 android:layout_alignLeft="@+id/pwd_again"
                 android:layout_below="@+id/agree"
                 android:clickable="true"
-                android:text="《易运达货运电商平台服务协议》"
+                android:text="《 货运电商平台服务协议》"
                 android:textColor="@color/blue" />
         </RelativeLayout>
 

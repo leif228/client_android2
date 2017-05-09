@@ -31,11 +31,11 @@ import android.widget.Toast;
 
 import com.eyunda.part1.plug.ViewContents;
 import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.activities.home.AdvCargoSearchActivity;
-import com.eyunda.third.activities.home.AdvShipSearchActivity;
-import com.eyunda.third.activities.home.HomeCategoryActivity;
-import com.eyunda.third.activities.ship.ShipPreviewActivity;
-import com.eyunda.third.adapters.home.HomeCateExAdapter;
+//import com.eyunda.third.activities.home.AdvCargoSearchActivity;
+//import com.eyunda.third.activities.home.AdvShipSearchActivity;
+//import com.eyunda.third.activities.home.HomeCategoryActivity;
+//import com.eyunda.third.activities.ship.ShipPreviewActivity;
+//import com.eyunda.third.adapters.home.HomeCateExAdapter;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.SpinnerItem;
 import com.eyunda.third.domain.enumeric.CargoBigTypeCode;
@@ -93,16 +93,16 @@ public class ListPlugUtil {
 				if(key.trim().equals("")){
 					Toast.makeText(context, "请输入搜索词", Toast.LENGTH_SHORT).show();
 				}else{
-					SpinnerItem si = (SpinnerItem)spCate.getSelectedItem();
-					Intent intent = null;
-					if(si.getId().equalsIgnoreCase(SearchRlsCode.shipsearch.name())){
-						intent = new Intent(context,AdvShipSearchActivity.class);
-					}else{
-						intent = new Intent(context,AdvCargoSearchActivity.class);
-					}
-					intent.putExtra("key", key.trim());
-					intent.putExtra("c", si.getId());
-					context.startActivity(intent);
+//					SpinnerItem si = (SpinnerItem)spCate.getSelectedItem();
+//					Intent intent = null;
+//					if(si.getId().equalsIgnoreCase(SearchRlsCode.shipsearch.name())){
+//						intent = new Intent(context,AdvShipSearchActivity.class);
+//					}else{
+//						intent = new Intent(context,AdvCargoSearchActivity.class);
+//					}
+//					intent.putExtra("key", key.trim());
+//					intent.putExtra("c", si.getId());
+//					context.startActivity(intent);
 				}
 			}
 		});

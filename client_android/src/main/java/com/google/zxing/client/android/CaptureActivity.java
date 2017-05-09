@@ -26,7 +26,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.eyunda.main.view.DialogUtil;
-import com.eyunda.third.activities.account.GeneralPayActivity;
+//import com.eyunda.third.activities.account.GeneralPayActivity;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.enumeric.FeeItemCode;
 import com.eyunda.third.domain.qcode.QCodeResultCode;
@@ -521,15 +521,15 @@ public final class CaptureActivity extends Activity implements
 						//[fetch, 93130002, machuandong, 20.0, tt, 20160601144655, 1, 1]
 						QCodeResultCode qc = QCodeResultCode.valueOf(resArr[0]);
 						if(qc.equals(QCodeResultCode.fetch)){
-							Intent intent = new Intent(CaptureActivity.this, GeneralPayActivity.class);
-							intent.putExtra("valueId", resArr[1]);//收款帐号
-							intent.putExtra("value", resArr[3]);//收款金额
-							intent.putExtra("remark", resArr[4]);//描述
-							intent.putExtra("suretyDays", Integer.parseInt(resArr[7]));//担保日期
-							intent.putExtra("type", FeeItemCode.face.name());//类型
-							intent.putExtra("title", "扫码支付");//类型
-							startActivity(intent);
-							finish();
+//							Intent intent = new Intent(CaptureActivity.this, GeneralPayActivity.class);
+//							intent.putExtra("valueId", resArr[1]);//收款帐号
+//							intent.putExtra("value", resArr[3]);//收款金额
+//							intent.putExtra("remark", resArr[4]);//描述
+//							intent.putExtra("suretyDays", Integer.parseInt(resArr[7]));//担保日期
+//							intent.putExtra("type", FeeItemCode.face.name());//类型
+//							intent.putExtra("title", "扫码支付");//类型
+//							startActivity(intent);
+//							finish();
 						}
 						//Toast.makeText(CaptureActivity.this, res,Toast.LENGTH_LONG).show();
 					} else {

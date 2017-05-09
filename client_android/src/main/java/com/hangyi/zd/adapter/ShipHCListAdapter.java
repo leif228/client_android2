@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.eyunda.main.view.DialogUtil;
-import com.eyunda.third.activities.map.ShipLatestDynamicActivity;
+//import com.eyunda.third.activities.map.ShipLatestDynamicActivity;
 import com.hangyi.tools.Util;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.NodeCode;

@@ -112,7 +112,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="航向:未知"
+                        android:text="船队:"
                         android:textColor="#464646"
                         android:textSize="14dp" />
 
@@ -200,7 +200,7 @@
                     android:background="@color/ship_jj1"
                     android:gravity="center_vertical"
                     android:paddingLeft="5dp"
-                    android:text="航向:未知"
+                    android:text="船队:"
                     android:textColor="#464646"
                     android:textSize="14dp" />
 

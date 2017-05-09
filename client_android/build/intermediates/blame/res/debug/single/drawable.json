@@ -60,6 +60,14 @@
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_search_clear.xml"
     },
     {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\switch_btn.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\switch_btn.xml"
+    },
+    {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_to_icon.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\voice_to_icon.xml"
+    },
+    {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\check_bg.xml",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\check_bg.xml"
     },
@@ -166,6 +174,10 @@
     {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_user_login_button_back.xml",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_user_login_button_back.xml"
+    },
+    {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_from_icon.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\voice_from_icon.xml"
     },
     {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bg.xml",

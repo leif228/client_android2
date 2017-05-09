@@ -1244,6 +1244,10 @@
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\webalert.xml"
     },
     {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\version_dialog.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\version_dialog.xml"
+    },
+    {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\mm_preference_list_content.xml",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\mm_preference_list_content.xml"
     },
@@ -1736,6 +1740,10 @@
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\part_home.xml"
     },
     {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\eyd_shipmoniter_item3.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\eyd_shipmoniter_item3.xml"
+    },
+    {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\zd_ship_item.xml",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\zd_ship_item.xml"
     },
@@ -1946,6 +1954,10 @@
     {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\eyd_ship_dtlist.xml",
         "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\eyd_ship_dtlist.xml"
+    },
+    {
+        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\zd_ship_play_fragment_surface.xml",
+        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\layout\\zd_ship_play_fragment_surface.xml"
     },
     {
         "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\layout\\eyd_my_order_ship_item.xml",

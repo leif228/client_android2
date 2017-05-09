@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
-import com.eyunda.third.adapters.chat.widget.CalendarUtil;
+//import com.eyunda.third.adapters.chat.widget.CalendarUtil;
 import com.eyunda.third.domain.BaseData;
 import com.eyunda.third.domain.account.UserData;
 import com.eyunda.third.domain.enumeric.CargoBigTypeCode;
@@ -53,7 +53,7 @@ public class CargoData extends BaseData {
 	private String receAddress = ""; // 收货地址
 
 	private String periodCode = RecentPeriodCode.ONE_MONTH.getCode(); // 期限编码
-	private String createTime = CalendarUtil.toYYYY_MM_DD_HH_MM_SS(Calendar.getInstance()); // 发布时间
+//	private String createTime = CalendarUtil.toYYYY_MM_DD_HH_MM_SS(Calendar.getInstance()); // 发布时间
 	private String periodTime = "";// 截止时间
 
 	private CargoStatusCode cargoStatus = CargoStatusCode.nopublish; // 状态
@@ -124,7 +124,7 @@ public class CargoData extends BaseData {
 
 			this.periodCode = (String) params.get("periodCode");
 			this.periodTime = (String) params.get("periodTime");
-			this.createTime = (String) params.get("createTime");
+//			this.createTime = (String) params.get("createTime");
 
 			String cargoStatus = (String) params.get("cargoStatus");
 			if ((cargoStatus != null) && (!cargoStatus.equals(""))) {
@@ -375,13 +375,13 @@ public class CargoData extends BaseData {
 		this.periodCode = periodCode;
 	}
 
-	public String getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(String createTime) {
-		this.createTime = createTime;
-	}
+//	public String getCreateTime() {
+//		return createTime;
+//	}
+//
+//	public void setCreateTime(String createTime) {
+//		this.createTime = createTime;
+//	}
 
 	public String getPeriodTime() {
 		return periodTime;

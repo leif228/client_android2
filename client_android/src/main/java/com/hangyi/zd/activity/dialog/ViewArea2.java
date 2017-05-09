@@ -3,7 +3,7 @@ package com.hangyi.zd.activity.dialog;
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
-import com.eyunda.third.adapters.chat.widget.photoview.PhotoView;
+//import com.eyunda.third.adapters.chat.widget.photoview.PhotoView;
 import com.eyunda.third.domain.location.ShipCooordData;
 import com.hangyi.zd.R;
 import com.hangyi.zd.activity.NewContentFragment;

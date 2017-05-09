@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.chat.event.OnlineStatusCode;
+//import com.eyunda.third.chat.event.OnlineStatusCode;
 import com.eyunda.third.domain.account.OperatorData;
 import com.eyunda.third.domain.account.UserData;
 import com.eyunda.tools.CircularImage;
@@ -94,11 +94,11 @@ public class TreeViewExpandableListAdapter extends BaseExpandableListAdapter {
 			holder.name.setText(getChild(groupPosition, childPosition).getTrueName());
 			holder.handler_mobile.setText(getChild(groupPosition, childPosition).getMobile());
 			
-			OnlineStatusCode onlineStatus = getChild(groupPosition, childPosition).getOnlineStatus();
-			if (onlineStatus == OnlineStatusCode.online) {
-				holder.signature.setText("[在线]");
-				holder.avatar.setAlpha(255);
-			} 
+//			OnlineStatusCode onlineStatus = getChild(groupPosition, childPosition).getOnlineStatus();
+//			if (onlineStatus == OnlineStatusCode.online) {
+//				holder.signature.setText("[在线]");
+//				holder.avatar.setAlpha(255);
+//			}
 //			else if (onlineStatus == OnlineStatusCode.busy) {
 //				holder.signature.setText("[忙碌]");
 //				holder.avatar.setAlpha(255);
@@ -106,10 +106,10 @@ public class TreeViewExpandableListAdapter extends BaseExpandableListAdapter {
 //				holder.signature.setText("[空闲]");
 //				holder.avatar.setAlpha(255);
 //			}
-			else {
-				holder.signature.setText("[离线]");
-				holder.avatar.setAlpha(80);// 这里设置透明度，当用户不在线时
-			}
+//			else {
+//				holder.signature.setText("[离线]");
+//				holder.avatar.setAlpha(80);// 这里设置透明度，当用户不在线时
+//			}
 			return convertView;
 	}
 

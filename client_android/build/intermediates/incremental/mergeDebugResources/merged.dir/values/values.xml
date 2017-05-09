@@ -205,6 +205,12 @@
     <item name="encode_failed" type="id"/>
     <item name="encode_succeeded" type="id"/>
     <item name="launch_product_query" type="id"/>
+    <item name="my_view" type="id"/>
+    <item name="my_view1" type="id"/>
+    <item name="my_view2" type="id"/>
+    <item name="my_view3" type="id"/>
+    <item name="my_view4" type="id"/>
+    <item name="my_view5" type="id"/>
     <item name="quit" type="id"/>
     <item name="restart_preview" type="id"/>
     <item name="return_scan_result" type="id"/>
@@ -457,6 +463,7 @@
     <string name="sbc_name">Google图书搜索</string>
     <string name="sdcard_unmonted_hint">请先挂载SD卡</string>
     <string name="search_boat">搜索</string>
+    <string name="select_area">选择地区</string>
     <string name="send">发送到微信</string>
     <string name="send_appdata">发送app消息</string>
     <string name="send_emoji">发送表情消息</string>

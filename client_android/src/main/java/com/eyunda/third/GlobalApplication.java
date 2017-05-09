@@ -26,7 +26,7 @@ import com.baidu.android.pushservice.CustomPushNotificationBuilder;
 import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.baidu.mapapi.BMapManager;
-import com.eyunda.third.chat.event.LoginStatusCode;
+//import com.eyunda.third.chat.event.LoginStatusCode;
 import com.eyunda.third.domain.account.UserData;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.tools.CrashHandler;
@@ -59,7 +59,7 @@ public class GlobalApplication extends TAApplication {
 		    .cacheOnDisc(true)      //缓存到sd卡
 		    .displayer(new SimpleBitmapDisplayer()).build();    
 	private UserData userData = null;// 为登入用户
-	private LoginStatusCode loginStatus = LoginStatusCode.noLogin;
+//	private LoginStatusCode loginStatus = LoginStatusCode.noLogin;
 	private ImageLoaderConfiguration imageLoaderConfiguration;
 	private File SdCardPath = Environment.getExternalStorageDirectory();// 获取SDCard目录
 
@@ -99,53 +99,53 @@ public class GlobalApplication extends TAApplication {
 		SdCardPath = sdCardPath;
 	}
 
-	public synchronized LoginStatusCode getLoginStatus() {
-		return loginStatus;
-	}
+//	public synchronized LoginStatusCode getLoginStatus() {
+//		return loginStatus;
+//	}
+//
+//	public synchronized void setLoginStatus(LoginStatusCode loginStatus) {
+//		this.loginStatus = loginStatus;
+//	}
 
-	public synchronized void setLoginStatus(LoginStatusCode loginStatus) {
-		this.loginStatus = loginStatus;
-	}
-
-	public synchronized UserData getUserData() {
-		UserData ret = null;
-
-		switch (loginStatus) {
-		case noLogin:
-			ret = new UserData();
-			break;
-//		case logining:
-//			int n = 0;
-//			while (this.userData == null && n++ <= 5) {
-//				try {
-//					Thread.sleep(200L);
-//				} catch (InterruptedException e) {
-//				}
-//			}
-//			ret = this.userData;
-//			
-//			if(!NetworkUtils.isNetworkAvailable()){//网络断了，给userData附值
-//				SharedPreferencesUtils currUser = new SharedPreferencesUtils("currUser",null);
-//				String json = currUser.getParam();
-//				
-//				Gson gson = new Gson();
-//				HashMap<String, Object> map = gson.fromJson((String) json,
-//						new TypeToken<Map<String, Object>>() {
-//						}.getType());
-//				ret = new UserData(
-//						(Map<String, Object>) map.get("content"));
-//			}
+//	public synchronized UserData getUserData() {
+//		UserData ret = null;
+//
+//		switch (loginStatus) {
+//		case noLogin:
+//			ret = new UserData();
 //			break;
-		case logined:
-			ret = this.userData;
-			break;
-		default:
-			ret = this.userData;
-			break;
-		}
-
-		return ret;
-	}
+////		case logining:
+////			int n = 0;
+////			while (this.userData == null && n++ <= 5) {
+////				try {
+////					Thread.sleep(200L);
+////				} catch (InterruptedException e) {
+////				}
+////			}
+////			ret = this.userData;
+////
+////			if(!NetworkUtils.isNetworkAvailable()){//网络断了，给userData附值
+////				SharedPreferencesUtils currUser = new SharedPreferencesUtils("currUser",null);
+////				String json = currUser.getParam();
+////
+////				Gson gson = new Gson();
+////				HashMap<String, Object> map = gson.fromJson((String) json,
+////						new TypeToken<Map<String, Object>>() {
+////						}.getType());
+////				ret = new UserData(
+////						(Map<String, Object>) map.get("content"));
+////			}
+////			break;
+//		case logined:
+//			ret = this.userData;
+//			break;
+//		default:
+//			ret = this.userData;
+//			break;
+//		}
+//
+//		return ret;
+//	}
 
 	public synchronized void setUserData(UserData userData) {
 		this.userData = userData;
@@ -227,7 +227,6 @@ public class GlobalApplication extends TAApplication {
 	/**
 	 * 进行验证key
 	 * 
-	 * @param pContext
 	 */
 //	private void initEngineManager(Context pContext) {
 //		if (mBMapManager == null) {

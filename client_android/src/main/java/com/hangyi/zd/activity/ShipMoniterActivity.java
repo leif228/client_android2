@@ -30,10 +30,10 @@ import android.widget.Toast;
 import com.eyunda.main.CommonActivity;
 import com.eyunda.main.view.DialogUtil;
 import com.eyunda.third.GlobalApplication;
-import com.eyunda.third.activities.map.ShipDistributeActivity;
-import com.eyunda.third.activities.ship.ShipLineListActivity;
-import com.eyunda.third.activities.ship.widget.AlertSearchDialog;
-import com.eyunda.third.adapters.ship.ShipMoniterAdapter;
+//import com.eyunda.third.activities.map.ShipDistributeActivity;
+//import com.eyunda.third.activities.ship.ShipLineListActivity;
+//import com.eyunda.third.activities.ship.widget.AlertSearchDialog;
+//import com.eyunda.third.adapters.ship.ShipMoniterAdapter;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.account.UserData;
 import com.eyunda.third.domain.enumeric.CollectCode;
@@ -51,7 +51,7 @@ import com.ta.util.http.AsyncHttpResponseHandler;
 public class ShipMoniterActivity extends CommonActivity implements
 OnItemClickListener,OnClickListener,OnScrollListener {
 	Data_loader data;
-	private ShipMoniterAdapter smpAdapter;
+//	private ShipMoniterAdapter smpAdapter;
 	private ArrayList<Map<String, Object>> dataList;
 	private View loadMoreView;
 	private ProgressBar loadMoreButton;
@@ -107,8 +107,8 @@ OnItemClickListener,OnClickListener,OnScrollListener {
 		mlistView.setOnScrollListener(this);
 		loadMoreView.setOnClickListener(null);
 		dataList =new ArrayList<Map<String,Object>>();
-		smpAdapter = new ShipMoniterAdapter(this, dataList);
-		mlistView.setAdapter(smpAdapter);
+//		smpAdapter = new ShipMoniterAdapter(this, dataList);
+//		mlistView.setAdapter(smpAdapter);
 		mlistView.setOnItemClickListener(this);
 		getData();
 		loadDate();
@@ -149,58 +149,58 @@ OnItemClickListener,OnClickListener,OnScrollListener {
 	protected void onStart() {
 		super.onStart();
 		setTitle("船舶监控");
-		final UserData user = GlobalApplication.getInstance().getUserData();
-	     if(user!=null){
-
-			
-			setRight("分布图", new OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					// 分布
-					Intent intent = new Intent(ShipMoniterActivity.this,
-							ShipDistributeActivity.class);
-					Bundle bundle = new Bundle();
-					bundle.putString("userId", user.getId()+"");// Ship ID
-					bundle.putString("searchName", searchName );
-					bundle.putInt("pageNo", page );
-					bundle.putString("collectCode", current.name());
-					intent.putExtras(bundle);
-					startActivity(intent);
-				}
-			});
-			setRight(R.drawable.ic_action_search, new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					final AlertSearchDialog ad = new AlertSearchDialog(ShipMoniterActivity.this);
-					ad.showAddDialog(new DialogInterface.OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-						View view =   ad.getView();
-						 EditText editTextName = (EditText) view.findViewById(R.id.et_search);
-						 resetFooter();
-						 searchName =editTextName.getText().toString();
-							getData();
-							
-						}
-					});
-				}
-			});
-	     }
+//		final UserData user = GlobalApplication.getInstance().getUserData();
+//	     if(user!=null){
+//
+//
+//			setRight("分布图", new OnClickListener() {
+//				@Override
+//				public void onClick(View v) {
+//					// 分布
+//					Intent intent = new Intent(ShipMoniterActivity.this,
+//							ShipDistributeActivity.class);
+//					Bundle bundle = new Bundle();
+//					bundle.putString("userId", user.getId()+"");// Ship ID
+//					bundle.putString("searchName", searchName );
+//					bundle.putInt("pageNo", page );
+//					bundle.putString("collectCode", current.name());
+//					intent.putExtras(bundle);
+//					startActivity(intent);
+//				}
+//			});
+//			setRight(R.drawable.ic_action_search, new OnClickListener() {
+//
+//				@Override
+//				public void onClick(View v) {
+//					final AlertSearchDialog ad = new AlertSearchDialog(ShipMoniterActivity.this);
+//					ad.showAddDialog(new DialogInterface.OnClickListener() {
+//						@Override
+//						public void onClick(DialogInterface dialog, int which) {
+//						View view =   ad.getView();
+//						 EditText editTextName = (EditText) view.findViewById(R.id.et_search);
+//						 resetFooter();
+//						 searchName =editTextName.getText().toString();
+//							getData();
+//
+//						}
+//					});
+//				}
+//			});
+//	     }
 		
 	}
 	@Override
 	public void onScrollStateChanged(AbsListView view, int scrollState) {
-		int itemsLastIndex = smpAdapter.getCount()-1;  //数据集最后一项的索引 
-		int lastIndex = itemsLastIndex + 1;
-		if (scrollState == OnScrollListener.SCROLL_STATE_IDLE
-				&& visibleLastIndex == lastIndex) {
-		   if(page<totalPages){
-				loadMoreText.setText("查看更多");
-			}else
-				//mlistView.removeFooterView(loadMoreView);
-				loadMoreView.setVisibility(View.GONE);
-		}
+//		int itemsLastIndex = smpAdapter.getCount()-1;  //数据集最后一项的索引
+//		int lastIndex = itemsLastIndex + 1;
+//		if (scrollState == OnScrollListener.SCROLL_STATE_IDLE
+//				&& visibleLastIndex == lastIndex) {
+//		   if(page<totalPages){
+//				loadMoreText.setText("查看更多");
+//			}else
+//				//mlistView.removeFooterView(loadMoreView);
+//				loadMoreView.setVisibility(View.GONE);
+//		}
 	}
 	@Override
 	public void onScroll(AbsListView view, int firstVisibleItem,
@@ -213,7 +213,7 @@ OnItemClickListener,OnClickListener,OnScrollListener {
 	private void getData() {
 		final Map<String, Object> params = new HashMap<String, Object>();
 
-		 UserData user = GlobalApplication.getInstance().getUserData();
+//		 UserData user = GlobalApplication.getInstance().getUserData();
 
 		// 请求
 		AsyncHttpResponseHandler handler = new AsyncHttpResponseHandler() {
@@ -249,7 +249,7 @@ OnItemClickListener,OnClickListener,OnScrollListener {
 							setData(content, i);
 					}
 					
-					smpAdapter.notifyDataSetChanged();
+//					smpAdapter.notifyDataSetChanged();
 				} else {
 					Toast.makeText(ShipMoniterActivity.this,cd.getMessage(), Toast.LENGTH_SHORT).show();
 				}
@@ -320,13 +320,13 @@ OnItemClickListener,OnClickListener,OnScrollListener {
 			long id) {
 
 		// String text = listView.getItemAtPosition(position)+"";
-		HashMap<String, Object> map = (HashMap<String, Object>) mlistView.getItemAtPosition(position);
-		Intent intent = new Intent(ShipMoniterActivity.this,ShipLineListActivity.class);
-		// 绑定传输的船舶数据
-		intent.putExtra("shipId", map.get("shipId").toString());
-		intent.putExtra("shipName", map.get("shipName").toString());
-		intent.putExtra("mmsi", map.get("MMSI").toString());
-		startActivity(intent);
+//		HashMap<String, Object> map = (HashMap<String, Object>) mlistView.getItemAtPosition(position);
+//		Intent intent = new Intent(ShipMoniterActivity.this,ShipLineListActivity.class);
+//		// 绑定传输的船舶数据
+//		intent.putExtra("shipId", map.get("shipId").toString());
+//		intent.putExtra("shipName", map.get("shipName").toString());
+//		intent.putExtra("mmsi", map.get("MMSI").toString());
+//		startActivity(intent);
 	}
 
 	private void resetFooter() {

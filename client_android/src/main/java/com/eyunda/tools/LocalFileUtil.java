@@ -17,7 +17,7 @@ import android.renderscript.Type;
 import android.widget.Toast;
 
 import com.eyunda.third.ApplicationConstants;
-import com.eyunda.third.activities.home.HomeCategoryActivity;
+//import com.eyunda.third.activities.home.HomeCategoryActivity;
 import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.SpinnerItem;
 import com.eyunda.third.domain.enumeric.EnumConst.BigAreaCode;

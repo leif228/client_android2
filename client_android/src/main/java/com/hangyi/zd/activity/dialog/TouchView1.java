@@ -377,6 +377,7 @@ public class TouchView1 extends ImageView
         if(mode != DRAG && mode != ZOOM && !scaleFlag){
 //        	this.setFrame(frameleft, frametop, frameright, framebottom);
 //        	this.layout(layoutleft, layouttop, layoutright, layoutbottom);
+
         }
     }
 
