@@ -2041,7 +2041,7 @@ public class NewContentFragment extends Fragment implements OnClickListener,
 	
 	private void loadUnReadMsgs() {
 		Calendar now = Calendar.getInstance();
-		String startTime = CalendarUtil.toYYYY_MM_DD_HH_MM_SS(CalendarUtil.addMonths(now, -3));
+		String startTime = CalendarUtil.toYYYY_MM_DD_HH_MM_SS(CalendarUtil.addMonths(now, -1));
 		String endTime = CalendarUtil.toYYYY_MM_DD_HH_MM_SS(now);
 		
 		Map<String, Object> apiParams = new HashMap<String, Object>();
