@@ -6,7 +6,7 @@ def static getTime() {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "25.0.1"
+    buildToolsVersion '25.0.1'
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
 
@@ -16,6 +16,11 @@ android {
         targetSdkVersion 19
 
         multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
     }
 
     signingConfigs {
@@ -48,6 +53,7 @@ android {
                     fileName = "debug_client_android.apk"
                 }
                 output.outputFile = new File(outputFile.parent, fileName)
+                //outputFileName = fileName
             }
 
         }

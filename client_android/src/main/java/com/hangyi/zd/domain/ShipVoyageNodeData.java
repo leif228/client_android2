@@ -18,7 +18,7 @@ public class ShipVoyageNodeData implements Serializable {
 	private String value = ""; // ģ在节点3和节点7分别表示装载吨和卸载吨，其他节点无意义������
 	private String opTime = ""; // ģ"2016-08-16 19:34:53"���
 
-	private BaiduWeatherData weather = null; // "﻿广州市,雷阵雨,微风,31 ~ 25℃", ģ������
+	private BaiduWeatherData weather = null; // "广州市,雷阵雨,微风,31 ~ 25℃", ģ������
 	private NodeCode nodeCode = null;
 
 	public ShipVoyageNodeData() {

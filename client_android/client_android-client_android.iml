@@ -22,7 +22,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/build/intermediates/classes/debug" />
     <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/debug" />
     <exclude-output />
@@ -97,37 +97,37 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform (1)" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="butterknife-7.0.1" level="project" />
-    <orderEntry type="library" exported="" name="75b28b2b-082a-3eec-bc0c-539989c64a77" level="project" />
-    <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
-    <orderEntry type="library" exported="" name="libammsdk" level="project" />
-    <orderEntry type="library" exported="" name="mina-core-2.0.4" level="project" />
-    <orderEntry type="library" exported="" name="baidumapapi_base_v4_0_0" level="project" />
-    <orderEntry type="library" exported="" name="pushservice-5.2.0.12" level="project" />
-    <orderEntry type="library" exported="" name="slf4j-log4j12-1.6.6" level="project" />
-    <orderEntry type="library" exported="" name="commons-lang-2.4" level="project" />
-    <orderEntry type="library" exported="" name="baidumapapi_cloud_v4_0_0" level="project" />
-    <orderEntry type="library" exported="" name="baidumapapi_util_v4_0_0" level="project" />
-    <orderEntry type="library" exported="" name="sun.misc.BASE64Decoder" level="project" />
-    <orderEntry type="library" exported="" name="baidumapapi_search_v4_0_0" level="project" />
-    <orderEntry type="library" exported="" name="otto-1.3.8" level="project" />
-    <orderEntry type="library" exported="" name="locSDK_6.13" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="multidex-instrumentation-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="gson-2.0" level="project" />
-    <orderEntry type="library" exported="" name="alipayutdid" level="project" />
-    <orderEntry type="library" exported="" name="iSecurityPAB" level="project" />
-    <orderEntry type="library" exported="" name="slf4j-api-1.6.1" level="project" />
-    <orderEntry type="library" exported="" name="alipaysecsdk" level="project" />
-    <orderEntry type="library" exported="" name="universal-image-loader-1.9.0" level="project" />
-    <orderEntry type="library" exported="" name="rxandroid-1.1.1" level="project" />
-    <orderEntry type="library" exported="" name="log4j-1.2.12" level="project" />
-    <orderEntry type="library" exported="" name="pafundverify-1.0" level="project" />
-    <orderEntry type="library" exported="" name="baidumapapi_radar_v4_0_0" level="project" />
-    <orderEntry type="library" exported="" name="baidumapapi_map_v4_0_0" level="project" />
-    <orderEntry type="library" exported="" name="rxjava-1.0.15" level="project" />
-    <orderEntry type="library" exported="" name="multidex-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="alipaysdk" level="project" />
-    <orderEntry type="library" exported="" name="classes_dex2jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\baidumapapi_radar_v4_0_0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\classes_dex2jar.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\libammsdk.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\slf4j-log4j12-1.6.6.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:multidex-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\pushservice-5.2.0.12.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\otto-1.3.8.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\baidumapapi_search_v4_0_0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\baidumapapi_cloud_v4_0_0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\alipaysdk.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\alipaysecsdk.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\75b28b2b-082a-3eec-bc0c-539989c64a77.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\butterknife-7.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\rxjava-1.0.15.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\locSDK_6.13.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\baidumapapi_util_v4_0_0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\rxandroid-1.1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\slf4j-api-1.6.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\commons-lang-2.4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\sun.misc.BASE64Decoder.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\mina-core-2.0.4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\iSecurityPAB.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\pafundverify-1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\picasso-2.5.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.code.gson:gson:2.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\log4j-1.2.12.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\baidumapapi_map_v4_0_0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\universal-image-loader-1.9.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\alipayutdid.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:E.\hangyi\client_android\client_android\libs\baidumapapi_base_v4_0_0.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="signaturePadLibrary" exported="" />
     <orderEntry type="module" module-name="cropper" exported="" />
     <orderEntry type="module" module-name="wheel" exported="" />
