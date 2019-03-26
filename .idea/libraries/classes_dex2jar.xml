@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="classes_dex2jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/client_android/libs/classes_dex2jar.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

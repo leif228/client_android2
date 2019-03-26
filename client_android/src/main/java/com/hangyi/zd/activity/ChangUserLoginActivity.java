@@ -39,6 +39,8 @@ import com.eyunda.third.loaders.Data_loader;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.hangyi.tools.ParseJson;
+import com.hangyi.tools.PasswordCheck;
+import com.hangyi.tools.Security;
 import com.hangyi.zd.R;
 import com.hangyi.zd.domain.UserPowerData;
 import com.ta.util.http.AsyncHttpResponseHandler;
@@ -192,13 +194,23 @@ public class ChangUserLoginActivity extends CommonActivity implements OnClickLis
 				dialog.dismiss();
 				//返回0登录成功，-1密码错误，-2未知错误，-3找不到用户
 				if("0".equals(content)){
-					GlobalApplication.getInstance().stopPush();
-					getCookieText();
-					saveOptionInfo();
-					GlobalApplication.getInstance().startPush();
-					initUserPower();
-					startActivity(new Intent(ChangUserLoginActivity.this,NewPageHomeMainActivity.class));
-					finish();
+					if(!PasswordCheck.isLetterDigit(etPassword.getText().toString())){
+						GlobalApplication.getInstance().stopPush();
+						getCookieText();
+						saveOptionInfo();
+						initUserPower();
+						startActivity(new Intent(ChangUserLoginActivity.this,ModifyPwd.class));
+						finish();
+					}else{
+						GlobalApplication.getInstance().stopPush();
+						getCookieText();
+						saveOptionInfo();
+						GlobalApplication.getInstance().startPush();
+						initUserPower();
+						startActivity(new Intent(ChangUserLoginActivity.this,NewPageHomeMainActivity.class));
+						finish();
+					}
+
 				}else if("-1".equals(content)) {
 					Toast.makeText(ChangUserLoginActivity.this, "密码错误",
 							Toast.LENGTH_LONG).show();
@@ -242,9 +254,10 @@ public class ChangUserLoginActivity extends CommonActivity implements OnClickLis
 			return;
 		}
 
-		params.put("username", etUserName.getText().toString().trim());
-		params.put("passcode", etPassword.getText().toString().trim());
+		params.put("username", Security.encrypt(etUserName.getText().toString().trim(),ApplicationConstants.AES_KEY));
+		params.put("passcode", Security.encrypt(etPassword.getText().toString().trim(),ApplicationConstants.AES_KEY));
 		params.put("clienttype", ApplicationConstants.clienttype);
+		params.put("version", "201902");
 		data1.getZd_ApiResult(handler, ApplicationUrls.login, params, "post");
 	}
 

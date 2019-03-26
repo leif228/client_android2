@@ -38,6 +38,8 @@ import com.eyunda.third.domain.ConvertData;
 import com.eyunda.third.domain.UpdateInfoData;
 import com.eyunda.third.loaders.Data_loader;
 import com.eyunda.third.locatedb.NetworkUtils;
+import com.hangyi.tools.PasswordCheck;
+import com.hangyi.tools.Security;
 import com.hangyi.zd.activity.LoginActivity;
 import com.hangyi.zd.activity.ShipPoliceActivity;
 import com.ta.util.http.AsyncHttpResponseHandler;
@@ -86,11 +88,17 @@ public class SplashActivity extends CommonActivity {
     public void init() {
         sp = getSharedPreferences(ApplicationConstants.UserInfoConfig_SharedPreferences, MODE_PRIVATE);
         String userName = sp.getString("UserName", "");
+        String userPassword = sp.getString("UserPassword", "");
         if ("".equals(userName)) {
             startActivity(new Intent(this, LoginActivity.class));
             finish();
         } else {
-            autologin2();
+            if(!PasswordCheck.isLetterDigit(userPassword)){
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
+            }else{
+                autologin2();
+            }
 
 //			startActivity(new Intent(this,MenuActivity.class));
 //			finish();
@@ -198,9 +206,10 @@ public class SplashActivity extends CommonActivity {
             }
         };
 
-        params.put("username", sp.getString("UserName", ""));
-        params.put("passcode", sp.getString("UserPassword", ""));
+        params.put("username", Security.encrypt(sp.getString("UserName", ""),ApplicationConstants.AES_KEY));
+        params.put("passcode", Security.encrypt(sp.getString("UserPassword", ""),ApplicationConstants.AES_KEY));
         params.put("clienttype", ApplicationConstants.clienttype);
+        params.put("version", "201902");
         data1.getZd_ApiResult(handler, ApplicationUrls.login, params, "post");
     }
 

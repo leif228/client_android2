@@ -28,6 +28,8 @@ import com.eyunda.third.domain.account.UserData;
 import com.eyunda.third.loaders.Data_loader;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.hangyi.tools.PasswordCheck;
+import com.hangyi.tools.Security;
 import com.hangyi.zd.R;
 import com.ta.util.http.AsyncHttpResponseHandler;
 
@@ -81,6 +83,11 @@ public class UpdatePwd extends CommonActivity {
 							Toast.LENGTH_SHORT).show();
 					return;
 				}
+				if(!PasswordCheck.isLetterDigit(pwd3.getText().toString())){
+					Toast.makeText(UpdatePwd.this, "密码必须包含数字与字母8位到20位",
+							Toast.LENGTH_LONG).show();
+					return;
+				}
 				loadData();
 			}
 		});
@@ -103,9 +110,11 @@ public class UpdatePwd extends CommonActivity {
 	}
 	private void loadData() {
 		Map<String, Object> apiParams = new HashMap<String, Object>();
-		apiParams.put("username", sp.getString("UserName", ""));
-		apiParams.put("oldpasswd", pwd1.getText().toString().trim());
-		apiParams.put("newpasswd", pwd3.getText().toString().trim());
+		apiParams.put("username", Security.encrypt(sp.getString("UserName", ""),ApplicationConstants.AES_KEY));
+		apiParams.put("oldpasswd", Security.encrypt(pwd1.getText().toString().trim(),ApplicationConstants.AES_KEY));
+		apiParams.put("newpasswd", Security.encrypt(pwd3.getText().toString().trim(),ApplicationConstants.AES_KEY));
+		apiParams.put("clienttype", ApplicationConstants.clienttype);
+		apiParams.put("version", "201902");
 		
 		data.getZd_ApiResult(new AsyncHttpResponseHandler() {
 			@Override

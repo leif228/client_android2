@@ -16,6 +16,7 @@ import com.eyunda.third.ApplicationConstants;
 import com.eyunda.third.ApplicationUrls;
 import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.loaders.Data_loader;
+import com.hangyi.tools.Security;
 import com.ta.util.http.AsyncHttpResponseHandler;
 import com.ta.util.http.PersistentCookieStore;
 
@@ -75,9 +76,10 @@ public class ReLoginListenerService extends Service {
 			}
 		};
 
-		params.put("username", sp.getString("UserName", ""));
-		params.put("passcode", sp.getString("UserPassword", ""));
+		params.put("username", Security.encrypt(sp.getString("UserName", ""),ApplicationConstants.AES_KEY));
+		params.put("passcode", Security.encrypt(sp.getString("UserPassword", ""),ApplicationConstants.AES_KEY));
 		params.put("clienttype", ApplicationConstants.clienttype);
+		params.put("version", "201902");
 		data1.getZd_ApiResult(handler, ApplicationUrls.login, params, "post");
 	}
     

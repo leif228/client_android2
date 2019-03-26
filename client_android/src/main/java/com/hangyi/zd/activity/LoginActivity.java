@@ -33,6 +33,8 @@ import com.eyunda.third.GlobalApplication;
 import com.eyunda.third.activities.MenuActivity;
 import com.eyunda.third.activities.NewPageHomeMainActivity;
 import com.eyunda.third.loaders.Data_loader;
+import com.hangyi.tools.PasswordCheck;
+import com.hangyi.tools.Security;
 import com.hangyi.tools.Util;
 import com.hangyi.zd.ClearService;
 import com.hangyi.zd.R;
@@ -170,16 +172,24 @@ public class LoginActivity extends Activity implements OnClickListener {
 				dialog.dismiss();
 				//返回0登录成功，-1密码错误，-2未知错误，-3找不到用户
 				if("0".equals(content)){
-					saveOptionInfo();
-					getCookieText();
-					GlobalApplication.getInstance().startPush();
-					
-					Intent intent = new Intent(LoginActivity.this,ReLoginListenerService.class); 
-					LoginActivity.this.startService(intent);
-					
+					if(!PasswordCheck.isLetterDigit(etPassword.getText().toString())){
+						saveOptionInfo();
+						getCookieText();
+						startActivity(new Intent(LoginActivity.this,ModifyPwd.class));
+						finish();
+					}else{
+						saveOptionInfo();
+						getCookieText();
+						GlobalApplication.getInstance().startPush();
+
+						Intent intent = new Intent(LoginActivity.this,ReLoginListenerService.class);
+						LoginActivity.this.startService(intent);
+
 //					Toast.makeText(LoginActivity.this, "登录成功，cookie=" + getCookieText(), Toast.LENGTH_SHORT).show();
-					startActivity(new Intent(LoginActivity.this,NewPageHomeMainActivity.class));
-					finish();
+						startActivity(new Intent(LoginActivity.this,NewPageHomeMainActivity.class));
+						finish();
+					}
+
 				}else if("-1".equals(content)) {
 					Toast.makeText(LoginActivity.this, "密码错误",
 							Toast.LENGTH_LONG).show();
@@ -223,9 +233,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 			return;
 		}
 
-		params.put("username", etUserName.getText().toString().trim());
-		params.put("passcode", etPassword.getText().toString().trim());
+		params.put("username", Security.encrypt(etUserName.getText().toString().trim(),ApplicationConstants.AES_KEY));
+		params.put("passcode", Security.encrypt(etPassword.getText().toString().trim(),ApplicationConstants.AES_KEY));
 		params.put("clienttype", ApplicationConstants.clienttype);
+		params.put("version", "201902");
 		data1.getZd_ApiResult(handler, ApplicationUrls.login, params, "post");
 	}
 	

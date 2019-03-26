@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\raw\\beep.ogg"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\raw\\beep.ogg"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\raw\\eydprotocol.txt",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\raw\\eydprotocol.txt"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\raw\\eydprotocol.txt",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\raw\\eydprotocol.txt"
     }
 ]

@@ -1,482 +1,482 @@
 [
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded_warning.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded_warning.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_common_tab_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_common_tab_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_button.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_alert_dialog_button.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_context_menu_item_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_context_menu_item_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bthumbnail_placeholder_default.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bthumbnail_placeholder_default.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_calm.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_calm.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\sl_sendmsg_camera.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\sl_sendmsg_camera.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_textview_with_line.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_textview_with_line.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\corner.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\corner.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\title_header.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\title_header.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_checkbox_mini.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\mm_checkbox_mini.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_checkbox_mini.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\mm_checkbox_mini.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_item.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\preference_item.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_stable.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_stable.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_checkbox_btn.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\mm_checkbox_btn.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_danger_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_danger_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_positive.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_positive.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_focused.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\dot_focused.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_press_speak_btn.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\chat_press_speak_btn.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_normal.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\dot_normal.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\iv_delete_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\iv_delete_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_bg.xml",
+        "source": "E:\\client_android\\client_android\\build\\intermediates\\exploded-aar\\client_android\\wheel\\unspecified\\res\\drawable\\wheel_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_mm_listitem_grey.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_mm_listitem_grey.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_info_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_info_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_one.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_one.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_search_clear.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_search_clear.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector_background.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\list_selector_background.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\switch_btn.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\switch_btn.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\commen_top_right.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\commen_top_right.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_to_icon.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\voice_to_icon.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\lv_search_tips_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\lv_search_tips_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\check_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\check_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\corner_line_detail.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\corner_line_detail.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navitemlayout.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\navitemlayout.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\text_while.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\text_while.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_blue_normal_shape.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_blue_normal_shape.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_sidebar_background_pressed.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_sidebar_background_pressed.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_marker.png",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\icon_marker.png"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_light_blue.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_light_blue.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_red_circle_friendcontact.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_red_circle_friendcontact.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navlayout.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\navlayout.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_one.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_one.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_warning_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_warning_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_success.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_success.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_success.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_success.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_stable.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_stable.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\base_gap.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\base_gap.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\base_gap.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\base_gap.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_cancel_pressed_shape.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_cancel_pressed_shape.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_shanchu.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bt_shanchu.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bthumbnail_container_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bthumbnail_container_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\lv_search_tips_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\lv_search_tips_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded_warning.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded_warning.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\thumbnail_circle.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\thumbnail_circle.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_add_pic.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bt_add_pic.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_focused.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\dot_focused.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_primary_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_primary_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bthumbnail_container_square.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bthumbnail_container_square.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_timestampe_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_timestampe_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chat_image_selector.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chat_image_selector.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_search_clear.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_search_clear.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\info_attention_but.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\info_attention_but.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chat_error_item_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chat_error_item_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\base_edittext.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\base_edittext.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_danger.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_danger.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\thumbnail_circle_container.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\thumbnail_circle_container.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_marker_2.png",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\icon_marker_2.png"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_success_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_success_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_default.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_default.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navlayout2.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\navlayout2.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_mm_listitem.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_mm_listitem.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_one_item.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\preference_one_item.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_danger.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_danger.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_warning.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_warning.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_to_icon.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\voice_to_icon.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_point_indicator.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\drawable_point_indicator.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\thumbnail_circle.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\thumbnail_circle.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_edit.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\mm_edit.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_type_select_btn.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_type_select_btn.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_cancel_pressed_shape.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_cancel_pressed_shape.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatting_setmode_keyboard_btn.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatting_setmode_keyboard_btn.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\sl_sendmsg_pic.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\sl_sendmsg_pic.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\search_edittext_shape.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\search_edittext_shape.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_user_login_button_back.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_user_login_button_back.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_blue_pressed_shape.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_blue_pressed_shape.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_from_icon.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\voice_from_icon.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_primary.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_primary.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\info_attention_but.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\info_attention_but.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatfrom_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatfrom_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_title_btn_right.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\mm_title_btn_right.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_energized.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_energized.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_edit.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\mm_edit.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_blue_selector.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_blue_selector.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatting_setmode_voice_btn.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatting_setmode_voice_btn.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\thumbnail_circle_minimal.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\thumbnail_circle_minimal.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_warning.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_warning.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\info_item4_search_selector.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\info_item4_search_selector.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatfrom_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatfrom_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_title_btn_right.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\mm_title_btn_right.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\base_edittext.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\base_edittext.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\recording_text_hint_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\recording_text_hint_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_inverse_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_inverse_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_submenu.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\mm_submenu.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_energized.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_energized.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_dividers_black.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\list_dividers_black.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\check_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\check_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_danger.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_danger.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_recording_hint_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_recording_hint_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_cancel_bj.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_cancel_bj.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_marker_stop.png",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\icon_marker_stop.png"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_type_select_btn.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_type_select_btn.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded_danger.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded_danger.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatting_setmode_keyboard_btn.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatting_setmode_keyboard_btn.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatto_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatto_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chat_send_btn_selector.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chat_send_btn_selector.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\corner.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\corner.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bgd_relatly_line.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bgd_relatly_line.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_last_item.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\preference_last_item.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_normal.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\dot_normal.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bgd_relatly_line.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bgd_relatly_line.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_innew.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_innew.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_marker.png",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\icon_marker.png"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_cancel.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_alert_dialog_cancel.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded_success.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded_success.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bthumbnail_container_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bthumbnail_container_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_item.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\preference_item.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_warning_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_warning_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_cancel_normal_shape.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_cancel_normal_shape.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded_danger.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded_danger.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\xml_back_textcolor.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\xml_back_textcolor.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatting_setmode_voice_btn.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatting_setmode_voice_btn.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_positive.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_positive.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_inverse.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_inverse.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_success_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_success_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bthumbnail_placeholder_default.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bthumbnail_placeholder_default.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_search_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_search_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_quxiao.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bt_quxiao.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\thumbnail_circle_minimal.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\thumbnail_circle_minimal.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_light_blue.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_light_blue.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navlayout3.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\navlayout3.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_default_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_default_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_shanchu.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bt_shanchu.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_danger.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_danger.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_red_circle.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_red_circle.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_cancel.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_alert_dialog_cancel.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navlayout.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\navlayout.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_one_item.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\preference_one_item.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chatto_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chatto_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_title_btn_back.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\mm_title_btn_back.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\text_while.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\text_while.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_warning.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_warning.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_title_btn_back.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\mm_title_btn_back.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_info.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_info.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_cancel_normal_shape.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_cancel_normal_shape.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_innew.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_innew.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_common_tab_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_common_tab_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\iv_delete_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\iv_delete_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_first_item.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\preference_first_item.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\sl_sendmsg_camera.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\sl_sendmsg_camera.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_info.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_info.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_mm_listitem_grey.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_mm_listitem_grey.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_mm_listitem.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_mm_listitem.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_sidebar_background_pressed.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_sidebar_background_pressed.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_first_item.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\preference_first_item.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\xml_back_textcolor.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\xml_back_textcolor.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_checkbox_btn.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\mm_checkbox_btn.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_marker_2.png",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\icon_marker_2.png"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_red_circle.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_red_circle.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_search_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_search_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_press_speak_btn.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\chat_press_speak_btn.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_primary_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_primary_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_info_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_info_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_textview_with_line.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_textview_with_line.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_quxiao.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bt_quxiao.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\corner_line_detail.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\corner_line_detail.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_queding.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bt_queding.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\exploded-aar\\client_android\\wheel\\unspecified\\res\\drawable\\wheel_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_default_rounded.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_default_rounded.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_rounded_success.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_rounded_success.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_special.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_alert_dialog_special.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_special.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_alert_dialog_special.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_blue_selector.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_blue_selector.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_blue_pressed_shape.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_blue_pressed_shape.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_style_alert_dialog_button.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\btn_style_alert_dialog_button.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector_background.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\list_selector_background.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bthumbnail_container_square.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bthumbnail_container_square.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_queding.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bt_queding.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_from_icon.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\voice_from_icon.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_primary.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_primary.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_msg_state_failed_resend.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_msg_state_failed_resend.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chat_error_item_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chat_error_item_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_point_indicator.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\drawable_point_indicator.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_file_selector.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\chat_file_selector.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\info_item4_search_selector.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\info_item4_search_selector.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_nobgd.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bt_nobgd.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_dividers.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\list_dividers.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_default.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_default.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_nobgd.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bt_nobgd.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_context_menu_item_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_context_menu_item_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_dividers_black.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\list_dividers_black.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_msg_state_failed_resend.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_msg_state_failed_resend.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_file_selector.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\chat_file_selector.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_timestampe_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_timestampe_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chat_image_selector.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chat_image_selector.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_add_pic.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bt_add_pic.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_inverse.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_inverse.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_success.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_success.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\mm_submenu.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\mm_submenu.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_val.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\exploded-aar\\client_android\\wheel\\unspecified\\res\\drawable\\wheel_val.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_val.xml",
+        "source": "E:\\client_android\\client_android\\build\\intermediates\\exploded-aar\\client_android\\wheel\\unspecified\\res\\drawable\\wheel_val.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navlayout3.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\navlayout3.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navlayout2.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\navlayout2.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_dividers.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\list_dividers.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\thumbnail_circle_container.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\thumbnail_circle_container.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_inverse_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_inverse_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_background_success.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\edittext_background_success.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_btn_style_calm.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_btn_style_calm.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_cancel_bj.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_cancel_bj.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\search_edittext_shape.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\search_edittext_shape.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\recording_text_hint_bg.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\recording_text_hint_bg.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\commen_top_right.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\commen_top_right.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\switch_btn.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\switch_btn.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_recording_hint_bg.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_recording_hint_bg.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_chat_send_btn_selector.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_chat_send_btn_selector.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\title_header.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\title_header.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_btn_blue_normal_shape.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_btn_blue_normal_shape.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_danger_rounded.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_danger_rounded.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_chat_red_circle_friendcontact.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_chat_red_circle_friendcontact.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\bbuton_warning.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\bbuton_warning.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\navitemlayout.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\navitemlayout.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\preference_last_item.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\preference_last_item.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\sl_sendmsg_pic.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\sl_sendmsg_pic.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_marker_stop.png",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\drawable\\icon_marker_stop.png"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\drawable\\eyd_user_login_button_back.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\drawable\\eyd_user_login_button_back.xml"
     }
 ]

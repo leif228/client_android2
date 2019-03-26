@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activities.PageHomeMainActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131428795, "field 'imageview1' and method 'clickShipCargo'");
-    target.imageview1 = finder.castView(view, 2131428795, "field 'imageview1'");
+    view = finder.findRequiredView(source, 2131428811, "field 'imageview1' and method 'clickShipCargo'");
+    target.imageview1 = finder.castView(view, 2131428811, "field 'imageview1'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -18,8 +18,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickShipCargo();
         }
       });
-    view = finder.findRequiredView(source, 2131428796, "field 'imageview2' and method 'clickRentShip'");
-    target.imageview2 = finder.castView(view, 2131428796, "field 'imageview2'");
+    view = finder.findRequiredView(source, 2131428812, "field 'imageview2' and method 'clickRentShip'");
+    target.imageview2 = finder.castView(view, 2131428812, "field 'imageview2'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -28,8 +28,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickRentShip();
         }
       });
-    view = finder.findRequiredView(source, 2131428794, "field 'imageview6' and method 'clickHelp'");
-    target.imageview6 = finder.castView(view, 2131428794, "field 'imageview6'");
+    view = finder.findRequiredView(source, 2131428810, "field 'imageview6' and method 'clickHelp'");
+    target.imageview6 = finder.castView(view, 2131428810, "field 'imageview6'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -38,8 +38,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickHelp();
         }
       });
-    view = finder.findRequiredView(source, 2131428799, "field 'imageview7' and method 'clickMonitor'");
-    target.imageview7 = finder.castView(view, 2131428799, "field 'imageview7'");
+    view = finder.findRequiredView(source, 2131428815, "field 'imageview7' and method 'clickMonitor'");
+    target.imageview7 = finder.castView(view, 2131428815, "field 'imageview7'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -48,8 +48,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickMonitor();
         }
       });
-    view = finder.findRequiredView(source, 2131428801, "field 'imageview8' and method 'clickQianbao'");
-    target.imageview8 = finder.castView(view, 2131428801, "field 'imageview8'");
+    view = finder.findRequiredView(source, 2131428817, "field 'imageview8' and method 'clickQianbao'");
+    target.imageview8 = finder.castView(view, 2131428817, "field 'imageview8'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -58,8 +58,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickQianbao();
         }
       });
-    view = finder.findRequiredView(source, 2131427828, "field 'textView1' and method 'clickShipCargo'");
-    target.textView1 = finder.castView(view, 2131427828, "field 'textView1'");
+    view = finder.findRequiredView(source, 2131427834, "field 'textView1' and method 'clickShipCargo'");
+    target.textView1 = finder.castView(view, 2131427834, "field 'textView1'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -68,8 +68,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickShipCargo();
         }
       });
-    view = finder.findRequiredView(source, 2131427788, "field 'textView2' and method 'clickRentShip'");
-    target.textView2 = finder.castView(view, 2131427788, "field 'textView2'");
+    view = finder.findRequiredView(source, 2131427794, "field 'textView2' and method 'clickRentShip'");
+    target.textView2 = finder.castView(view, 2131427794, "field 'textView2'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -78,8 +78,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickRentShip();
         }
       });
-    view = finder.findRequiredView(source, 2131428297, "field 'textView6' and method 'clickHelp'");
-    target.textView6 = finder.castView(view, 2131428297, "field 'textView6'");
+    view = finder.findRequiredView(source, 2131428303, "field 'textView6' and method 'clickHelp'");
+    target.textView6 = finder.castView(view, 2131428303, "field 'textView6'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -88,8 +88,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickHelp();
         }
       });
-    view = finder.findRequiredView(source, 2131428288, "field 'textView7' and method 'clickMonitor'");
-    target.textView7 = finder.castView(view, 2131428288, "field 'textView7'");
+    view = finder.findRequiredView(source, 2131428294, "field 'textView7' and method 'clickMonitor'");
+    target.textView7 = finder.castView(view, 2131428294, "field 'textView7'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -98,8 +98,8 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickMonitor();
         }
       });
-    view = finder.findRequiredView(source, 2131428293, "field 'textView8' and method 'clickQianbao'");
-    target.textView8 = finder.castView(view, 2131428293, "field 'textView8'");
+    view = finder.findRequiredView(source, 2131428299, "field 'textView8' and method 'clickQianbao'");
+    target.textView8 = finder.castView(view, 2131428299, "field 'textView8'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -108,9 +108,9 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickQianbao();
         }
       });
-    view = finder.findRequiredView(source, 2131428793, "field 'mainContent'");
-    target.mainContent = finder.castView(view, 2131428793, "field 'mainContent'");
-    view = finder.findRequiredView(source, 2131428798, "method 'clickInsurance'");
+    view = finder.findRequiredView(source, 2131428809, "field 'mainContent'");
+    target.mainContent = finder.castView(view, 2131428809, "field 'mainContent'");
+    view = finder.findRequiredView(source, 2131428814, "method 'clickInsurance'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -119,7 +119,7 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickInsurance();
         }
       });
-    view = finder.findRequiredView(source, 2131427351, "method 'clickInsurance'");
+    view = finder.findRequiredView(source, 2131427357, "method 'clickInsurance'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -128,7 +128,7 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickInsurance();
         }
       });
-    view = finder.findRequiredView(source, 2131428803, "method 'clickContect'");
+    view = finder.findRequiredView(source, 2131428819, "method 'clickContect'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -137,7 +137,7 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickContect();
         }
       });
-    view = finder.findRequiredView(source, 2131428251, "method 'clickContect'");
+    view = finder.findRequiredView(source, 2131428257, "method 'clickContect'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -146,7 +146,7 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickContect();
         }
       });
-    view = finder.findRequiredView(source, 2131428800, "method 'clickOrder'");
+    view = finder.findRequiredView(source, 2131428816, "method 'clickOrder'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -155,7 +155,7 @@ public class PageHomeMainActivity$$ViewBinder<T extends com.eyunda.third.activit
           target.clickOrder();
         }
       });
-    view = finder.findRequiredView(source, 2131428292, "method 'clickOrder'");
+    view = finder.findRequiredView(source, 2131428298, "method 'clickOrder'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -55,6 +55,18 @@
             android:padding="3dp"
             android:textSize="18dp" />
 
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:textSize="18dp"
+            android:textColor="@color/red"
+            android:text="注：新密码必须包含数字与字母8位到20位!"/>
+
         <Button
             android:id="@+id/submit"
             android:layout_width="fill_parent"

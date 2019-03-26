@@ -12,6 +12,8 @@ public class ApplicationConstants {
     public static final String NOTIFICATION_ICON = "NOTIFICATION_ICON";
     public static final String HTTP_PRE = "http://";
 
+    public static final String AES_KEY = "zdrlboatzdrlboat";
+
     public static final String HTTP_DOMAINNAME = "";
     public static final String ZD_DOMAINNAME = "http://www.zdrlboat.com";
     public static final String ZD_TELEPHONE = "020-37958062";

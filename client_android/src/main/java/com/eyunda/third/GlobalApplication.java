@@ -34,6 +34,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.hangyi.baidu.push.Utils;
 import com.hangyi.tools.CookieImageDownloader;
+import com.hangyi.tools.Security;
 import com.hangyi.zd.R;
 import com.hangyi.zd.SplashActivity;
 import com.hangyi.zd.domain.GroupData;
@@ -358,9 +359,10 @@ public class GlobalApplication extends TAApplication {
 			}
 		};
 
-		params.put("username", sp.getString("UserName", ""));
-		params.put("passcode", sp.getString("UserPassword", ""));
+		params.put("username", Security.encrypt(sp.getString("UserName", ""),ApplicationConstants.AES_KEY));
+		params.put("passcode", Security.encrypt(sp.getString("UserPassword", ""),ApplicationConstants.AES_KEY));
 		params.put("clienttype", ApplicationConstants.clienttype);
+		params.put("version", "new");
 		data1.getZd_ApiResult(handler, ApplicationUrls.login, params, "post");
 	}
 	

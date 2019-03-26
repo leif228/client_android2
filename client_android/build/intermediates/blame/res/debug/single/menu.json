@@ -1,30 +1,30 @@
 [
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_user_context_userchild_list.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\eyd_user_context_userchild_list.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_chat_context_contact_list.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\eyd_chat_context_contact_list.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_wallet_bind_bankcard.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\eyd_wallet_bind_bankcard.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_user_context_account_list.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\eyd_user_context_account_list.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\activity_main.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\activity_main.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_chat_context_contact_list_allchild.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\eyd_chat_context_contact_list_allchild.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_wallet_bind_bankcard.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\eyd_wallet_bind_bankcard.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_chat_context_contact_list.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\eyd_chat_context_contact_list.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_chat_delete_message.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\eyd_chat_delete_message.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_chat_delete_message.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\eyd_chat_delete_message.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_chat_context_contact_list_allchild.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\eyd_chat_context_contact_list_allchild.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_user_context_account_list.xml",
-        "source": "E:\\hangyi\\client_android\\client_android\\src\\main\\res\\menu\\eyd_user_context_account_list.xml"
+        "merged": "E:\\client_android\\client_android\\build\\intermediates\\res\\merged\\debug\\menu\\eyd_user_context_userchild_list.xml",
+        "source": "E:\\client_android\\client_android\\src\\main\\res\\menu\\eyd_user_context_userchild_list.xml"
     }
 ]

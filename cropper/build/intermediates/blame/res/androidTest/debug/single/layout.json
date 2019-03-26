@@ -1,6 +1,6 @@
 [
     {
-        "merged": "E:\\hangyi\\client_android\\cropper\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\crop_image_view.xml",
-        "source": "E:\\hangyi\\client_android\\cropper\\build\\intermediates\\bundles\\debug\\res\\layout\\crop_image_view.xml"
+        "merged": "E:\\client_android\\cropper\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\crop_image_view.xml",
+        "source": "E:\\client_android\\cropper\\build\\intermediates\\bundles\\debug\\res\\layout\\crop_image_view.xml"
     }
 ]

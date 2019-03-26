@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hangyi.zd"
     android:versionCode="1"
-    android:versionName="4.9.7" >
+    android:versionName="4.9.9" >
 
     <uses-sdk
         android:minSdkVersion="13"
@@ -223,6 +223,11 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.hangyi.zd.activity.UpdatePwd"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.hangyi.zd.activity.ModifyPwd"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />

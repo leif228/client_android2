@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4779d8"
+            >
+
+            <Button
+                android:id="@+id/top_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/base_back"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp" >
+
+                <Button
+                    android:id="@+id/top_commit"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@null"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/top_edit"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/top_commit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/xml_back_textcolor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BDBEC2" />
+
+        <EditText
+            android:id="@+id/pwd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/base_edittext"
+            android:hint="输入原密码"
+            android:inputType="textPassword"
+            android:padding="3dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/pwd2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:padding="3dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/pwd3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="确认新密码"
+            android:inputType="textPassword"
+            android:padding="3dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:textSize="18dp"
+            android:textColor="@color/red"
+            android:text="注：新密码必须包含数字与字母8位到20位!"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#4D7DD2"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

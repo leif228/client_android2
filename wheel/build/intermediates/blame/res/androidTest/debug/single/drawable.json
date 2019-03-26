@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\hangyi\\client_android\\wheel\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_val.xml",
-        "source": "E:\\hangyi\\client_android\\wheel\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_val.xml"
+        "merged": "E:\\client_android\\wheel\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_val.xml",
+        "source": "E:\\client_android\\wheel\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_val.xml"
     },
     {
-        "merged": "E:\\hangyi\\client_android\\wheel\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_bg.xml",
-        "source": "E:\\hangyi\\client_android\\wheel\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_bg.xml"
+        "merged": "E:\\client_android\\wheel\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_bg.xml",
+        "source": "E:\\client_android\\wheel\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_bg.xml"
     }
 ]

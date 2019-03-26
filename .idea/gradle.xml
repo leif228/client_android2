@@ -3,13 +3,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="F:\hangyi\android studio\gradle\gradle-2.14.1" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-4.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/client_android" />
+            <option value="$PROJECT_DIR$/compoundButtonView自定义控件属性" />
             <option value="$PROJECT_DIR$/cropper" />
             <option value="$PROJECT_DIR$/signaturePadLibrary" />
             <option value="$PROJECT_DIR$/wheel" />
